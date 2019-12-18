@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2019.2_1 2019.05, May 13 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck
+vfifo
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1576680381
+!i10b 1
+!s100 z]0J<eJ[QGfHd9CkJ5:X82
+!s11b Y@AfUMRVcN4Y49oz[bT0K2
+IB=f7mLa9?^3gY^4]9XI:a0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1576631083
+8./src/vlog/fifo.sv
+F./src/vlog/fifo.sv
+L0 1
+Z4 OL;L;2019.2_1;69
+r1
+!s85 0
+31
+!s108 1576680380.000000
+!s107 ./src/vlog/fifo.sv|
+!s90 ./src/vlog/fifo.sv|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vfifo_wrapper
+R1
+R2
+!i10b 1
+!s100 1BEUCz4oKRhLgKkJHgURb2
+!s11b UHV[JA_Ai3ZC@7:z;G43L2
+IR_TJahKk`gb5Ga@Z@fP5n2
+R3
+S1
+R0
+w1576680271
+8./src/vlog/fifo_wrapper.sv
+F./src/vlog/fifo_wrapper.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1576680381.000000
+!s107 ./src/vlog/fifo_wrapper.sv|
+!s90 ./src/vlog/fifo_wrapper.sv|
+!i113 0
+R5
+R6

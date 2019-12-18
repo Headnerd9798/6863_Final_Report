@@ -1,0 +1,97 @@
+vunit v1 (drink_machine_top) {
+
+        default clock = (posedge clk);
+        
+        wire [7:0] added_value, change_value, money;
+        reg  [7:0] money_reg;
+	wire [7:0] load_level;
+	reg  [7:0] load_level_reg;
+
+	assign added_value = 	(dime_in	? 10 : 0) + 
+				(quarter_in 	? 25 : 0) + 
+				(nickel_in 	?  5 : 0); 
+	
+	assign change_value = 	(dime_out 	? 10 : 0) + 
+				(two_dime_out 	? 20 : 0) + 
+				(nickel_out 	?  5 : 0); 
+
+	assign money = dispense ? 0 : (money_reg + added_value);
+	//assign money = (dispense ? 0 : money_reg) + added_value; // bug in the design, loosing my money!
+        
+        assign load_level = load ? cans : (load_level_reg - (dispense ? 1 : 0));
+        
+        // always_ff @(posedge clk) // Not supported by Jasper!
+        always @(posedge clk)
+                if (reset) begin
+                        load_level_reg <= 0;
+                        money_reg <= 0;
+		end
+		else begin
+                        load_level_reg <= load_level;
+                        money_reg <= money;
+                end 
+        
+        // Output Assertions
+
+        // no dispense without money in
+	output_no_dispense_without_money: assert !dispense until_ (dime_in || nickel_in || quarter_in);
+	
+	// no dispense when empty
+	output_no_dispense_when_empty: assert always {empty} |=> {!dispense};
+	
+	// correct dispense after enough money
+	output_correct_dispense: assert always {money_reg >= 50} |-> dispense;
+	
+	// correct change
+	output_correct_change: assert always {dispense} |-> {change_value == prev(money_reg) + prev(added_value) - 50};
+	
+	// correct change
+	output_no_change_without_dispense: assert always {!dispense} |-> {change_value == 0};
+	
+	// no empty if loaded and not enough dispense
+	output_no_empty_if_loaded: assert always {load_level_reg > 0} |-> {!empty};
+	
+	// empty after dispensing all cans
+	output_empty: assert always {load_level_reg == 0} |-> {empty};
+	
+	// empty until load
+	output_empty_until_load: assert always always {reset; !reset} |-> empty until ((load && cans >= 0) || dispense || reset);
+	
+	
+	// Input Assumptions
+	
+	// never load when dispensing
+	input_never_load_when_dispensing: assume never (load && dispense);
+	
+	// never insert coin when dispensing
+	//input_never_insert_coin_when_dispensing: assume never ((dime_in || nickel_in || quarter_in) && dispense);
+	
+	// never insert coin when empty
+	// input_never_insert_coin_when_empty: assume never ((dime_in || nickel_in || quarter_in) && empty);
+	
+	// only one coin per cycle
+	input_insert_only_one_coin: assume always onehot0({dime_in, nickel_in, quarter_in});
+	
+	// only one load
+	case_only_one_load: assume never {load; [*]; load};
+	
+
+	// Cover Statements
+	output_cover_empty:		cover {1; rose(empty)};
+	output_cover_dispense:		cover {1; rose(dispense)};
+	output_cover_dime_out:		cover {1; rose(dime_out)};
+	output_cover_two_dime_out:	cover {1; rose(two_dime_out)};
+	output_cover_nickel_out:	cover {1; rose(nickel_out)};
+	output_cover_exact_change:	cover {1; rose(exact_change)};
+	
+	input_cover_dime_in:		cover {1; rose(dime_in)};
+	input_cover_nickel_in:		cover {1; rose(nickel_in)};
+	input_cover_quarter_in: 	cover {1; rose(quarter_in)};
+	input_cover_load_cans:		cover {load && (cans >= 0)};
+	input_cover_load_nickels:	cover {load && (nickels >= 0)};
+	input_cover_load_dimes:		cover {load && (dimes >= 0)};
+
+`ifdef UNREACHABLE
+	cover_never:		cover {1 == 0};
+`endif
+}

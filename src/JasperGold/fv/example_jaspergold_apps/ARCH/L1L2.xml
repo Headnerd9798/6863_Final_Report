@@ -1,0 +1,1597 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2013-01-23T22:18:04Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8655</WindowHeight>
+  <WindowWidth>24870</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Comment">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FF8080" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="In">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Label">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65" ss:Name="Label_head">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66" ss:Name="Label_head_out">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#969696" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67" ss:Name="Normal 2">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s68" ss:Name="Table">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s69" ss:Name="tbl_in">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s70" ss:Name="tbl_out">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m345130468" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m345130508" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m345130528" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m345130548" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s82" ss:Parent="s62">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s85" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s86" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s87" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s94" ss:Parent="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#969696" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s108" ss:Parent="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s115" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s118" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s119" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s120" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s121" ss:Parent="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s122" ss:Parent="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#DA9694" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s123">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#DA9694" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s124" ss:Parent="s64">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s125" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s126">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#E6B8B7" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s127" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s128" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s129" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s130" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s131" ss:Parent="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s132" ss:Parent="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s133" ss:Parent="s69">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s134" ss:Parent="s69">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s135" ss:Parent="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s136" ss:Parent="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s137" ss:Parent="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s138" ss:Parent="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s143" ss:Parent="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s144" ss:Parent="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s145" ss:Parent="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s146" ss:Parent="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s147" ss:Parent="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s148">
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s149" ss:Parent="s70">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s150" ss:Parent="s62">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Setup">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="58" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s71" ss:DefaultColumnWidth="84.75">
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:StyleID="s71" ss:Width="96.75"/>
+   <Column ss:StyleID="s71" ss:Width="59.25"/>
+   <Column ss:StyleID="s71" ss:Width="72"/>
+   <Column ss:StyleID="s71" ss:Width="65.25"/>
+   <Column ss:StyleID="s71" ss:Width="37.5"/>
+   <Column ss:StyleID="s71" ss:Width="43.5" ss:Span="1"/>
+   <Column ss:Index="9" ss:StyleID="s71" ss:Width="33"/>
+   <Column ss:StyleID="s71" ss:Width="25.5"/>
+   <Column ss:StyleID="s71" ss:Width="91.5"/>
+   <Column ss:StyleID="s71" ss:Width="129.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Sizing parameters</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">PARAM</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">A=2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AW=$clog2(A)</Data></Cell>
+   </Row>
+   <Row ss:Index="4">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Inputs</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">INPUT</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_op_go</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_op_a</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_opcode_i</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">INPUT</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_op_go</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_op_a</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">INPUT</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_cmp_a</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">INPUT</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_cmp_a</Data></Cell>
+   </Row>
+   <Row ss:Index="10">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Defining cache states - Invalid, Valid, Dirty</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">ENUM</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">[1:0]</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">cs_t;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">cs_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_state [A]</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">cs_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_state [A]</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="8"><Data ss:Type="String"> </Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s82"><Data ss:Type="String">Operations</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">ENUM</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">[1:0]</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">opc_t;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">opc_t</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:Index="19">
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">ENUM</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">[0:0]</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MEM_RD</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MEM_WR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">mop_t;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">mop_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">mem_op</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="8"><Data ss:Type="String"> </Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s150"><Data ss:Type="String">Cast the input to internal enum type signal.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">[1:0]</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_opcode_i</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:Index="2" ss:StyleID="s68"><Data ss:Type="String">TABLE=IN_ASSIGN</Data></Cell>
+   </Row>
+   <Row ss:StyleID="Default">
+    <Cell ss:Index="2" ss:StyleID="s66"><Data ss:Type="String">WIRE</Data></Cell>
+   </Row>
+   <Row ss:StyleID="Default">
+    <Cell ss:Index="2" ss:StyleID="s94"><Data ss:Type="String">L1_opcode</Data></Cell>
+   </Row>
+   <Row ss:StyleID="Default">
+    <Cell ss:Index="2" ss:StyleID="s70"><Data ss:Type="String">opc_t'(L1_opcode_i)</Data></Cell>
+   </Row>
+   <Row ss:Index="30">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s82"><Data ss:Type="String">Address variables</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">[AW]</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s63"><Data ss:Type="String">L1_op_a, L2_op_a, L1_cmp_a, L2_cmp_a</Data></Cell>
+   </Row>
+   <Row ss:Index="33">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Defining operation states</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">ENUM</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">[2:0]</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_OP</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ops_t;</Data></Cell>
+   </Row>
+   <Row ss:Index="36">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s82"><Data ss:Type="String">Structure</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">STRUCT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ops_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">op_state</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">opc_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">opc_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">L2_opcode</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">trk_t;</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:Index="43">
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">VAR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">trk_t</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">trk [A]</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:Index="45">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="L1_OP">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="38" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="44.25"/>
+   <Column ss:Width="69.75"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80.25"/>
+   <Column ss:Width="51"/>
+   <Column ss:Width="63" ss:Span="2"/>
+   <Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="260.25"/>
+   <Row ss:Index="2" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define when this step &quot;can&quot; go</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L1_OP_CAN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">WIRE [A]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i].op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L1_op_can[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Index="8">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s115"><Data ss:Type="String">TABLE=BAD_L1_OP</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">NEVER (ASSUME)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_op_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_op_can [L1_op_a]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="13" ss:AutoFitHeight="0" ss:Height="27" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define L1_OP decisions - this is the starting step for an operation</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L1_OP</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="String">PRLL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">FULL (ASSUME)</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">COVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">NOTES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_op_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_state [L1_op_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L1_state [L1_op_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L1_op_a] .op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L1_op_a] .L2_opcode</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L1_op_a] .L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s123"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s127"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">I, V</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Invalidate, no writeback</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">RD, WR</Data></Cell>
+    <Cell ss:StyleID="s129"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">RD/WR must get valid copy from L2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">RD local copy</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Write updates state to dirty</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Invalidate dirty copy must send writeback to L2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">RD, WR</Data></Cell>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">RD or WR local dirty copy</Data></Cell>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="L2_OP">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="38" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="44.25"/>
+   <Column ss:Width="69.75"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:Width="51" ss:Span="1"/>
+   <Column ss:Index="7" ss:Width="50.25"/>
+   <Column ss:Width="63"/>
+   <Column ss:AutoFitWidth="0" ss:Width="381"/>
+   <Row ss:Index="2" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define when this step &quot;can&quot; go</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L2_OP_CAN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">WIRE [A]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i].op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L2_op_can[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Index="8" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=BAD_L2_OP</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">NEVER (ASSUME)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_op_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_op_can [L2_op_a]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="13" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define L2_OP decisions - Op received by L2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L2_OP</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="String">PRLL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">FULL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">COVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">WIRE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">NOTES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s131"><Data ss:Type="String">L2_op_go</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="String">trk[L2_op_a] .L2_opcode</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_state [L2_op_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L2_state [L2_op_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">mem_op</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L2_op_a] .op_state</Data></Cell>
+    <Cell ss:StyleID="s123"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">No writeback to mem</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">No writeback to mem</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">MEM_WR</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Writeback dirty copy to memory</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">MEM_RD</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">RD copy from memory</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">#Unreachable state due to inclusive caching scheme, comment out this line to resolve</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Update to D state</Data></Cell>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>1200</HorizontalResolution>
+    <VerticalResolution>1200</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="L2_CMP">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="34" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="44.25"/>
+   <Column ss:Width="69.75"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:Width="59.25" ss:Span="1"/>
+   <Column ss:Index="7" ss:Width="69"/>
+   <Column ss:AutoFitWidth="0" ss:Width="271.5"/>
+   <Row ss:Index="2" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define when this step &quot;can&quot; go</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L2_CMP_CAN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">WIRE [A]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i].op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L2_cmp_can[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Index="8" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=BAD_L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">NEVER (ASSUME)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_cmp_can [L2_cmp_a]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="13" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define L2_CMP decisions - op completing at L2 when MEM_OP sent</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L2_CMP</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="String">PRLL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">FULL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">COVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">NOTES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s131"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="String">trk[L2_cmp_a] .L2_opcode</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="String">L2_state [L2_cmp_a]</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">L2_state [L2_cmp_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L2_cmp_a] .op_state</Data></Cell>
+    <Cell ss:StyleID="s123"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s137"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">L2 state goes invalid, send L1 complete</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s137"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Return valid copy to L2/L1</Data></Cell>
+   </Row>
+   <Row ss:Index="21">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="L1_CMP">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="37" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="44.25"/>
+   <Column ss:Width="69.75"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:Width="72"/>
+   <Column ss:Width="59.25"/>
+   <Column ss:Width="72" ss:Span="1"/>
+   <Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="477.75"/>
+   <Row ss:Index="2" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define when this step &quot;can&quot; go</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L1_CMP_CAN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">WIRE [A]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i].op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L1_cmp_can[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Index="8" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s115"><Data ss:Type="String">TABLE=BAD_L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">NEVER (ASSUME)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_cmp_can [L1_cmp_a]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="13" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Define L1_CMP decisions - op completing at L1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">TABLE=L1_CMP</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="String">PRLL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">FULL</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">COVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s108"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">NOTES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_cmp_go</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[L1_cmp_a] .L1_opcode</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[L1_cmp_a] .L2_opcode</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">L1_state [L1_cmp_a]</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L1_cmp_a] .op_state</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">trk[L1_cmp_a] .L2_opcode</Data></Cell>
+    <Cell ss:StyleID="s123"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">#Duplicate - PRLL check failure.  Inputs should be 1/x/INV; comment this line to resolve</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:StyleID="s124"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">#Uncomment this line</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">V</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">L1 gets valid copy</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s124"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">x</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">L2_OP</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">INV</Data></Cell>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">Second step to Invalidating dirty copy- send INV to L2 after writeback</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:StyleID="s124"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">WR</Data></Cell>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">RD</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s126"><Data ss:Type="String">#Dead-end state- FULL check failure.  Need to specify behavior for this condition.  Uncomment to resolve.</Data></Cell>
+   </Row>
+   <Row ss:Index="24">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="User_Properties">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="38" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="44.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="92.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="102.75"/>
+   <Row ss:Index="2" ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Check for bad cache states - L2 should not be Invalid when L1 is Valid/Dirty</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="m345130468"><Data
+      ss:Type="String">TABLE=L1_L2_BAD_STATE</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">NEVER</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s143"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s143"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s143"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i] .op_state</Data></Cell>
+    <Cell ss:StyleID="s143"><Data ss:Type="String">L1_state[i]</Data></Cell>
+    <Cell ss:StyleID="s143"><Data ss:Type="String">L2_state[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s144"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s145"><Data ss:Type="String">V, D</Data></Cell>
+    <Cell ss:StyleID="s145"><Data ss:Type="String">I</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s144"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s145"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s145"><Data ss:Type="String">V, D</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s146"/>
+    <Cell ss:StyleID="s146"/>
+    <Cell ss:StyleID="s147"/>
+    <Cell ss:StyleID="s147"/>
+    <Cell ss:StyleID="s147"/>
+    <Cell ss:StyleID="s147"/>
+    <Cell ss:StyleID="s147"/>
+   </Row>
+   <Row ss:StyleID="s71">
+    <Cell><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s62"><Data ss:Type="String">Check for system deadlock - no steps &quot;can&quot; occur</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="m345130508"><Data
+      ss:Type="String">TABLE=L1_L2_DEADLOCK</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">NEVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_op_can</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_op_can</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_cmp_can</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_cmp_can</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="15">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="m345130528"><Data
+      ss:Type="String">TABLE=BAD_L1</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">NEVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_state[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">&gt;D</Data></Cell>
+   </Row>
+   <Row ss:Index="20">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="m345130548"><Data
+      ss:Type="String">TABLE=BAD_L2</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">NEVER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_state[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">&gt;D</Data></Cell>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+   <Row ss:Index="34" ss:AutoFitHeight="0" ss:Height="11.25"/>
+   <Row ss:Hidden="1" ss:Span="3"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Reset">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="21" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="96">
+   <Column ss:AutoFitWidth="0" ss:Width="10.5"/>
+   <Column ss:Width="75"/>
+   <Column ss:Width="16.5"/>
+   <Column ss:Width="69.75"/>
+   <Column ss:Width="53.25" ss:Span="1"/>
+   <Row ss:Index="3" ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:Index="2" ss:StyleID="s68"><Data ss:Type="String">TABLE=RESET</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">LABEL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">STATE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">STATE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s65"><Data ss:Type="String">FOR i[A]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">rst</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">trk[i].op_state</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L1_state[i]</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">L2_state[i]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s148"/>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">I</Data></Cell>
+   </Row>
+   <Row ss:Index="8">
+    <Cell ss:MergeAcross="7" ss:MergeDown="13" ss:StyleID="s102"><Data
+      ss:Type="String">#****************************************************************************************&#13;#  Copyright (C) 2017 Cadence Design Systems, Inc. All Rights Reserved.  &#13;#  Unpublished &#45;- rights reserved under the copyright laws ofthe United States.&#13;#&#13;#  The content of this file is owned by Cadence Design Systems, Inc.&#13;#  and may be used only as authorized in the license agreement&#13;#  controlling such use. No part of these materials may be reproduced,&#13;#  transmitted, or translated, in any form or by any means, electronic,&#13;#  mechanical, manual, optical, or otherwise, without prior written permission&#13;#  of Cadence Design Systems, or as expressly provided by the license&#13;#  agreement. These materials are for information and instruction purposes.&#13;#&#13;#  For technical assistance please send email to support@cadence.com.&#13;#****************************************************************************************</Data></Cell>
+   </Row>
+   <Row ss:Index="11" ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="14" ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

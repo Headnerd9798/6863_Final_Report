@@ -1,0 +1,129 @@
+# 
+# Questa Static Verification System
+# Version 2019.2_1 linux_x86_64 18 May 2019
+
+log created Tue Dec 17 20:33:40 2019 by hz2619 on cadpc14
+
+
+Command: netlist elaborate
+Command arguments:
+    -zdb
+      /homes/user/stud/fall19/hz2619/hanoi43/quickstart_propcheck/Output_Results/qcache/DB/zdb_1
+    -tool propcheck
+    -d move_disk
+
+
+## Elaborating Design...
+Reading MTI mapping for library mapping
+Writing all MTI mappings to vmap output ...
+
+Top level modules:
+	move_disk
+
+Analyzing design...
+-- Loading module z0in_work.move_disk
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module z0in_work.move_disk(fast)
+Optimized design name is zi_opt_csl_1442229464_1
+End of log Tue Dec 17 20:33:42 2019
+
+
+# 
+# Questa Static Verification System
+# Version 2019.2_1 linux_x86_64 18 May 2019
+
+log created Tue Dec 17 20:33:42 2019 by hz2619 on cadpc14
+
+
+Command: netlist create
+Command arguments:
+    -zdb
+      /homes/user/stud/fall19/hz2619/hanoi43/quickstart_propcheck/Output_Results/qcache/DB/zdb_1
+    -tool propcheck
+    -d move_disk
+
+
+## Synthesizing netlist...
+Processing module 'move_disk'
+Elaborating module 'move_disk'.
+
+##Time Taken (Synthesis) = 800000.000000 ticks = 0.800000 secs
+
+End of log Tue Dec 17 20:33:43 2019
+
+
+# 
+# Questa Static Verification System
+# Version 2019.2_1 linux_x86_64 18 May 2019
+
+log created Tue Dec 17 20:33:43 2019 by hz2619 on cadpc14
+
+
+Command: formal compile
+Command arguments:
+    -zdb
+      /homes/user/stud/fall19/hz2619/hanoi43/quickstart_propcheck/Output_Results/qcache/DB/zdb_1
+    -d move_disk
+
+
+## Processing Formal Logic...
+Processing module 'move_disk'
+Restoring module 'move_disk'.
+Flattening design 'move_disk'.
+Info    : Detected reset.  Reset: rst, polarity: synchronous, active: high.  [netlist-12]
+Info    : Detected clock.  Clock: clk, polarity: posedge.  [netlist-11]
+Design is processed for formal verification.  Design 'move_disk'.
+
+Clocks
+------------------------------------------------------------------------------
+Port                                   Period         Waveform    Edges
+------------------------------------------------------------------------------
+clk                                        10              0 5    PE   
+------------------------------------------------------------------------------
+
+Blackboxes
+------------------------------------------------------------------------------
+Module name                                                Reason
+------------------------------------------------------------------------------
+<no blackboxed modules>
+------------------------------------------------------------------------------
+
+Inferred directives
+------------------------------------------------------------------------------
+<no inferred directives>
+------------------------------------------------------------------------------
+
+Design is linked for formal analysis.  Design 'move_disk'.
+Formal model has been created.
+
+Property Summary
+-------------------------------------------------------------------------------
+Total  Directives :65
+Assert Directives :58
+Assume Directives :0
+Cover  Directives :7
+
+SVA Summary
+-------------------------------------------------------------------------------
+SVA Directive Type        Directives           Checkers
+-------------------------------------------------------------------------------
+Assert                        58                  58
+Assume                         0                   0
+Cover                          7                   7
+-------------------------------------------------------------------------------
+
+To see results in the GUI run:
+qverify /homes/user/stud/fall19/hz2619/hanoi43/quickstart_propcheck/Output_Results/formal_compile.db
+
+
+Message Summary
+---------------------------------------------------------------------------
+Count  Type     Message ID         Summary
+---------------------------------------------------------------------------
+    1  Info     netlist-11         Detected clock.
+    1  Info     netlist-12         Detected reset.
+
+Final Process Statistics: Max memory 714MB, CPU time 2s, Total time 4s
+End of log Tue Dec 17 20:33:44 2019
+
+

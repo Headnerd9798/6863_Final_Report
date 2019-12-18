@@ -1,0 +1,47 @@
+module v_egress (
+  clk, rstN,
+  eg_valid,
+  eg_ready,
+  int_datavalid,
+  int_datardy
+);
+input clk, rstN;
+input eg_valid;
+input eg_ready;
+input int_datavalid;
+input int_datardy;
+
+  reg eg_odd;
+  always @(posedge clk or negedge rstN) begin
+    if (!rstN)                     eg_odd <= 1'b1;
+    else if (eg_valid && eg_ready) eg_odd <= ~eg_odd;
+  end
+
+  // Assertion "wvalid_2cycle"
+  //  Valid signal is asserted twice in a row
+  //
+  property wvalid_2cycle;
+    @(posedge clk) (eg_odd == 1'b0) |-> (eg_valid == 1'b1);
+  endproperty
+  a_wvalid_2cycle: assert property (wvalid_2cycle);
+
+  // Egress ready/valid
+  c_eg_ready: cover property (@(posedge clk) (eg_ready));
+  c_eg_valid: cover property (@(posedge clk) (eg_valid));
+  //
+  // Data ready/valid
+  c_int_datavalid: cover property (@(posedge clk) (int_datavalid));
+  c_int_datardy:   cover property (@(posedge clk) (int_datardy));
+  //
+
+endmodule // v_egress
+
+
+// -------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Cadence Design Systems, Inc. Proprietary and Confidential.
+// -------------------------------------------------------
+

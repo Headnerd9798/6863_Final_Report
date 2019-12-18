@@ -1,0 +1,21 @@
+<LayoutInfo CurrentRTLLayout="Default" version="1">
+ <Layout Name="Default" Type="RTL">
+  <dockareas right="112" top="0" left="250" bottom="335"/>
+  <window type="rtl" width="1680" visible="1" height="1013" y="37" undocked="0" x="1680"/>
+  <window dock_location="bottom" type="transcript" visible="1" y="0" undocked="0" x="0"/>
+  <window title="Wave (assert_bigsmall_disk_0_21)" type="wave" width="1008" visible="0" height="630" y="0" undocked="1" x="1680"/>
+  <window title="Wave (cover_mid_disk_1)" type="wave" width="864" visible="0" height="526" y="0" undocked="1" x="0" id="1"/>
+  <window title="Wave (fifo_index_check.ovl_cover.ovl_cover_basic.cover_fifo_pop)" type="wave" width="1008" visible="0" height="630" y="237" undocked="1" x="185" id="2"/>
+  <window title="Wave (fifo_index_check.ovl_assert.A_ASSERT_FIFO_INDEX_UNDERFLOW_P)" type="wave" width="1008" visible="0" height="630" y="346" undocked="1" x="614" id="3"/>
+  <window title="Wave (fifo_num_entries_0)" type="wave" width="1008" visible="0" height="630" y="80" undocked="1" x="160" id="4"/>
+  <window type="source" visible="1" y="0" undocked="0" x="0"/>
+  <window dock_location="right" type="fsmview" visible="0" y="0" undocked="0" x="0"/>
+  <window dock_location="left" type="structure" visible="0" y="0" undocked="0" x="0"/>
+  <window title="Details" dock_location="left" type="zindetails" visible="0" y="0" undocked="0" x="0"/>
+  <window title="Schematic" dock_location="right" type="zinschematicview" width="802" visible="0" height="653" y="199" undocked="1" x="604"/>
+  <window title="Design" dock_location="left" type="zindutview" visible="1" y="0" undocked="0" x="0"/>
+  <window title="Properties" dock_location="bottom" type="zinformalproperties" visible="1" y="0" undocked="0" x="0"/>
+  <window title="Control Points" dock_location="right" type="zinformalcontrolpointsnew" visible="0" y="0" undocked="0" x="0"/>
+  <window title="Design Checks" dock_location="bottom" type="zinformalpolicychecks" visible="0" y="0" undocked="0" x="0"/>
+ </Layout>
+</LayoutInfo>

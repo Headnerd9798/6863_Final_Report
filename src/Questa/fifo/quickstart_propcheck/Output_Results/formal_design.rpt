@@ -1,0 +1,120 @@
+
+Questa Version 2019.2_1 linux_x86_64 18 May 2019
+
+-------------------------------------------------------------------------------
+Design Report
+Created Wed Dec 18 09:46:29 2019
+-------------------------------------------------------------------------------
+
+
+Design 'fifo_wrapper'
+===============================================================================
+
+
+---------------------------------------
+Design Summary                    Count
+---------------------------------------
+Clocks                                1
+  User-specified                      1
+  Inferred                            0
+Resets                                1
+  User-specified                      0
+  Inferred                            1
+Control Point Bits                   59
+  DUT Input Bits                     12
+  Cut Point Bits                      0
+  Black Box Output Bits               0
+  Undriven Wire Bits                 47
+  Unresolved RHS Bits                 0
+State Bits                           52
+  Design Register Bits               52
+  Design Latch Bits                   0
+Storage Structures       
+  Counters                            3
+  RAMs                                0
+Black Boxes                           0
+Constants Bits                        0
+---------------------------------------
+
+Detailed Design Information
+===============================================================================
+
+
+Clocks
+------------------------------------------------------------------------------
+Port                                   Period         Waveform    Edges
+------------------------------------------------------------------------------
+clk                                        10              0 5    PE   
+------------------------------------------------------------------------------
+
+Resets
+-------
+  rst [inferred] (Active High)
+
+Constants
+------------------
+  <none>
+
+Cut Points
+----------
+  <none>
+
+Black Box Outputs
+-----------------
+  <none>
+
+Undriven Wires
+--------------
+  fifo_data  (32 bits)
+  head  (8 bits)
+  number_of_current_entries  (3 bits)
+  read_ptr  (2 bits)
+  write_ptr  (2 bits)
+
+Unresolved RHS Bits
+-------------------
+  <none>
+
+Latches
+-------
+  <none>
+
+Counters
+--------
+  fifo_inst.number_of_current_entries  (3 bits)
+  fifo_inst.read_ptr  (2 bits)
+  fifo_inst.write_ptr  (2 bits)
+
+RAMs
+----
+  <none>
+
+Black Boxes (User-specified)
+----------------------------
+  <none>
+
+Black Boxes (Inferred)
+----------------------
+  <none>
+
+
+
+Port Constraints
+-------------------------------------------------------------------------------
+Type                 Clock Domain         Value         Port
+-------------------------------------------------------------------------------
+Clock                <n/a>                -            'clk'
+Unconstrained        <none>               -            'in_read_ctrl'
+Unconstrained        <none>               -            'in_write_ctrl'
+Unconstrained        <none>               -            'in_write_data'
+Unconstrained        <none>               -            'rst'
+-------------------------------------------------------------------------------
+
+Instance Usage
+===============================================================================
+Count  Module          Location
+-------------------------------------------------------------------------------
+   1   fifo            /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv (Line 1)
+
+
+

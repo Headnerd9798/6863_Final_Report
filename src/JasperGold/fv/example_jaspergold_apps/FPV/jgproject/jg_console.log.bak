@@ -1,0 +1,46 @@
+2019-12-17 21:49:38.801222 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.801292 (13944) main____ INFO    JasperGold version info
+2019-12-17 21:49:38.801300 (13944) main____ INFO      tool      : JasperGold 2019.03
+2019-12-17 21:49:38.801306 (13944) main____ INFO      version   : 2019.03p002 64 bits
+2019-12-17 21:49:38.801311 (13944) main____ INFO      build date: 2019.06.01 18:04:02 PDT
+2019-12-17 21:49:38.801314 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.801318 (13944) main____ INFO    Runtime info:
+2019-12-17 21:49:38.801322 (13944) main____ INFO      platform  : Linux 3.10.0-1062.el7.x86_64 x86_64
+2019-12-17 21:49:38.801329 (13944) main____ INFO      hostname  : cadpc14
+2019-12-17 21:49:38.801333 (13944) main____ INFO      pid       : 13944
+2019-12-17 21:49:38.801337 (13944) main____ INFO      arguments : '-style' 'windows' '-fpv' 'FPV_verilog_hanoi.tcl'
+2019-12-17 21:49:38.801341 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.801344 (13944) main____ INFO    System resource limits info:
+2019-12-17 21:49:38.801348 (13944) main____ INFO      virtual memory: unlimited
+2019-12-17 21:49:38.801352 (13944) main____ INFO      cpu time      : unlimited
+2019-12-17 21:49:38.801366 (13944) main____ INFO      stack size    : 8388608 B
+2019-12-17 21:49:38.801372 (13944) main____ INFO      core file size: 0 B
+2019-12-17 21:49:38.801380 (13944) main____ INFO      open files    : 1024
+2019-12-17 21:49:38.801384 (13944) main____ INFO      file size     : unlimited
+2019-12-17 21:49:38.801388 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.801391 (13944) main____ INFO    Memory statistics:
+2019-12-17 21:49:38.801395 (13944) main____ INFO      total physical memory  : 32721096 kB
+2019-12-17 21:49:38.801398 (13944) main____ INFO      free physical memory   : 27820672 kB
+2019-12-17 21:49:38.801401 (13944) main____ INFO      committed address space: 7029684 kB
+2019-12-17 21:49:38.801404 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.801429 (13944) main____ INFO    Important environment variables:
+2019-12-17 21:49:38.801436 (13944) main____ INFO      CDS_LIC_FILE: '5280@bioeecad.ee.columbia.edu'
+2019-12-17 21:49:38.801447 (13944) main____ INFO      DISPLAY     : ':0'
+2019-12-17 21:49:38.801451 (13944) main____ INFO    ----------------------------------------
+2019-12-17 21:49:38.802141 (13944) lic_core INFO    Initializing license system ...
+2019-12-17 21:49:38.804656 (13944) lic_core INFO    ... license system initialized.
+2019-12-17 21:49:38.805631 (13944) lic__man INFO    Claim 'main' for <ui>.
+2019-12-17 21:49:38.805662 (13944) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2019-12-17 21:49:38.816779 (13944) lic_core INFO    ... (1) checkout succeeded
+2019-12-17 21:49:38.816820 (13944) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:49:38.816839 (13944) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2019-12-17 21:49:38.827834 (13944) lic_core INFO    ... (2) checkout succeeded
+2019-12-17 21:49:40.481289 (13944) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:49:41.407126 (13944) lic__man INFO    Unclaim 'fpv' for <ui>.
+2019-12-17 21:49:41.407163 (13944) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:49:41.425942 (13944) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2019-12-17 21:49:41.427226 (13944) session_ INFO    Analysis session with session id 'session_0' started (pid: 13966)
+2019-12-17 21:49:43.581973 (13944) session_ INFO    Analysis session 'session_0' connected to the console (host: 128.59.64.204:51160)
+2019-12-17 21:50:50.679152 (13944) main____ INFO    About to exit: requested from GUI
+2019-12-17 21:50:50.854394 (13944) session_ INFO    Analysis session 'session_0' disconnected.
+2019-12-17 21:50:50.871765 (13944) main____ INFO    Exiting with status 0.

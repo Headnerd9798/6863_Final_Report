@@ -1,0 +1,15 @@
+<spirit:component xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <spirit:vendor>opencores.org</spirit:vendor>
+    <spirit:library>or1k</spirit:library>
+    <spirit:name>ahb2wb</spirit:name>
+    <spirit:version>1300.008</spirit:version>
+    <spirit:fileSets>
+        <spirit:fileSet>
+            <spirit:name>RTL_Files</spirit:name>
+            <spirit:file>
+                <spirit:name>ahb/ahb2wb.v</spirit:name>
+                <spirit:fileType>systemVerilogSource</spirit:fileType>
+            </spirit:file>
+        </spirit:fileSet>
+    </spirit:fileSets>
+</spirit:component>

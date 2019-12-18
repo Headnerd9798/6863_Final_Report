@@ -1,0 +1,28 @@
+vunit v_ingress (ingress(rtl)) {
+
+  default clock is rose(clk);
+
+  -- Ingress I/F
+  c_rd_ready: cover {rd_ready};
+  c_write:    cover {wr_rd};
+  c_read:     cover {wr_rd = '0'};
+  c_valid:    cover {valid};
+  c_ready:    cover {ready};
+  --
+  -- Internal I/F
+  c_int_valid: cover {int_valid};
+  c_int_ready: cover {int_ready};
+  c_int_read_done: cover {int_read_done};
+  --
+
+} -- v_ingress
+
+
+-- -------------------------------------------------------
+-- Copyright (c) 2017 Cadence Design Systems, Inc.
+--
+-- All rights reserved.
+--
+-- Cadence Design Systems Proprietary and Confidential.
+-- -------------------------------------------------------
+

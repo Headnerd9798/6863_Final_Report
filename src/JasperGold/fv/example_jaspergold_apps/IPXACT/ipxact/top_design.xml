@@ -1,0 +1,48 @@
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/design.xsd">
+    <spirit:vendor>opencores.org</spirit:vendor>
+    <spirit:library>or1k</spirit:library>
+    <spirit:name>orpsoc_top</spirit:name>
+    <spirit:version>1300.008</spirit:version>
+    <spirit:componentInstances>
+        <spirit:componentInstance>
+            <spirit:instanceName>or1200_top0</spirit:instanceName>
+            <spirit:componentRef spirit:vendor="opencores.org" spirit:library="or1k" spirit:name="or1200_top" spirit:version="1300.008"/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>ahb2wb</spirit:instanceName>
+            <spirit:componentRef spirit:vendor="opencores.org" spirit:library="or1k" spirit:name="ahb2wb" spirit:version="1300.008"/>
+        </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_clock</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="iwb_clk_i"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="clk_i"/>
+        </spirit:adHocConnection>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_reset</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="iwb_rst_i"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="rst_i"/>
+        </spirit:adHocConnection>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_address</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="dbg_adr_i"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="adr_o"/>
+        </spirit:adHocConnection>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_data_in</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="dbg_dat_i"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="dat_o"/>
+        </spirit:adHocConnection>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_data_out</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="dbg_dat_o"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="dat_i"/>
+        </spirit:adHocConnection>
+        <spirit:adHocConnection>
+            <spirit:name>ahb2wb_ack</spirit:name>
+            <spirit:internalPortReference spirit:componentRef="or1200_top0" spirit:portRef="dbg_ack_o"/>
+            <spirit:internalPortReference spirit:componentRef="ahb2wb" spirit:portRef="ack_i"/>
+        </spirit:adHocConnection>
+    </spirit:adHocConnections>
+</spirit:design>

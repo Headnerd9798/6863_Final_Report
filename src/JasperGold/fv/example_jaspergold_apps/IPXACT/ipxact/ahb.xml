@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spirit:busDefinition xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd">
+    <spirit:vendor>amba.com</spirit:vendor>
+    <spirit:library>AMBA4</spirit:library>
+    <spirit:name>ahb</spirit:name>
+    <spirit:version>r0p0_0</spirit:version>
+    <spirit:directConnection>true</spirit:directConnection>
+    <spirit:isAddressable>true</spirit:isAddressable>
+    <spirit:maxMasters>1</spirit:maxMasters>
+    <spirit:maxSlaves>1</spirit:maxSlaves>
+    <spirit:description>
+        AHB definition.
+    </spirit:description>
+</spirit:busDefinition>

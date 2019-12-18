@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////
+//
+//
+//               Formal Verification CSEE E6863
+//
+//			sj, hz
+//
+//
+///////////////////////////////////////////////////////////////////////
+vunit fifo_psl(fifo){
+
+// Assume:
+default clock = rose(clk);
+
+// fifo_assume_empty: assume (@(posedge clk) out_is_empty |-> ~in_read_ctrl );
+// fifo_assume_full: assume (@(posedge clk) out_is_full |-> ~in_write_ctrl );
+
+// Coverage: grant asserted
+fifo_num_entries_6: cover {number_of_current_entries == 6};
+
+fifo_num_entries_5: cover {number_of_current_entries == 5};
+
+fifo_num_entries_4: cover {number_of_current_entries == 4};
+
+fifo_num_entries_3: cover {number_of_current_entries == 3};
+
+fifo_num_entries_2: cover {number_of_current_entries == 2};
+
+fifo_num_entries_1: cover {number_of_current_entries == 1};
+
+fifo_num_entries_0: cover {number_of_current_entries == 0};
+
+}

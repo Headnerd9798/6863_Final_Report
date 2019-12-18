@@ -1,0 +1,51 @@
+module v_bridge (
+  clk, rstN,
+  fifo_full, wr_ptr,
+  fifo_empty, rd_ptr,
+  int_datavalid, int_datardy, int_ready, int_valid
+);
+input clk, rstN;
+input fifo_full;
+input [3:0] wr_ptr;
+input fifo_empty;
+input [3:0] rd_ptr;
+input int_datavalid, int_datardy, int_ready, int_valid;
+
+  // Assertion "fifo_no_overflow"
+  //  The FIFO must never overflow
+  //  The write pointer cannot change when the FIFO is full
+  //
+  property fifo_no_overflow;
+    @(posedge clk) fifo_full |=> (wr_ptr == $past(wr_ptr));
+  endproperty
+  a_fifo_no_overflow: assert property (fifo_no_overflow);
+
+  // Assertion "fifo_no_underflow"
+  //  The FIFO must never underflow
+  //  The read pointer cannot change when the FIFO is empty
+  //
+  property fifo_no_underflow;
+    @(posedge clk) fifo_empty |=> (rd_ptr == $past(rd_ptr));
+  endproperty
+  a_fifo_no_underflow: assert property (fifo_no_underflow);
+
+  // Internal bridge to egress I/F
+  c_int_datavalid: cover property (@(posedge clk) (int_datavalid));
+  c_int_datardy:   cover property (@(posedge clk) (int_datardy));
+  //
+  // Internal bridge to ingress I/F
+  c_int_ready: cover property (@(posedge clk) (int_ready));
+  c_int_valid: cover property (@(posedge clk) (int_valid));
+  //
+
+endmodule // v_bridge
+
+
+// -------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Cadence Design Systems Proprietary and Confidential.
+// -------------------------------------------------------
+

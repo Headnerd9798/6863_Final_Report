@@ -1,0 +1,70 @@
+vunit v1 (drink_machine) {
+
+	%for i in 0..8 do 
+		wire a%{i};
+	%end
+
+	%for i in 0..8 do 
+		A%{i} : cover {a%{i}};
+	%end
+
+	wire [0:32] b;
+
+`ifndef GENERATE_OFF
+	generate
+		genvar g;
+		for (g = 0; g <= 8; g++) begin
+			cover_b_psl : cover {b[g]} @(posedge clk);
+			cover_b_sva : cover property ( @(posedge clk) b[g] );
+		end
+	endgenerate
+`endif
+
+
+
+	//%if %{i} == nickel_in %then
+	//	cover_%{i}: cover {%{i}}@(posedge clk);
+	//%end
+	
+	%for i in {nickel_in, dime_in, quarter_in} do
+	//	%if %{i} == nickel_in %then
+	//		cover_%{i}: cover {%{i}}@(posedge clk);
+	//	%else
+	//		cover_%{i}: cover {%{i}[*2]}@(posedge clk);
+	//	%end
+		cover_%{i}_rose: cover {rose(%{i})}@(posedge clk);
+		cover_%{i}_fell: cover {fell(%{i})}@(posedge clk);
+	%end
+
+	%for i in {
+		s_idle, 
+		s_five, 
+		s_ten,
+		s_fifteen,
+		s_twenty,
+		s_twenty_five,
+		s_thirty,
+		s_thirty_five,
+		s_forty,
+		s_forty_five,
+		s_fifty,
+		s_nickel_out,
+		s_dime_out,
+		s_nickel_dime_out,
+		s_two_dime_out} do
+		cover_state_is_%{i}: cover {current_state == %{i}}@(posedge clk);
+	%end 
+
+`ifndef COVERGROUPS_OFF
+	covergroup states @(posedge clk);
+		coverpoint current_state {
+			bins zero   = { s_idle   };
+			bins few    = { s_five, s_ten, s_fifteen, s_twenty};
+			bins more   = { [s_twenty_five:s_fifty] };
+			bins out    = { [s_nickel_out:s_two_dime_out] };
+		}
+	endgroup
+	states i_states = new();
+`endif
+
+}

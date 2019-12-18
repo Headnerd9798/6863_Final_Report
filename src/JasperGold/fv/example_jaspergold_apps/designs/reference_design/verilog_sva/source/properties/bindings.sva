@@ -1,0 +1,52 @@
+bind arbiter
+  v_arbiter i_arbiter (
+  .clk(clk), .rstN(rstN),
+  .gnt(gnt), .req(req),
+  .int_ready(int_ready), .int_valid(int_valid), .trans_started(trans_started)
+);
+
+bind bridge
+  v_bridge i_bridge (
+  .clk(clk), .rstN(rstN),
+  .fifo_full(fifo_full), .wr_ptr(wr_ptr),
+  .fifo_empty(fifo_empty), .rd_ptr(rd_ptr),
+  .int_datavalid(int_datavalid), .int_datardy(int_datardy),
+  .int_ready(int_ready), .int_valid(int_valid)
+);
+
+bind egress
+  v_egress i_egress (
+  .clk(clk), .rstN(rstN),
+  .eg_valid(eg_valid),
+  .eg_ready(eg_ready),
+  .int_datavalid(int_datavalid),
+  .int_datardy(int_datardy)
+);
+
+bind ingress
+  v_ingress i_ingress (
+  .clk(clk), .rstN(rstN),
+  .rd_ready(rd_ready), .wr_rd(wr_rd), .valid(valid), .ready(ready),
+  .int_valid(int_valid), .int_ready(int_ready), .int_read_done(int_read_done)
+);
+
+bind port_select
+  v_port_select i_port_select (
+  .clk(clk),
+  .int_ready0(int_ready0), .int_ready1(int_ready1),
+  .int_ready2(int_ready2), .int_ready3(int_ready3),
+  .ig_sel(ig_sel), .int_size(int_size),
+  .int_size0(int_size0), .int_size1(int_size1),
+  .int_size2(int_size2), .int_size3(int_size3)
+);
+
+
+// ------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Jasper Design Automation Proprietary and Confidential.
+// -------------------------------------------------------
+
+

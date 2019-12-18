@@ -1,0 +1,27 @@
+Contents:
+===================
+CLEAN                   : directory clean-up script.
+README                  : this file
+RUNME                   : script to run example
+irun.f                  : design and irun argument file list
+tcl/                    : directory contains jg tcl file
+covfile.cf              : coverage configuration file
+setup.csh               : source script to set-up SOCV_KIT_HOME
+
+How to run:
+==================
+Note: Please ensure that jg path is set to 64bit installation.
+1. source setup.csh
+2. To run simulation : RUNME sim 
+3. To run UNR in single step  : RUNME unr  
+4. To analyse the data in IMC after running UNR : imc -exec jgproject/sessionLogs/session_0/unr_imc_coverage_merge.cmd
+
+Expected Results:
+================
+A) After running simulation (step 2) , the Coverage % in IMC for the DUT uart_top = 78.47% 
+B) UNR will generate AFA (block + expressions) for the 21.53% holes (251 items).   
+C) After running UNR (step 3) , you will see 12 unreachable items. 
+D) For excluding all the UNR uncomment the exclude line in jgproject/sessionLogs/session_0/unr_imc_coverage_merge.cmd
+E) Save the excluded information in the refinement file using imc command : save -refinement abc.vRefine
+F) To see the Coverage % in IMC after running UNR , load the saved refinement file in IMC.         
+   Coverage % for DUT uart_top = 80.14% now.

@@ -1,0 +1,135 @@
+
+
+===============================================================================
+Module: fifo_wrapper
+===============================================================================
+Parameters: 
+    parameter  ENTRIES = 4
+    parameter  ENTRIES_LOG2 = 32'b10
+Summary
+-------------------------------------------------------------------------------
+Assertions   : 0 
+Assumptions  : 3 
+Covers       : 7 
+-------------------------------------------------------------------------------
+assume fifo_assume_empty (sva)
+  Instance: fifo_wrapper.fifo_assume_empty
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 67
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+assume fifo_assume_full (sva)
+  Instance: fifo_wrapper.fifo_assume_full
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 68
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+assume fifo_assume_in_rw_ctrl (sva)
+  Instance: fifo_wrapper.fifo_assume_in_rw_ctrl
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 72
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+cover fifo_num_entries_6 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_6
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 77
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_5 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_5
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 79
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_4 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_4
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 81
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_3 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_3
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 83
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_2 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_2
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 85
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_1 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_1
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 87
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover fifo_num_entries_0 (sva)
+  Instance: fifo_wrapper.fifo_num_entries_0
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv, Line 89
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+
+===============================================================================
+Module: fifo
+===============================================================================
+Parameters: 
+    parameter  ENTRIES = 4
+    parameter  ENTRIES_LOG2 = 32'b10
+Summary
+-------------------------------------------------------------------------------
+Assertions   : 8 
+Assumptions  : 0 
+Covers       : 0 
+-------------------------------------------------------------------------------
+assert assert_reset (sva)
+  Instance: fifo_inst.assert_reset
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 74
+  Severity: error
+  Stats:   depth=2 gates=9 flops=1
+
+assert assert_empty (sva)
+  Instance: fifo_inst.assert_empty
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 79
+  Severity: error
+  Stats:   depth=1 gates=5 flops=0
+
+assert assert_not_full (sva)
+  Instance: fifo_inst.assert_not_full
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 84
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+assert assert_become_empty (sva)
+  Instance: fifo_inst.assert_become_empty
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 89
+  Severity: error
+  Stats:   depth=2 gates=7 flops=1
+
+assert assert_neither_full_nor_empty (sva)
+  Instance: fifo_inst.assert_neither_full_nor_empty
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 94
+  Severity: error
+  Stats:   depth=1 gates=9 flops=0
+
+assert assert_become_full (sva)
+  Instance: fifo_inst.assert_become_full
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 99
+  Severity: error
+  Stats:   depth=2 gates=7 flops=1
+
+assert asser_full (sva)
+  Instance: fifo_inst.asser_full
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 104
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+assert assert_not_empty (sva)
+  Instance: fifo_inst.assert_not_empty
+  Location: File /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv, Line 109
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+

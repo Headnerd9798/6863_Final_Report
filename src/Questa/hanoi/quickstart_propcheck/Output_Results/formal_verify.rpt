@@ -1,0 +1,266 @@
+-------------------------------------------------------------------------------
+Questa PropCheck Version 2019.2_1 linux_x86_64 18 May 2019
+-------------------------------------------------------------------------------
+Report Generated               : Tue Dec 17 21:05:40 2019
+-------------------------------------------------------------------------------
+
+Command-line arguments:
+	-jobs 4 \ 
+	-init qs_files/twoersofhanoi.init \ 
+	-timeout 5m 
+
+-------------------------------------------------------------------------------
+
+Clock Relationships
+-------------------------------------------------------------------------------
+clk : P
+
+
+Port Constraints
+-------------------------------------------------------------------------------
+Type                 Clock Domain         Value         Port
+-------------------------------------------------------------------------------
+Clock                <n/a>                -            'clk'
+Unconstrained        <none>               -            'from_rod'
+Unconstrained        <none>               -            'rst'
+Unconstrained        <none>               -            'to_rod'
+-------------------------------------------------------------------------------
+
+
+
+Using user-specified initialization sequence:
+
+---------------- BEGIN RESET SEQUENCE --------------
+$default_clock clk
+$default_input_value 0
+rst = 1'b1
+##
+rst = 1'b0
+
+---------------- END RESET SEQUENCE ----------------
+
+
+-------------------------------------------------------------------------------
+Assumptions (1)
+-------------------------------------------------------------------------------
+assume_adjacent
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Active Targets (24)
+-------------------------------------------------------------------------------
+assert_bigsmall_disk_0_21_10
+assert_bigsmall_disk_0_21_21
+assert_bigsmall_disk_0_31_10
+assert_bigsmall_disk_0_31_21
+assert_bigsmall_disk_0_32_10
+assert_bigsmall_disk_0_32_21
+assert_bigsmall_disk_1_21_10
+assert_bigsmall_disk_1_21_21
+assert_bigsmall_disk_1_31_10
+assert_bigsmall_disk_1_31_21
+assert_bigsmall_disk_1_32_10
+assert_bigsmall_disk_1_32_21
+assert_bigsmall_disk_2_21_10
+assert_bigsmall_disk_2_21_21
+assert_bigsmall_disk_2_31_10
+assert_bigsmall_disk_2_31_21
+assert_bigsmall_disk_2_32_10
+assert_bigsmall_disk_2_32_21
+assert_top_disk_1_1
+assert_top_disk_1_2
+cover_top_disk_1_1
+cover_top_disk_1_2
+my_assert
+my_assert_cover
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+X Registers in Starting State
+-------------------------------------------------------------------------------
+  0 registers (0.0% of 12 in sequential fanin of properties)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Z Registers in Starting State
+-------------------------------------------------------------------------------
+  0 registers (0.0% of 12 in sequential fanin of properties)
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Formal Netlist Statistics         Count
+---------------------------------------
+Control Point Bits                   10
+  DUT Input Bits                      4
+  Cut Point Bits                      0
+  Black Box Output Bits               0
+  Undriven Wire Bits                  0
+  Modeling Bits                       6
+State Bits                           24
+  Counter State Bits                  6
+  RAM State Bits                      0
+  Register State Bits                18
+  Property State Bits                 0
+Logic Gates                         290
+  Design Gates                      246
+  Property Gates                     44
+---------------------------------------
+
+
+-------------------------------------------------------------------------------
+Targets Proven (18)
+-------------------------------------------------------------------------------
+assert_bigsmall_disk_0_21_10
+assert_bigsmall_disk_0_21_21
+assert_bigsmall_disk_0_31_10
+assert_bigsmall_disk_0_31_21
+assert_bigsmall_disk_0_32_10
+assert_bigsmall_disk_0_32_21
+assert_bigsmall_disk_1_21_10
+assert_bigsmall_disk_1_21_21
+assert_bigsmall_disk_1_31_10
+assert_bigsmall_disk_1_31_21
+assert_bigsmall_disk_1_32_10
+assert_bigsmall_disk_1_32_21
+assert_bigsmall_disk_2_21_10
+assert_bigsmall_disk_2_21_21
+assert_bigsmall_disk_2_31_10
+assert_bigsmall_disk_2_31_21
+assert_bigsmall_disk_2_32_10
+assert_bigsmall_disk_2_32_21
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Targets Fired (3)
+-------------------------------------------------------------------------------
+assert_top_disk_1_1
+assert_top_disk_1_2
+my_assert
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Targets Covered (3)
+-------------------------------------------------------------------------------
+cover_top_disk_1_1
+cover_top_disk_1_2
+my_assert_cover
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Proofs
+-------------------------------------------------------------------------------
+<no assumptions used in proofs>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Bounded Proofs
+-------------------------------------------------------------------------------
+<no assumptions used in bounded proofs>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Unsatisfiable Sanity Checks
+-------------------------------------------------------------------------------
+<no assumptions used in unsatisfiable sanity checks>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Bounded Unsatisfiable Sanity Checks
+-------------------------------------------------------------------------------
+<no assumptions used in bounded unsatisfiable sanity checkss>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Target Waveforms (6)
+-------------------------------------------------------------------------------
+  TB Time(ns) Dist  Target
+-------------------------------------------------------------------------------
+          150   14  assert_top_disk_1_1
+          280   27  assert_top_disk_1_2
+          150   14  cover_top_disk_1_1
+          280   27  cover_top_disk_1_2
+          150   14  my_assert
+           20    1  my_assert_cover
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Target Waveforms Summary by Distance
+---------------------------------------
+Distance                          Count
+---------------------------------------
+  1 cycle                             1
+ 14 cycles                            3
+ 27 cycles                            2
+---------------------------------------
+Total                                 6
+---------------------------------------
+
+
+-------------------------------------------------------------------------------
+Proof Radius Summary by Target
+-------------------------------------------------------------------------------
+<all targets either proven or fired>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Engine Performance
+---------------------- Proofs -------------------------- Waveforms ------------
+   Engine |  Safety Liveness Vacuity  Sanity |  Safety Liveness Vacuity  Sanity
+-------------------------------------------------------------------------------
+        7 |       0        0       0       0 |       3        0       0       0
+       10 |      18        0       0       0 |       3        0       0       0
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Property Summary                  Count
+---------------------------------------
+Assumed                               1
+Proven                               18
+Covered                               3
+Inconclusive                          0
+Fired                                 3
+Uncoverable                           0
+---------------------------------------
+Total                                25
+---------------------------------------
+
+
+--------- Process Statistics ----------
+Elapsed Time                       1 s 
+-------- Orchestration Process --------
+------------ cadpc14:9491 -------------
+CPU Time                           0 s 
+Peak Memory                      0.4 GB
+---------- Engine Processes -----------
+------------ cadpc14:9500 -------------
+CPU Time                           1 s 
+Peak Memory                      0.1 GB
+CPU Utilization                    0 % 
+------------ cadpc14:9503 -------------
+CPU Time                           1 s 
+Peak Memory                      0.3 GB
+CPU Utilization                    0 % 
+------------ cadpc14:9507 -------------
+CPU Time                           1 s 
+Peak Memory                      0.1 GB
+CPU Utilization                    0 % 
+------------ cadpc14:9510 -------------
+CPU Time                           1 s 
+Peak Memory                      0.1 GB
+CPU Utilization                    0 % 
+---------------------------------------
+

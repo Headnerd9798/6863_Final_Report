@@ -1,0 +1,2 @@
+-f /homes/user/stud/fall19/hz2619/hanoi54/quickstart_propcheck/Output_Results/qcache/FORMAL/SEARCH/SIM/vsim_tb_replay_top_modules.arg \
+-voptargs="-assertdebug"

@@ -1,0 +1,25 @@
+work=./work
+std=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../std
+ieee=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../ieee
+vital2000=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../vital2000
+verilog=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../verilog
+std_developerskit=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../std_developerskit
+synopsys=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../synopsys
+modelsim_lib=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../modelsim_lib
+sv_std=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../sv_std
+mtiAvm=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../avm
+mtiRnm=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../rnm
+mtiOvm=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../ovm-2.1.2
+mtiUvm=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../uvm-1.1d
+mtiUPF=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../upf_lib
+mtiPA=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../pa_lib
+floatfixlib=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../floatfixlib
+mc2_lib=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../mc2_lib
+osvvm=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../osvvm
+mgc_ams=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../mgc_ams
+ieee_env=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../ieee_env
+infact=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../infact
+vhdlopt_lib=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../vhdlopt_lib
+vh_ux01v_lib=/tools/mentor/questa_2019.2_1/share/modeltech/linux_x86_64/../vh_ux01v_lib
+*RAW_COMMAND csl -zdb /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/Output_Results/qcache/DB/zdb_1 -d fifo_wrapper 
+*COMMAND csl -d fifo_wrapper -zdb /homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/Output_Results/qcache/DB/zdb_1

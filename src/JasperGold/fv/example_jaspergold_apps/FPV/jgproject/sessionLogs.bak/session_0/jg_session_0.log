@@ -1,0 +1,93 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2019.03
+# platform  : Linux 3.10.0-1062.el7.x86_64
+# version   : 2019.03p002 64 bits
+# build date: 2019.06.01 18:04:02 PDT
+#----------------------------------------
+# started Tue Dec 17 21:49:41 EST 2019
+# hostname  : cadpc14
+# pid       : 13966
+# arguments : '-label' 'session_0' '-console' 'cadpc14:34165' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/homes/user/stud/fall19/hz2619/fv/example_jaspergold_apps/FPV/jgproject/sessionLogs/session_0' '-init' '-hidden' '/homes/user/stud/fall19/hz2619/fv/example_jaspergold_apps/FPV/jgproject/.tmp/.initCmds.tcl' 'FPV_verilog_hanoi.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2019 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /homes/user/stud/fall19/hz2619/fv/example_jaspergold_apps/FPV/jgproject/sessionLogs/session_0
+
+/homes/user/stud/fall19/hz2619/fv/example_jaspergold_apps/FPV/jgproject/jg.log
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/user/stud/fall19/hz2619/.config/jasper/jaspergold.conf".
+% # ----------------------------------------
+% #  Copyright (c) 2017 Cadence Design Systems, Inc. All Rights
+% #  Reserved.  Unpublished -- rights reserved under the copyright 
+% #  laws of the United States.
+% # ----------------------------------------
+% 
+% # Analyze design under verification files
+% set ROOT_PATH ../designs/reference_design/verilog_sva
+../designs/reference_design/verilog_sva
+% set RTL_PATH ${ROOT_PATH}/source/design
+../designs/reference_design/verilog_sva/source/design
+% set PROP_PATH ${ROOT_PATH}/source/properties
+../designs/reference_design/verilog_sva/source/properties
+% 
+% analyze -sv \
+  ${RTL_PATH}/towersofhanoi54.sv \
+
+[-- (VERI-1482)] Analyzing Verilog file '/tools/cadence/jasper_2019.03p002/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file '../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv'
+% # Elaborate design and properties
+% elaborate -top move_disk
+INFO (ISW003): Top module name is "move_disk".
+[INFO (VERI-1018)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(2): compiling module 'move_disk'
+[WARN (VERI-9005)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(49): 32-bit index expression (top_of_rod[from_rod] - 1) truncated to 3 bits
+[WARN (VERI-9005)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(49): 32-bit index expression (top_of_rod[to_rod] - 1) truncated to 3 bits
+[WARN (VERI-9005)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(50): 32-bit index expression (top_of_rod[from_rod] - 1) truncated to 3 bits
+[WARN (VERI-9005)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(50): 4-bit index expression top_of_rod[to_rod] truncated to 3 bits
+[WARN (VERI-9005)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(51): 32-bit index expression (top_of_rod[from_rod] - 1) truncated to 3 bits
+[WARN (VERI-1209)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(52): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(53): expression size 32 truncated to fit in target size 4
+[ERROR (VERI-1216)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(86): index 4 is out of range [3:0] for 'rod_data'
+[INFO (VERI-1073)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(2): module 'move_disk' remains a black box, due to errors in its contents
+ERROR (ENL134): Unable to elaborate design as top module "move_disk" is black boxed.
+Summary of errors detected:
+	[ERROR (VERI-1216)] ../designs/reference_design/verilog_sva/source/design/towersofhanoi54.sv(86): index 4 is out of range [3:0] for 'rod_data'
+	ERROR (ENL134): Unable to elaborate design as top module "move_disk" is black boxed.
+ERROR (ENL034): 2 errors detected in the design file(s).
+
+ERROR: problem encountered at line 16 in file FPV_verilog_hanoi.tcl
+
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

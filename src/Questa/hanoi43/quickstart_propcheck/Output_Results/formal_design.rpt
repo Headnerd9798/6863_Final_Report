@@ -1,0 +1,114 @@
+
+Questa Version 2019.2_1 linux_x86_64 18 May 2019
+
+-------------------------------------------------------------------------------
+Design Report
+Created Tue Dec 17 20:33:44 2019
+-------------------------------------------------------------------------------
+
+
+Design 'move_disk'
+===============================================================================
+
+
+---------------------------------------
+Design Summary                    Count
+---------------------------------------
+Clocks                                1
+  User-specified                      1
+  Inferred                            0
+Resets                                1
+  User-specified                      0
+  Inferred                            1
+Control Point Bits                    6
+  DUT Input Bits                      6
+  Cut Point Bits                      0
+  Black Box Output Bits               0
+  Undriven Wire Bits                  0
+  Unresolved RHS Bits                 0
+State Bits                           54
+  Design Register Bits               54
+  Design Latch Bits                   0
+Storage Structures       
+  Counters                            3
+  RAMs                                0
+Black Boxes                           0
+Constants Bits                        0
+---------------------------------------
+
+Detailed Design Information
+===============================================================================
+
+
+Clocks
+------------------------------------------------------------------------------
+Port                                   Period         Waveform    Edges
+------------------------------------------------------------------------------
+clk                                        10              0 5    PE   
+------------------------------------------------------------------------------
+
+Resets
+-------
+  rst [inferred] (Active High)
+
+Constants
+------------------
+  <none>
+
+Cut Points
+----------
+  <none>
+
+Black Box Outputs
+-----------------
+  <none>
+
+Undriven Wires
+--------------
+  <none>
+
+Unresolved RHS Bits
+-------------------
+  <none>
+
+Latches
+-------
+  <none>
+
+Counters
+--------
+  top_of_rod[0]  (3 bits)
+  top_of_rod[1]  (3 bits)
+  top_of_rod[2]  (3 bits)
+
+RAMs
+----
+  <none>
+
+Black Boxes (User-specified)
+----------------------------
+  <none>
+
+Black Boxes (Inferred)
+----------------------
+  <none>
+
+
+
+Port Constraints
+-------------------------------------------------------------------------------
+Type                 Clock Domain         Value         Port
+-------------------------------------------------------------------------------
+Clock                <n/a>                -            'clk'
+Unconstrained        <none>               -            'from_rod'
+Unconstrained        <none>               -            'rst'
+Unconstrained        <none>               -            'to_rod'
+-------------------------------------------------------------------------------
+
+Instance Usage
+===============================================================================
+Count  Module          Location
+-------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,12 @@
++define+functional
++incdir+./${SPEC_RTL_PATH} \
+       ./${SPEC_RTL_PATH}/uart_top.v \
+       ./${SPEC_RTL_PATH}/uart_debug_if.v \
+       ./${SPEC_RTL_PATH}/uart_receiver.v \
+       ./${SPEC_RTL_PATH}/uart_regs.v \
+       ./${SPEC_RTL_PATH}/uart_sync_flops.v \
+       ./${SPEC_RTL_PATH}/uart_tfifo.v \
+       ./${SPEC_RTL_PATH}/uart_transmitter.v \
+       ./${SPEC_RTL_PATH}/uart_wb.v \
+       ./${SPEC_RTL_PATH}/uart_rfifo.v \
+       ./${SPEC_RTL_PATH}/raminfr.v 

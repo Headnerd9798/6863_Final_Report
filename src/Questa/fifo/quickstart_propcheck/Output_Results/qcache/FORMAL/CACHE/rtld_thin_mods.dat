@@ -1,0 +1,151 @@
+>1
+>2
+21
+0:15:fifo_1366207263
+1:4:fifo
+2:4:work
+3:73:/homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo.sv
+4:7:ENTRIES
+5:5:32'h4
+6:12:ENTRIES_LOG2
+7:5:32'h2
+8:3:clk
+9:9:fifo_data
+10:4:head
+11:12:in_read_ctrl
+12:13:in_write_ctrl
+13:13:in_write_data
+14:25:number_of_current_entries
+15:12:out_is_empty
+16:11:out_is_full
+17:13:out_read_data
+18:8:read_ptr
+19:3:rst
+20:9:write_ptr
+<2
+>3
+7
+0:140:10 "scalar signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar signed" "<zin_internal>" 0 2 1 0 0
+1:126:10 "scalar[31:0]" "<zin_internal>" 0 4 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+2:36:7 "logic" "<zin_internal>" 0 0 1 0 0
+3:211:10 "logic[3:0][7:0]" "<zin_internal>" 0 4 1 7 "integer[3:0]" "<zin_internal>" 0 10 32 3 0 10 "logic[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+4:121:10 "logic[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+5:121:10 "logic[2:0]" "<zin_internal>" 0 4 1 7 "integer[2:0]" "<zin_internal>" 0 10 32 2 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+6:121:10 "logic[1:0]" "<zin_internal>" 0 4 1 7 "integer[1:0]" "<zin_internal>" 0 10 32 1 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+<3
+>4
+e1b2f3l1.115t0c2p4v5F0L7T0U0p6v7F0L10T1U0;
+<4
+>5
+b13@8l12knt2;
+@9l23knt3;
+@10l24knt4;
+@11l14knt2;
+@12l15knt2;
+@13l16knt4;
+@14l25knt5;
+@15l19knt2;
+@16l18knt2;
+@17l17knt4;
+@18l22knt6;
+@19l13knt2;
+@20l21knt6;
+<5
+>6
+b8@8l25x1t2;
+@19l25x12t2;
+@11l25x4t2;
+@12l25x5t2;
+@13l25x6t4;
+@17l25d1x10t4;
+@16l25d1x9t2;
+@15l25d1x8t2;
+<6
+>7
+c0
+<7
+<1
+>1
+>2
+29
+0:12:fifo_wrapper
+1:4:work
+2:81:/homes/user/stud/fall19/hz2619/fifo/quickstart_propcheck/src/vlog/fifo_wrapper.sv
+3:2:c0
+4:7:ENTRIES
+5:5:32'h4
+6:12:ENTRIES_LOG2
+7:5:32'h2
+8:14:c0.<clk_prime>
+9:11:c0.c0_event
+10:3:clk
+11:9:fifo_data
+12:15:fifo_is_correct
+13:4:head
+14:12:in_read_ctrl
+15:13:in_write_ctrl
+16:13:in_write_data
+17:17:last_out_is_empty
+18:16:last_out_is_full
+19:25:number_of_current_entries
+20:12:out_is_empty
+21:16:out_is_empty_tmp
+22:11:out_is_full
+23:15:out_is_full_tmp
+24:13:out_read_data
+25:8:read_ptr
+26:3:rst
+27:9:write_ptr
+28:9:fifo_inst
+<2
+>3
+8
+0:140:10 "scalar signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar signed" "<zin_internal>" 0 2 1 0 0
+1:126:10 "scalar[31:0]" "<zin_internal>" 0 4 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+2:36:7 "logic" "<zin_internal>" 0 0 1 0 0
+3:36:7 "event" "<zin_internal>" 0 0 1 0 0
+4:211:10 "logic[3:0][7:0]" "<zin_internal>" 0 4 1 7 "integer[3:0]" "<zin_internal>" 0 10 32 3 0 10 "logic[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+5:121:10 "logic[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+6:121:10 "logic[2:0]" "<zin_internal>" 0 4 1 7 "integer[2:0]" "<zin_internal>" 0 10 32 2 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+7:121:10 "logic[1:0]" "<zin_internal>" 0 4 1 7 "integer[1:0]" "<zin_internal>" 0 10 32 1 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+<3
+>4
+#1b1f2l2.92t0C1B3P2S65E65c2p4v5F0L8T0U0p6v7F0L11T1U0;
+<4
+>5
+b20@8l13knt2;
+@9l65knt3;
+@10l13knt2;
+@11l24knt4;
+@12l33knt2;
+@13l25knt5;
+@14l15knt2;
+@15l16knt2;
+@16l17knt5;
+@17l30knt2;
+@18l31knt2;
+@19l26knt6;
+@20l20knt2;
+@21l29knt2;
+@22l19knt2;
+@23l28knt2;
+@24l18knt5;
+@25l23knt7;
+@26l14knt2;
+@27l22knt7;
+<5
+>6
+b8@10l65x3t2;
+@26l65x19t2;
+@14l65x7t2;
+@15l65x8t2;
+@16l65x9t5;
+@24l65d1x17t5;
+@22l65d1x15t2;
+@20l65d1x13t2;
+<6
+>7
+c1
+@28i29l37x3 7 0 28;
+<7
+<1

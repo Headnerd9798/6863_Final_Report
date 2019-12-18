@@ -1,0 +1,33 @@
+================================================================================
+== Profile: REAL-TIME, CPU-freq = 4.00 GHz
+                                                          Calls Real-Time  Parent 
+                                                                   (secs) fraction
+
+    <zixl_543IiP35>~_zixl                                                1       2.1 (100.0%)
+  zixl_z57-ZAiL~_zixl                                                    1       2.1         
+    zixl_zi_iSe2_I3L_tP42~_zixl                                          1       1.5 ( 69.4%)
+      zixl_iSe2-4IPr155~_zixl                                            1       1.5 ( 99.8%)
+        zixl_tP42-ZAiL~_zixl                                             1       1.1 ( 72.2%)
+          <zixl_I152>~_zixl                                                      1.0 ( 99.1%)
+        zixl_iSe2-5At1~_zixl                                             1       0.1 (  4.5%)
+          zixl_42-5At1~_zixl                                             1       0.0 ( 72.2%)
+          zixl_32q-5At1~_zixl                                            1       0.0 (  6.4%)
+          <zixl_I152>~_zixl                                                      0.0 ( 21.4%)
+        <zixl_I152>~_zixl                                                        0.3 ( 23.4%)
+    <zixl_I152>~_zixl                                                            0.6 ( 30.6%)
+
+
+================================================================================
+== Profile: PEAK-MEMORY, CPU-freq = 4.00 GHz
+                                                          Calls   Peak-Mb         
+                                                                                  
+
+    <zixl_543IiP35>~_zixl                                                1      20.0 (100.0%)
+  zixl_z57-ZAiL~_zixl                                                    1      20.0         
+    zixl_zi_iSe2_I3L_tP42~_zixl                                          1      16.0 ( 80.0%)
+      zixl_iSe2-4IPr155~_zixl                                            1      16.0 (100.0%)
+        zixl_tP42-ZAiL~_zixl                                             1      12.0 ( 75.0%)
+          <zixl_I152>~_zixl                                                     12.0 (100.0%)
+        <zixl_I152>~_zixl                                                        4.0 ( 25.0%)
+    <zixl_I152>~_zixl                                                            4.0 ( 20.0%)
+

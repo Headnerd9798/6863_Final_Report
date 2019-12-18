@@ -1,0 +1,38 @@
+vunit v_bridge (bridge(rtl)) {
+
+  default clock is rose(clk);
+
+  -- Assertion "fifo_no_overflow"
+  --  The FIFO must never overflow
+  --  The write pointer cannot change when the FIFO is full
+  --
+  property fifo_no_overflow is fifo_full -> next(wr_ptr = prev(wr_ptr));
+  a_fifo_no_overflow: assert always fifo_no_overflow;
+
+  -- Assertion "fifo_no_underflow"
+  --  The FIFO must never underflow
+  --  The read pointer cannot change when the FIFO is empty
+  --
+  property fifo_no_underflow is fifo_empty -> next(rd_ptr = prev(rd_ptr));
+  a_fifo_no_underflow: assert always fifo_no_underflow;
+
+  -- Internal bridge to egress I/F
+  c_int_datavalid: cover {int_datavalid};
+  c_int_datardy:   cover {int_datardy};
+  --
+  -- Internal bridge to ingress I/F
+  c_int_ready: cover {int_ready};
+  c_int_valid: cover {int_valid};
+  --
+
+} -- v_bridge
+
+
+-- -------------------------------------------------------
+-- Copyright (c) 2017 Cadence Design Systems, Inc.
+--
+-- All rights reserved.
+--
+-- Cadence Design Systems Proprietary and Confidential.
+-- -------------------------------------------------------
+

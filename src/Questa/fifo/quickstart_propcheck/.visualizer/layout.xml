@@ -1,0 +1,21 @@
+<LayoutInfo CurrentRTLLayout="Default" version="1">
+ <Layout Name="Default" Type="RTL">
+  <dockareas top="0" right="211" left="250" bottom="503"/>
+  <window type="rtl" y="65" undocked="0" x="0" width="1680" visible="1" height="951"/>
+  <window type="transcript" y="0" undocked="0" dock_location="bottom" x="0" visible="1"/>
+  <window type="wave" y="286" undocked="1" x="340" width="1008" visible="0" height="630" title="Wave (fifo_num_entries_5)"/>
+  <window type="wave" y="383" undocked="1" x="1802" width="1008" visible="0" height="630" id="1" title="Wave (fifo_num_entries_5)"/>
+  <window type="wave" y="349" undocked="1" x="1680" width="1008" visible="0" height="630" id="2" title="Wave (fifo_num_entries_5)"/>
+  <window type="wave" y="80" undocked="1" x="160" width="1008" visible="1" height="630" id="3" title="Wave (fifo_num_entries_2)"/>
+  <window type="wave" y="80" undocked="1" x="160" width="1008" visible="1" height="630" id="4" title="Wave (fifo_num_entries_1)"/>
+  <window type="source" y="0" undocked="0" x="0" visible="1"/>
+  <window type="fsmview" y="0" undocked="0" dock_location="right" x="0" visible="0"/>
+  <window type="structure" y="0" undocked="0" dock_location="left" x="0" visible="0"/>
+  <window type="zindetails" y="0" undocked="0" dock_location="left" x="0" visible="0" title="Details"/>
+  <window type="zinschematicview" y="199" undocked="1" dock_location="right" x="604" width="802" visible="0" height="653" title="Schematic"/>
+  <window type="zindutview" y="0" undocked="0" dock_location="left" x="0" visible="1" title="Design"/>
+  <window type="zinformalproperties" y="0" undocked="0" dock_location="bottom" x="0" visible="1" title="Properties"/>
+  <window type="zinformalcontrolpointsnew" y="0" undocked="0" dock_location="right" x="0" visible="0" title="Control Points"/>
+  <window type="zinformalpolicychecks" y="0" undocked="0" dock_location="bottom" x="0" visible="1" title="Design Checks"/>
+ </Layout>
+</LayoutInfo>

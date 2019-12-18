@@ -1,0 +1,79 @@
+# UPF Power intent for memory subsystem 
+create_power_domain PD_AO -include_scope
+create_power_domain PD_MEM -elements {mem_ctrl}
+
+
+create_supply_port vdd -domain PD_AO -direction in
+create_supply_port gnd -domain PD_AO -direction in
+
+
+create_supply_net vdd_net -domain PD_AO
+create_supply_net gnd_net -domain PD_AO
+
+create_supply_net vdd_net -domain PD_MEM -reuse
+create_supply_net gnd_net -domain PD_MEM -reuse
+
+create_supply_net vdd_sw_net -domain PD_MEM 
+
+
+connect_supply_net vdd_net -ports vdd
+connect_supply_net gnd_net -ports gnd
+
+
+create_power_switch PD_MEM_switch -domain PD_MEM \
+    -output_supply_port {vddo vdd_sw_net} \
+    -input_supply_port  {vddi vdd_net} \
+    -control_port       {vdd_on pwr_up} \
+    -on_state           {ON  vddi {vdd_on}} \
+    -off_state          {OFF      {!vdd_on}}
+
+
+set_domain_supply_net PD_AO \
+    -primary_power_net vdd_net \
+    -primary_ground_net gnd_net
+
+set_domain_supply_net PD_MEM \
+    -primary_power_net vdd_sw_net \
+    -primary_ground_net gnd_net
+
+
+set strg {mem_ctrl.link1_addr mem_ctrl.link1_en mem_ctrl.link1_rx_cnt mem_ctrl.link1_size mem_ctrl.link1_tx_cnt mem_ctrl.link2_addr mem_ctrl.link2_en mem_ctrl.link2_rx_cnt mem_ctrl.link2_size mem_ctrl.link2_tx_cnt mem_ctrl.rx_ack1 mem_ctrl.rx_ack2 mem_ctrl.rx_toggle mem_ctrl.temp_empty mem_ctrl.temp_full mem_ctrl.temp_rptr mem_ctrl.temp_wptr mem_ctrl.tx_ack1 mem_ctrl.tx_ack2 mem_ctrl.tx_dout1 mem_ctrl.tx_dout2 mem_ctrl.tx_toggle}
+
+set_retention retention_PD_MEM \
+    -domain PD_MEM \
+    -elements $strg \
+    -retention_power_net vdd_net \
+    -retention_ground_net gnd_net
+
+
+set_retention_control retention_PD_MEM \
+    -domain PD_MEM \
+    -save_signal    {save    posedge} \
+    -restore_signal {restore posedge}
+
+
+set iso_in  {mem_ctrl.req_rx1 mem_ctrl.req_rx2 mem_ctrl.req_tx1 mem_ctrl.req_tx2 mem_ctrl.wr}
+set iso_out {mem_ctrl.rx_ack1 mem_ctrl.rx_ack2 mem_ctrl.tx_ack1 mem_ctrl.tx_ack2}
+
+set_isolation iso_input  \
+    -domain PD_MEM \
+    -elements $iso_in \
+    -clamp_value 0 \
+    -isolation_power_net vdd_net
+
+set_isolation iso_output \
+    -domain PD_MEM \
+    -elements $iso_out \
+    -clamp_value 0 \
+    -isolation_power_net vdd_net
+
+
+set_isolation_control iso_input \
+    -domain PD_MEM  \
+    -isolation_signal iso_up
+
+set_isolation_control iso_output \
+    -domain PD_MEM \
+    -isolation_signal iso_up \
+    -isolation_sense {high}
+

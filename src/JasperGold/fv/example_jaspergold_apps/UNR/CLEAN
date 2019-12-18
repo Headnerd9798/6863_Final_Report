@@ -1,0 +1,4 @@
+#! /bin/csh -f
+
+# Clean up 
+rm -rf INCA* *.log *.key .simvis* waves* *.shm  *~ cov_work iev_*.cf __vpp.arg .formalrun .lock* .iev *.cmd perf.vsif *.elog assertions.txt sessions/* .lsf_run i*_coverage_unr_merge.cmd jgproject/ irun.history

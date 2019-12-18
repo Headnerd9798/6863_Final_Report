@@ -1,0 +1,28 @@
+#! /bin/csh -f
+
+# Step 1: simulation and coverage review with IMC before UNR
+if ($1 == "sim") then
+	irun	-f ${MY_WORK_AREA}/irun.f \
+				-input ${MY_WORK_AREA}/tcl/run_sim.tcl \
+				-64bit
+    
+	imc -load ${MY_WORK_AREA}/cov_work/scope/test_sv1 
+
+# Step 2: UNR analysis then view the unreachables in IMC
+else if ($1 == "unr") then
+	# UNR with single irun invocation
+
+		irun  -jg \
+		      -unr \
+					-R \
+					-jgsynthesis \
+					-covdb ${MY_WORK_AREA}/cov_work/scope/test_sv1 \
+					-inst_top uart_ctrl_top.uart_dut \
+					-input ${MY_WORK_AREA}/tcl/jg.tcl \
+					-64bit
+
+							
+	# Merge and view in imc
+	imc -init ${MY_WORK_AREA}/jgproject/sessionLogs/session_0/unr_imc_coverage_merge.cmd
+
+endif

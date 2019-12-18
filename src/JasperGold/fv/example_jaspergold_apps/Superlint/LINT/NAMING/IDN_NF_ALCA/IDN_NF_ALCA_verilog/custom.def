@@ -1,0 +1,4 @@
+include default
+params IDN_NF_ALCA {pattern="^([a-zA-Z0-9:])+$"}
+params IDN_NF_ALCA {reserved_keyword_list="portB"}
+params IDN_NF_ALCA {local_pattern_style="regex"}

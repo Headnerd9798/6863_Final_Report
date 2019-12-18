@@ -1,0 +1,12 @@
+
+# /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qverify_cmds.tcl : 5
+/tools/mentor/questa_2019.2_1/linux_x86_64/bin/qverifyek  -od Output_Results -l .elab.log  -cli -internal -cmd elab -zdb /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/DB/zdb_1 -tool propcheck -d move_disk
+
+# /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qverify_cmds.tcl : 5
+/tools/mentor/questa_2019.2_1/linux_x86_64/bin/qverifyek  -od Output_Results -l .createnl.log  -cli -internal -cmd create_netlist -zdb /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/DB/zdb_1 -tool propcheck -d move_disk
+
+# /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qverify_cmds.tcl : 5
+/tools/mentor/questa_2019.2_1/linux_x86_64/bin/qverifyek  -od Output_Results -l .csl.log  -cli -internal -cmd csl -zdb /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/DB/zdb_1 -d move_disk
+
+# /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qverify_cmds.tcl : 6
+ -od Output_Results -tool prove -j 4     -init qs_files/twoersofhanoi.init -timeout 5m -import_db Output_Results/formal_compile.db -zdb /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/DB/zdb_2

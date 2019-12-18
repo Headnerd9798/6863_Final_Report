@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY ELB_IS_ERRO IS
+	PORT
+	(
+		out_a : OUT std_logic_vector(2 DOWNTO 0));
+END ELB_IS_ERRO;
+
+ARCHITECTURE ELB_IS_ERRO_rtl OF ELB_IS_ERRO IS
+BEGIN
+	out_a <= "0101";
+END ELB_IS_ERRO_rtl;

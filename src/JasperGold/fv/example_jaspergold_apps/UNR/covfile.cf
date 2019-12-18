@@ -1,0 +1,7 @@
+# enables scoring of all Verilog and VHDL operators in 
+# conditions and assignments
+set_expr_scoring -all
+
+# ignores the coverage counts brought by delta cycle
+# glitch, applies to block and expression coverages
+set_glitch_strobe

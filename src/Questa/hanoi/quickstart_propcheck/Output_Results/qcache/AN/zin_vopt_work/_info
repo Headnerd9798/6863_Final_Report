@@ -1,0 +1,18 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/stud/fall19/hz2619/hanoi/quickstart_propcheck
+Tzi_opt_csl_2142616913_1
+!s110 1576634735
+Vf`W@_gD=mPR7l9VM7jTWM0
+09 9 4 z0in_work move_disk fast 0
+o-nologo -noclknetalias -nolock -noOptProcessWaits -noinstaliasopt -pslallowseverity -suppress 153 -suppress 3053 -suppress 8884 -suppress 8885 -suppress 1127 -suppress 7033 -suppress 3838 -suppress 12003 -suppress 3054 -suppress 2734 +acc=a -0in_elab -opt=-optStmt -opt=-optExpr -noStaticExprOpt +designfile+Output_Results/qcache/VISUALIZER/design.bin +convertvhdlgenbracket -suppress 143 -work work -mixedansiports
+tCvgOpt 0
+nzi_opt_csl_2142616913_1
+OL;O;2019.2_1;69

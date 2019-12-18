@@ -1,0 +1,33 @@
+module v_ingress (
+  clk, rstN,
+  rd_ready, wr_rd, valid, ready,
+  int_valid, int_ready, int_read_done
+);
+input clk, rstN;
+input rd_ready, wr_rd, valid, ready;
+input int_valid, int_ready, int_read_done;
+
+  // Ingress I/F
+  c_rd_ready: cover property (@(posedge clk) (rd_ready));
+  c_write:    cover property (@(posedge clk) (wr_rd));
+  c_read:     cover property (@(posedge clk) (wr_rd == 1'b0));
+  c_valid:    cover property (@(posedge clk) (valid));
+  c_ready:    cover property (@(posedge clk) (ready));
+  //
+  // Internal I/F
+  c_int_valid: cover property (@(posedge clk) (int_valid));
+  c_int_ready: cover property (@(posedge clk) (int_ready));
+  c_int_read_done: cover property (@(posedge clk) (int_read_done));
+  //
+
+endmodule // v_ingress
+
+
+// -------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Cadence Design Systems Proprietary and Confidential.
+// -------------------------------------------------------
+

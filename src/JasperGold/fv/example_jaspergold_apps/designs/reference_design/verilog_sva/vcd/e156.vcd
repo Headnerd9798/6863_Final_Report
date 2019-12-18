@@ -1,0 +1,1933 @@
+$date Mon Apr 26 15:08:29 2010
+ $end
+$version JasperGold $end
+$timescale 1 ns $end
+$scope module top $end
+$scope module ing3 $end
+$scope module i_ingress $end
+$var wire 1 ! valid $end
+$var wire 1 " int_read_done $end
+$var wire 1 # int_ready $end
+$var wire 1 $ int_valid $end
+$var wire 1 % wr_rd $end
+$var wire 1 & ready $end
+$var wire 1 ' rd_ready $end
+$var wire 1 ( rstN $end
+$var wire 1 ) clk $end
+$upscope $end
+$var reg 2 * int_size [1:0] $end
+$var reg 1 + valid_read $end
+$var wire 39 , int_addr_data [38:0] $end
+$var reg 1 - int_valid $end
+$var wire 1 . current_read_write $end
+$var wire 1 / int_read_done $end
+$var wire 32 0 wdata [31:0] $end
+$var wire 1 1 int_ready $end
+$var wire 7 2 addr [6:0] $end
+$var wire 1 3 rstN $end
+$var wire 1 4 rd_ready $end
+$var wire 1 5 wr_rd $end
+$var wire 1 6 new_tran $end
+$var reg 7 7 int_addr [6:0] $end
+$var reg 1 8 int_read_write $end
+$var wire 1 9 ready $end
+$var reg 32 : wdata_reorder [31:0] $end
+$var reg 1 ; trans_started $end
+$var reg 1 < wr_rd_reg $end
+$var wire 1 = valid $end
+$var wire 2 > size [1:0] $end
+$var wire 32 ? rdata [31:0] $end
+$var wire 32 @ int2ig_data [31:0] $end
+$var wire 1 A clk $end
+$upscope $end
+$scope module brdg $end
+$scope module i_bridge $end
+$var wire 1 B int_datavalid $end
+$var wire 4 C rd_ptr [3:0] $end
+$var wire 4 D wr_ptr [3:0] $end
+$var wire 1 E fifo_full $end
+$var wire 1 F int_ready $end
+$var wire 1 G int_valid $end
+$var wire 1 H rstN $end
+$var wire 1 I fifo_empty $end
+$var wire 1 J int_datardy $end
+$var wire 1 K clk $end
+$upscope $end
+$var wire 1 L int2eg_end $end
+$var wire 7 M new_addr_dep [6:0] $end
+$var reg 41 N \fifo[14] [40:0] $end
+$var wire 7 O new_addr [6:0] $end
+$var reg 41 P \fifo[7] [40:0] $end
+$var wire 7 Q \fifo_addr[1] [6:0] $end
+$var wire 7 R \fifo_addr[4] [6:0] $end
+$var wire 41 S fifo2 [40:0] $end
+$var wire 7 T \fifo_addr[5] [6:0] $end
+$var wire 1 U rstN $end
+$var wire 1 V last_byte_num $end
+$var wire 41 W fifo1 [40:0] $end
+$var reg 41 X \fifo[11] [40:0] $end
+$var reg 41 Y \fifo[15] [40:0] $end
+$var wire 2 Z out_size [1:0] $end
+$var reg 41 [ \fifo[10] [40:0] $end
+$var reg 41 \ \fifo[13] [40:0] $end
+$var wire 7 ] \fifo_addr[0] [6:0] $end
+$var wire 32 ^ i [31:0] $end
+$var wire 1 _ int_valid $end
+$var reg 4 ` wr_ptr [3:0] $end
+$var reg 1 a addr_fifo $end
+$var reg 41 b \fifo[12] [40:0] $end
+$var reg 4 c rd_ptr [3:0] $end
+$var wire 1 d int_ready $end
+$var wire 41 e fifo6 [40:0] $end
+$var wire 41 f fifo0 [40:0] $end
+$var wire 1 g int_read_done $end
+$var wire 2 h int_size [1:0] $end
+$var wire 41 i fifo5 [40:0] $end
+$var wire 1 j fifo_empty $end
+$var wire 7 k \fifo_addr[10] [6:0] $end
+$var wire 7 l \fifo_addr[8] [6:0] $end
+$var wire 1 m new_tran $end
+$var wire 7 n \fifo_addr[11] [6:0] $end
+$var wire 7 o \fifo_addr[14] [6:0] $end
+$var wire 8 p eg2int_data [7:0] $end
+$var wire 7 q \fifo_addr[13] [6:0] $end
+$var wire 41 r fifo_out [40:0] $end
+$var wire 41 s fifo8 [40:0] $end
+$var wire 7 t \fifo_addr[15] [6:0] $end
+$var reg 41 u \fifo[1] [40:0] $end
+$var reg 41 v \fifo[0] [40:0] $end
+$var wire 41 w fifo12 [40:0] $end
+$var wire 7 x \fifo_addr[7] [6:0] $end
+$var reg 7 y read_addr [6:0] $end
+$var wire 41 z fifo10 [40:0] $end
+$var wire 8 { int2eg_data [7:0] $end
+$var wire 39 | int_addr_data [38:0] $end
+$var wire 32 } int2ig_data [31:0] $end
+$var wire 41 ~ fifo7 [40:0] $end
+$var reg 41 !! \fifo[4] [40:0] $end
+$var wire 41 "! fifo9 [40:0] $end
+$var wire 41 #! fifo3 [40:0] $end
+$var wire 1 $! rd_ready $end
+$var reg 41 %! \fifo[5] [40:0] $end
+$var wire 1 &! int_datavalid $end
+$var wire 7 '! \fifo_addr[9] [6:0] $end
+$var reg 41 (! \fifo[2] [40:0] $end
+$var wire 7 )! \fifo_addr[12] [6:0] $end
+$var wire 1 *! trans_started $end
+$var wire 16 +! fifo_entry_valid [15:0] $end
+$var wire 1 ,! int_datardy $end
+$var wire 4 -! wr_ptr_minus1 [3:0] $end
+$var wire 7 .! \fifo_addr[3] [6:0] $end
+$var wire 41 /! fifo15 [40:0] $end
+$var wire 41 0! fifo13 [40:0] $end
+$var reg 41 1! \fifo[3] [40:0] $end
+$var reg 41 2! \fifo[6] [40:0] $end
+$var wire 7 3! \fifo_addr[6] [6:0] $end
+$var wire 1 4! current_read_write $end
+$var wire 41 5! fifo4 [40:0] $end
+$var wire 41 6! fifo14 [40:0] $end
+$var reg 41 7! \fifo[9] [40:0] $end
+$var reg 2 8! byte_num [1:0] $end
+$var reg 41 9! \fifo[8] [40:0] $end
+$var reg 1 :! int_datavalid_tmp $end
+$var wire 1 ;! int_read_write $end
+$var wire 1 <! fifo_full $end
+$var wire 1 =! read_dep $end
+$var wire 41 >! fifo11 [40:0] $end
+$var wire 7 ?! \fifo_addr[2] [6:0] $end
+$var wire 1 @! clk $end
+$upscope $end
+$scope module ing2 $end
+$scope module i_ingress $end
+$var wire 1 A! rstN $end
+$var wire 1 B! int_read_done $end
+$var wire 1 C! int_valid $end
+$var wire 1 D! wr_rd $end
+$var wire 1 E! rd_ready $end
+$var wire 1 F! ready $end
+$var wire 1 G! int_ready $end
+$var wire 1 H! valid $end
+$var wire 1 I! clk $end
+$upscope $end
+$var wire 39 J! int_addr_data [38:0] $end
+$var wire 1 K! ready $end
+$var wire 1 L! int_ready $end
+$var wire 1 M! rd_ready $end
+$var reg 1 N! valid_read $end
+$var wire 32 O! int2ig_data [31:0] $end
+$var wire 1 P! new_tran $end
+$var wire 7 Q! addr [6:0] $end
+$var wire 1 R! valid $end
+$var wire 32 S! wdata [31:0] $end
+$var wire 2 T! size [1:0] $end
+$var reg 1 U! int_read_write $end
+$var reg 7 V! int_addr [6:0] $end
+$var wire 1 W! rstN $end
+$var reg 1 X! wr_rd_reg $end
+$var wire 1 Y! wr_rd $end
+$var reg 2 Z! int_size [1:0] $end
+$var wire 1 [! current_read_write $end
+$var reg 1 \! trans_started $end
+$var reg 32 ]! wdata_reorder [31:0] $end
+$var wire 32 ^! rdata [31:0] $end
+$var reg 1 _! int_valid $end
+$var wire 1 `! int_read_done $end
+$var wire 1 a! clk $end
+$upscope $end
+$scope module ing1 $end
+$scope module i_ingress $end
+$var wire 1 b! rstN $end
+$var wire 1 c! int_ready $end
+$var wire 1 d! int_valid $end
+$var wire 1 e! valid $end
+$var wire 1 f! wr_rd $end
+$var wire 1 g! ready $end
+$var wire 1 h! rd_ready $end
+$var wire 1 i! int_read_done $end
+$var wire 1 j! clk $end
+$upscope $end
+$var reg 7 k! int_addr [6:0] $end
+$var wire 32 l! rdata [31:0] $end
+$var reg 1 m! trans_started $end
+$var reg 1 n! valid_read $end
+$var reg 1 o! wr_rd_reg $end
+$var wire 1 p! rstN $end
+$var reg 32 q! wdata_reorder [31:0] $end
+$var wire 1 r! new_tran $end
+$var wire 1 s! rd_ready $end
+$var reg 1 t! int_read_write $end
+$var reg 2 u! int_size [1:0] $end
+$var wire 1 v! current_read_write $end
+$var wire 1 w! valid $end
+$var wire 32 x! wdata [31:0] $end
+$var reg 1 y! int_valid $end
+$var wire 1 z! int_ready $end
+$var wire 1 {! wr_rd $end
+$var wire 2 |! size [1:0] $end
+$var wire 39 }! int_addr_data [38:0] $end
+$var wire 7 ~! addr [6:0] $end
+$var wire 1 !" int_read_done $end
+$var wire 32 "" int2ig_data [31:0] $end
+$var wire 1 #" ready $end
+$var wire 1 $" clk $end
+$upscope $end
+$scope module ing0 $end
+$scope module i_ingress $end
+$var wire 1 %" rd_ready $end
+$var wire 1 &" int_read_done $end
+$var wire 1 '" rstN $end
+$var wire 1 (" valid $end
+$var wire 1 )" int_ready $end
+$var wire 1 *" int_valid $end
+$var wire 1 +" wr_rd $end
+$var wire 1 ," ready $end
+$var wire 1 -" clk $end
+$upscope $end
+$var wire 32 ." wdata [31:0] $end
+$var wire 1 /" wr_rd $end
+$var reg 7 0" int_addr [6:0] $end
+$var reg 1 1" valid_read $end
+$var wire 2 2" size [1:0] $end
+$var wire 7 3" addr [6:0] $end
+$var wire 1 4" int_read_done $end
+$var reg 1 5" int_valid $end
+$var wire 1 6" new_tran $end
+$var reg 2 7" int_size [1:0] $end
+$var wire 32 8" rdata [31:0] $end
+$var wire 32 9" int2ig_data [31:0] $end
+$var reg 32 :" wdata_reorder [31:0] $end
+$var wire 39 ;" int_addr_data [38:0] $end
+$var reg 1 <" int_read_write $end
+$var reg 1 =" trans_started $end
+$var wire 1 >" valid $end
+$var wire 1 ?" rstN $end
+$var wire 1 @" current_read_write $end
+$var wire 1 A" int_ready $end
+$var reg 1 B" wr_rd_reg $end
+$var wire 1 C" ready $end
+$var wire 1 D" rd_ready $end
+$var wire 1 E" clk $end
+$upscope $end
+$scope module p_sel $end
+$scope module i_port_select $end
+$var wire 1 F" int_ready3 $end
+$var wire 2 G" int_size1 [1:0] $end
+$var wire 2 H" ig_sel [1:0] $end
+$var wire 1 I" int_ready0 $end
+$var wire 2 J" int_size2 [1:0] $end
+$var wire 1 K" int_ready2 $end
+$var wire 1 L" int_ready1 $end
+$var wire 2 M" int_size [1:0] $end
+$var wire 2 N" int_size0 [1:0] $end
+$var wire 2 O" int_size3 [1:0] $end
+$var wire 1 P" clk $end
+$upscope $end
+$var wire 39 Q" int_addr_data3 [38:0] $end
+$var wire 39 R" int_addr_data0 [38:0] $end
+$var wire 39 S" int_addr_data [38:0] $end
+$var wire 1 T" int_ready0 $end
+$var wire 1 U" int_read_done0 $end
+$var wire 39 V" int_addr_data1 [38:0] $end
+$var wire 1 W" current_read_write1 $end
+$var wire 2 X" ig_sel [1:0] $end
+$var wire 2 Y" int_size1 [1:0] $end
+$var wire 1 Z" int_ready $end
+$var wire 1 [" int_read_write $end
+$var wire 32 \" int2ig_data [31:0] $end
+$var wire 1 ]" int_read_done $end
+$var wire 2 ^" int_size3 [1:0] $end
+$var wire 1 _" int_valid0 $end
+$var wire 1 `" int_read_done3 $end
+$var wire 1 a" int_ready2 $end
+$var wire 1 b" int_read_done1 $end
+$var wire 1 c" new_tran2 $end
+$var wire 2 d" int_size [1:0] $end
+$var wire 1 e" int_read_write2 $end
+$var wire 32 f" int2ig_data1 [31:0] $end
+$var wire 1 g" new_tran1 $end
+$var wire 1 h" int_ready1 $end
+$var wire 1 i" int_read_write1 $end
+$var wire 39 j" int_addr_data2 [38:0] $end
+$var wire 1 k" trans_started3 $end
+$var wire 1 l" trans_started2 $end
+$var wire 1 m" trans_started0 $end
+$var wire 1 n" trans_started1 $end
+$var wire 1 o" int_read_write3 $end
+$var wire 1 p" current_read_write0 $end
+$var wire 1 q" new_tran $end
+$var wire 1 r" new_tran3 $end
+$var wire 1 s" int_valid $end
+$var wire 1 t" current_read_write2 $end
+$var wire 32 u" int2ig_data0 [31:0] $end
+$var wire 32 v" int2ig_data2 [31:0] $end
+$var wire 1 w" int_valid2 $end
+$var wire 1 x" current_read_write3 $end
+$var wire 1 y" int_valid3 $end
+$var wire 1 z" int_read_write0 $end
+$var wire 1 {" int_valid1 $end
+$var wire 1 |" int_read_done2 $end
+$var wire 2 }" int_size2 [1:0] $end
+$var wire 1 ~" int_ready3 $end
+$var wire 1 !# trans_started $end
+$var wire 2 "# int_size0 [1:0] $end
+$var wire 1 ## current_read_write $end
+$var wire 1 $# new_tran0 $end
+$var wire 32 %# int2ig_data3 [31:0] $end
+$var wire 1 &# clk $end
+$upscope $end
+$scope module eg $end
+$scope module i_egress $end
+$var wire 1 '# rstN $end
+$var wire 1 (# int_datavalid $end
+$var wire 1 )# eg_valid $end
+$var wire 1 *# int_datardy $end
+$var reg 1 +# eg_odd $end
+$var wire 1 ,# eg_ready $end
+$var wire 1 -# clk $end
+$upscope $end
+$var reg 1 .# read_write $end
+$var wire 1 /# eg_ready $end
+$var reg 8 0# eg2int_data [7:0] $end
+$var wire 2 1# nxt_state [1:0] $end
+$var wire 1 2# int_datavalid $end
+$var reg 8 3# eg_ad_dataout [7:0] $end
+$var wire 8 4# int2eg_data [7:0] $end
+$var wire 8 5# i2c2int_data [7:0] $end
+$var wire 1 6# rstN $end
+$var reg 2 7# cur_state [1:0] $end
+$var wire 1 8# eg_valid $end
+$var wire 8 9# eg_datain [7:0] $end
+$var wire 1 :# int_datardy $end
+$var wire 1 ;# clk $end
+$upscope $end
+$scope module arb $end
+$scope module i_arbiter $end
+$var wire 4 <# req [3:0] $end
+$var wire 1 =# trans_started $end
+$var wire 1 ># int_ready $end
+$var wire 1 ?# rstN $end
+$var wire 4 @# gnt [3:0] $end
+$var wire 1 A# int_valid $end
+$var wire 1 B# clk $end
+$upscope $end
+$var reg 4 C# req_r [3:0] $end
+$var wire 4 D# shift [3:0] $end
+$var reg 9 E# port_idle_cnt1 [8:0] $end
+$var wire 1 F# sample_transfer_ready $end
+$var wire 1 G# int_valid $end
+$var reg 2 H# sel1 [1:0] $end
+$var reg 4 I# shift_d [3:0] $end
+$var reg 4 J# hi_pri [3:0] $end
+$var reg 2 K# sample_timer_cnt [1:0] $end
+$var reg 2 L# sel3 [1:0] $end
+$var wire 1 M# sample_ready $end
+$var reg 9 N# port_idle_cnt2 [8:0] $end
+$var reg 9 O# port_idle_cnt3 [8:0] $end
+$var wire 1 P# trans_started $end
+$var reg 4 Q# gnt [3:0] $end
+$var reg 1 R# last_phase $end
+$var wire 1 S# rstN $end
+$var wire 4 T# ig_req [3:0] $end
+$var reg 9 U# port_idle_cnt0 [8:0] $end
+$var reg 2 V# ig_sel [1:0] $end
+$var wire 4 W# req_rr [3:0] $end
+$var wire 1 X# hipri_req $end
+$var wire 1 Y# sample_pgrant $end
+$var wire 4 Z# pri_req [3:0] $end
+$var wire 1 [# sample_hipri $end
+$var wire 1 \# int_ready $end
+$var wire 2 ]# next_port [1:0] $end
+$var reg 2 ^# sel2 [1:0] $end
+$var reg 2 _# current_port [1:0] $end
+$var reg 2 `# sel0 [1:0] $end
+$var wire 4 a# rr_shift [3:0] $end
+$var wire 1 b# sample_grant $end
+$var wire 4 c# req [3:0] $end
+$var reg 4 d# req_rr_d [3:0] $end
+$var wire 1 e# clk $end
+$upscope $end
+$var wire 2 f# int_size3 [1:0] $end
+$var wire 32 g# int2ig_data [31:0] $end
+$var wire 1 h# int_read_done2 $end
+$var wire 7 i# addr0 [6:0] $end
+$var wire 1 j# int_valid3 $end
+$var wire 1 k# current_read_write $end
+$var wire 32 l# rdata3 [31:0] $end
+$var wire 2 m# int_size2 [1:0] $end
+$var wire 1 n# wr_rd1 $end
+$var wire 1 o# new_tran0 $end
+$var wire 1 p# current_read_write2 $end
+$var wire 32 q# wdata [31:0] $end
+$var wire 8 r# eg_ad_dataout [7:0] $end
+$var wire 8 s# eg2int_data [7:0] $end
+$var wire 1 t# int_valid0 $end
+$var wire 1 u# int_ready3 $end
+$var wire 1 v# int_ready1 $end
+$var wire 1 w# int_ready0 $end
+$var wire 32 x# rdata2 [31:0] $end
+$var wire 32 y# wdata3 [31:0] $end
+$var wire 8 z# int2eg_data [7:0] $end
+$var wire 1 {# int_read_write2 $end
+$var wire 32 |# rdata0 [31:0] $end
+$var wire 2 }# int_size1 [1:0] $end
+$var wire 2 ~# ig_sel [1:0] $end
+$var wire 1 !$ current_read_write1 $end
+$var wire 1 "$ eg_ready $end
+$var wire 2 #$ size0 [1:0] $end
+$var wire 2 $$ size3 [1:0] $end
+$var wire 1 %$ int_datardy $end
+$var wire 32 &$ rdata1 [31:0] $end
+$var wire 39 '$ int_addr_data2 [38:0] $end
+$var wire 1 ($ int_read_write $end
+$var wire 1 )$ rstN $end
+$var wire 1 *$ ready3 $end
+$var wire 1 +$ valid3 $end
+$var wire 1 ,$ int_valid2 $end
+$var wire 1 -$ int_read_write3 $end
+$var wire 1 .$ int_ready $end
+$var wire 32 /$ int2ig_data2 [31:0] $end
+$var wire 8 0$ eg_datain [7:0] $end
+$var wire 39 1$ int_addr_data3 [38:0] $end
+$var wire 1 2$ valid1 $end
+$var wire 1 3$ int_datavalid $end
+$var wire 1 4$ trans_started0 $end
+$var wire 32 5$ int2ig_data3 [31:0] $end
+$var wire 1 6$ new_tran $end
+$var wire 1 7$ new_tran3 $end
+$var wire 1 8$ trans_started2 $end
+$var wire 1 9$ trans_started $end
+$var wire 1 :$ trans_started1 $end
+$var wire 32 ;$ int2ig_data1 [31:0] $end
+$var wire 1 <$ valid0 $end
+$var wire 32 =$ int2ig_data0 [31:0] $end
+$var wire 32 >$ wdata2 [31:0] $end
+$var wire 7 ?$ addr2 [6:0] $end
+$var wire 1 @$ new_tran1 $end
+$var wire 1 A$ valid2 $end
+$var wire 1 B$ new_tran2 $end
+$var wire 1 C$ trans_started3 $end
+$var wire 1 D$ int_read_done3 $end
+$var wire 1 E$ int_read_done1 $end
+$var wire 2 F$ int_size0 [1:0] $end
+$var wire 1 G$ int_valid $end
+$var wire 1 H$ wr_rd2 $end
+$var wire 7 I$ addr [6:0] $end
+$var wire 1 J$ rd_ready $end
+$var wire 2 K$ int_size [1:0] $end
+$var wire 1 L$ eg_valid $end
+$var wire 1 M$ ready2 $end
+$var wire 7 N$ addr1 [6:0] $end
+$var wire 39 O$ int_addr_data0 [38:0] $end
+$var wire 39 P$ int_addr_data [38:0] $end
+$var wire 1 Q$ int_ready2 $end
+$var wire 32 R$ wdata0 [31:0] $end
+$var wire 32 S$ wdata1 [31:0] $end
+$var wire 2 T$ size1 [1:0] $end
+$var wire 1 U$ int_read_done $end
+$var wire 39 V$ int_addr_data1 [38:0] $end
+$var wire 1 W$ current_read_write3 $end
+$var wire 1 X$ ready0 $end
+$var wire 1 Y$ int_read_done0 $end
+$var wire 1 Z$ ready1 $end
+$var wire 1 [$ int_read_write0 $end
+$var wire 2 \$ size [1:0] $end
+$var wire 1 ]$ int_valid1 $end
+$var wire 1 ^$ wr_rd0 $end
+$var wire 2 _$ size2 [1:0] $end
+$var wire 1 `$ current_read_write0 $end
+$var wire 7 a$ addr3 [6:0] $end
+$var wire 32 b$ rdata [31:0] $end
+$var wire 1 c$ wr_rd3 $end
+$var wire 1 d$ int_read_write1 $end
+$var wire 1 e$ clk $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+1%
+0&
+1'
+1(
+1)
+b00 *
+1+
+b000000000000000000000000000000000000000 ,
+0-
+0.
+0/
+b00000000000000000000000000000000 0
+01
+b1111111 2
+13
+14
+15
+06
+b0000000 7
+08
+09
+b00000000000000000000000000000000 :
+0;
+1<
+0=
+b11 >
+b00000000000000000000000000000000 ?
+b00000000000000000000000000000000 @
+1A
+0B
+b0000 C
+b0000 D
+0E
+1F
+0G
+1H
+1I
+1J
+1K
+0L
+b0000000 M
+b00000000000000000000000000000000000000000 N
+b0000000 O
+b00000000000000000000000000000000000000000 P
+b0000000 Q
+b0000000 R
+b00000000000000000000000000000000000000000 S
+b0000000 T
+1U
+0V
+b00000000000000000000000000000000000000000 W
+b00000000000000000000000000000000000000000 X
+b00000000000000000000000000000000000000000 Y
+b00 Z
+b00000000000000000000000000000000000000000 [
+b00000000000000000000000000000000000000000 \
+b0000000 ]
+b00000000000000000000000000000000 ^
+0_
+b0000 `
+1a
+b00000000000000000000000000000000000000000 b
+b0000 c
+1d
+b00000000000000000000000000000000000000000 e
+b00000000000000000000000000000000000000000 f
+0g
+b00 h
+b00000000000000000000000000000000000000000 i
+1j
+b0000000 k
+b0000000 l
+1m
+b0000000 n
+b0000000 o
+b00000000 p
+b0000000 q
+b00000000000000000000000000000000000000000 r
+b00000000000000000000000000000000000000000 s
+b0000000 t
+b00000000000000000000000000000000000000000 u
+b00000000000000000000000000000000000000000 v
+b00000000000000000000000000000000000000000 w
+b0000000 x
+b0000000 y
+b00000000000000000000000000000000000000000 z
+b00000000 {
+b000000000000000000000000000000000000000 |
+b00000000000000000000000000000000 }
+b00000000000000000000000000000000000000000 ~
+b00000000000000000000000000000000000000000 !!
+b00000000000000000000000000000000000000000 "!
+b00000000000000000000000000000000000000000 #!
+1$!
+b00000000000000000000000000000000000000000 %!
+0&!
+b0000000 '!
+b00000000000000000000000000000000000000000 (!
+b0000000 )!
+0*!
+b0000000000000000 +!
+1,!
+b1111 -!
+b0000000 .!
+b00000000000000000000000000000000000000000 /!
+b00000000000000000000000000000000000000000 0!
+b00000000000000000000000000000000000000000 1!
+b00000000000000000000000000000000000000000 2!
+b0000000 3!
+04!
+b00000000000000000000000000000000000000000 5!
+b00000000000000000000000000000000000000000 6!
+b00000000000000000000000000000000000000000 7!
+b00 8!
+b00000000000000000000000000000000000000000 9!
+0:!
+0;!
+0<!
+0=!
+b00000000000000000000000000000000000000000 >!
+b0000000 ?!
+1@!
+1A!
+0B!
+0C!
+1D!
+1E!
+0F!
+0G!
+1H!
+1I!
+b000000000000000000000000000000000000000 J!
+0K!
+0L!
+1M!
+1N!
+b00000000000000000000000000000000 O!
+0P!
+b1111111 Q!
+1R!
+b00000000000000000000000000000000 S!
+b11 T!
+0U!
+b0000000 V!
+1W!
+1X!
+1Y!
+b00 Z!
+0[!
+0\!
+b00000000000000000000000000000000 ]!
+b00000000000000000000000000000000 ^!
+0_!
+0`!
+1a!
+1b!
+0c!
+0d!
+1e!
+1f!
+0g!
+1h!
+0i!
+1j!
+b0000000 k!
+b00000000000000000000000000000000 l!
+0m!
+1n!
+1o!
+1p!
+b00000000000000000000000000000000 q!
+0r!
+1s!
+0t!
+b00 u!
+0v!
+1w!
+b00000000000000000000000000000000 x!
+0y!
+0z!
+1{!
+b11 |!
+b000000000000000000000000000000000000000 }!
+b1110100 ~!
+0!"
+b00000000000000000000000000000000 ""
+0#"
+1$"
+1%"
+0&"
+1'"
+0("
+1)"
+0*"
+0+"
+1,"
+1-"
+b00000000000000000000000000000000 ."
+0/"
+b0000000 0"
+11"
+b11 2"
+b0011011 3"
+04"
+05"
+16"
+b00 7"
+b00000000000000000000000000000000 8"
+b00000000000000000000000000000000 9"
+b00000000000000000000000000000000 :"
+b000000000000000000000000000000000000000 ;"
+0<"
+0="
+0>"
+1?"
+0@"
+1A"
+1B"
+1C"
+1D"
+1E"
+0F"
+b00 G"
+b00 H"
+1I"
+b00 J"
+0K"
+0L"
+b00 M"
+b00 N"
+b00 O"
+1P"
+b000000000000000000000000000000000000000 Q"
+b000000000000000000000000000000000000000 R"
+b000000000000000000000000000000000000000 S"
+1T"
+0U"
+b000000000000000000000000000000000000000 V"
+0W"
+b00 X"
+b00 Y"
+1Z"
+0["
+b00000000000000000000000000000000 \"
+0]"
+b00 ^"
+0_"
+0`"
+0a"
+0b"
+0c"
+b00 d"
+0e"
+b00000000000000000000000000000000 f"
+0g"
+0h"
+0i"
+b000000000000000000000000000000000000000 j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+1q"
+0r"
+0s"
+0t"
+b00000000000000000000000000000000 u"
+b00000000000000000000000000000000 v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+b00 }"
+0~"
+0!#
+b00 "#
+0##
+1$#
+b00000000000000000000000000000000 %#
+1&#
+1'#
+0(#
+0)#
+1*#
+1+#
+1,#
+1-#
+0.#
+1/#
+b00000000 0#
+b00 1#
+02#
+b00000000 3#
+b00000000 4#
+b00000000 5#
+16#
+b00 7#
+08#
+b00000000 9#
+1:#
+1;#
+b0110 <#
+0=#
+1>#
+1?#
+b0000 @#
+0A#
+1B#
+b0000 C#
+b0000 D#
+b000000000 E#
+1F#
+0G#
+b01 H#
+b0000 I#
+b0000 J#
+b11 K#
+b11 L#
+1M#
+b000000000 N#
+b000000000 O#
+0P#
+b0000 Q#
+0R#
+1S#
+b0110 T#
+b000000000 U#
+b00 V#
+b0000 W#
+0X#
+0Y#
+b0000 Z#
+0[#
+1\#
+b00 ]#
+b10 ^#
+b00 _#
+b00 `#
+b0000 a#
+0b#
+b0110 c#
+b0000 d#
+1e#
+b00 f#
+b00000000000000000000000000000000 g#
+0h#
+b0011011 i#
+0j#
+0k#
+b00000000000000000000000000000000 l#
+b00 m#
+1n#
+1o#
+0p#
+b00000000000000000000000000000000 q#
+b00000000 r#
+b00000000 s#
+0t#
+0u#
+0v#
+1w#
+b00000000000000000000000000000000 x#
+b00000000000000000000000000000000 y#
+b00000000 z#
+0{#
+b00000000000000000000000000000000 |#
+b00 }#
+b00 ~#
+0!$
+1"$
+b11 #$
+b11 $$
+1%$
+b00000000000000000000000000000000 &$
+b000000000000000000000000000000000000000 '$
+0($
+1)$
+0*$
+0+$
+0,$
+0-$
+1.$
+b00000000000000000000000000000000 /$
+b00000000 0$
+b000000000000000000000000000000000000000 1$
+12$
+03$
+04$
+b00000000000000000000000000000000 5$
+16$
+07$
+08$
+09$
+0:$
+b00000000000000000000000000000000 ;$
+0<$
+b00000000000000000000000000000000 =$
+b00000000000000000000000000000000 >$
+b1111111 ?$
+0@$
+1A$
+0B$
+0C$
+0D$
+0E$
+b00 F$
+0G$
+1H$
+b0000000 I$
+1J$
+b00 K$
+0L$
+0M$
+b1110100 N$
+b000000000000000000000000000000000000000 O$
+b000000000000000000000000000000000000000 P$
+0Q$
+b00000000000000000000000000000000 R$
+b00000000000000000000000000000000 S$
+b11 T$
+0U$
+b000000000000000000000000000000000000000 V$
+0W$
+1X$
+0Y$
+0Z$
+0[$
+b00 \$
+0]$
+0^$
+b11 _$
+0`$
+b1111111 a$
+b00000000000000000000000000000000 b$
+1c$
+0d$
+1e$
+#4
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#9
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#10
+1*!
+1="
+1m"
+1!#
+1=#
+b0110 C#
+b000000001 E#
+0F#
+b00 K#
+0M#
+b000000001 N#
+b000000001 O#
+1P#
+b000000001 U#
+b0110 W#
+b0110 Z#
+1[#
+14$
+19$
+#14
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#19
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#20
+1("
+1>"
+b0111 <#
+b1110 D#
+b000000010 E#
+b01 K#
+b000000010 N#
+b000000010 O#
+b0111 T#
+b000000010 U#
+b0000 W#
+1Y#
+b0000 Z#
+0[#
+b01 ]#
+b0111 c#
+b0110 d#
+1<$
+#24
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#29
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#30
+1G
+b0011011 O
+1_
+b001101100000000000000000000000000000000 |
+14!
+1*"
+0,"
+b0011011 0"
+01"
+15"
+b001101100000000000000000000000000000000 ;"
+1@"
+0B"
+0C"
+b001101100000000000000000000000000000000 R"
+b001101100000000000000000000000000000000 S"
+1_"
+1p"
+1s"
+1##
+1A#
+b000000011 E#
+1G#
+b1110 I#
+b10 K#
+b000000011 N#
+b000000011 O#
+b000000011 U#
+0Y#
+b01 _#
+b1110 a#
+1b#
+b0000 d#
+1k#
+1t#
+1G$
+b001101100000000000000000000000000000000 O$
+b001101100000000000000000000000000000000 P$
+0X$
+1`$
+#34
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#39
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#40
+0G
+b0000000 O
+b0011011 ]
+0_
+b00110110000000000000000000000000000000000 f
+b00110110000000000000000000000000000000000 r
+b00110110000000000000000000000000000000000 v
+b00011011 {
+b000000000000000000000000000000000000000 |
+0*!
+04!
+1c!
+1g!
+1r!
+1z!
+1#"
+0)"
+0*"
+05"
+06"
+1<"
+0A"
+b01 H"
+0I"
+1L"
+b000000000000000000000000000000000000000 S"
+0T"
+b01 X"
+0_"
+1g"
+1h"
+0s"
+1z"
+0!#
+0##
+0$#
+b00011011 4#
+0=#
+b0010 @#
+0A#
+b000000100 E#
+0G#
+b11 K#
+1M#
+b000000100 N#
+b000000100 O#
+0P#
+b0010 Q#
+1R#
+b000000100 U#
+b01 V#
+0b#
+0k#
+0o#
+0t#
+1v#
+0w#
+b00011011 z#
+b01 ~#
+09$
+1@$
+0G$
+b000000000000000000000000000000000000000 P$
+1Z$
+1[$
+#44
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#49
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#50
+1G
+b1110100 O
+1_
+b111010000000000000000000000000000000000 |
+1*!
+1d!
+b1110100 k!
+1m!
+1y!
+b111010000000000000000000000000000000000 }!
+b111010000000000000000000000000000000000 S"
+b111010000000000000000000000000000000000 V"
+1n"
+1s"
+1{"
+1!#
+b00011011 3#
+1=#
+b0000 @#
+1A#
+b000000000 E#
+1G#
+b10 H#
+b01 L#
+b000000101 N#
+b000000101 O#
+1P#
+b0000 Q#
+0R#
+b000000101 U#
+b11 ^#
+b00011011 r#
+19$
+1:$
+1G$
+b111010000000000000000000000000000000000 P$
+b111010000000000000000000000000000000000 V$
+1]$
+#54
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#59
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#60
+0'
+04
+b0001 D
+0I
+b0000001 M
+b1110100 ]
+b0001 `
+b11101000000000000000000000000000000000000 f
+0j
+0m
+b11101000000000000000000000000000000000000 r
+b11101000000000000000000000000000000000000 v
+b01110100 {
+0$!
+b0000000000000001 +!
+b0000 -!
+1=!
+0E!
+0M!
+0e!
+0h!
+0r!
+0s!
+0w!
+0%"
+0D"
+0g"
+0q"
+b01110100 4#
+b0101 <#
+b000000001 E#
+b000000110 N#
+b000000110 O#
+b0101 T#
+b000000110 U#
+b0101 c#
+b01110100 z#
+02$
+06$
+0@$
+0J$
+#64
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#69
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#70
+1B
+b0010 D
+0G
+0J
+b0000011 M
+b1110100 Q
+b11101000000000000000000000000000000000000 W
+0_
+b0010 `
+b11101000000000000000000000000000000000000 u
+1&!
+0*!
+b0000000000000011 +!
+0,!
+b0001 -!
+1:!
+0d!
+1e!
+0f!
+0m!
+1w!
+0y!
+0{!
+0n"
+0s"
+0{"
+0!#
+1(#
+0*#
+0,#
+0/#
+12#
+b01110100 3#
+0:#
+b0111 <#
+0=#
+0A#
+b000000010 E#
+1F#
+0G#
+b000000111 N#
+b000000111 O#
+0P#
+b0111 T#
+b000000111 U#
+b0111 c#
+0n#
+b01110100 r#
+0"$
+0%$
+12$
+13$
+09$
+0:$
+0G$
+0]$
+#74
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#79
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#80
+1G
+1J
+1_
+1,!
+14!
+1d!
+0e!
+1f!
+0g!
+0n!
+0o!
+1v!
+0w!
+1y!
+1{!
+0#"
+1W"
+1s"
+1{"
+1##
+1*#
+1,#
+1/#
+b01 1#
+1:#
+b0101 <#
+1A#
+b0111 C#
+b000000011 E#
+0F#
+1G#
+b00 K#
+0M#
+b000001000 N#
+b000001000 O#
+b0101 T#
+b000001000 U#
+b1011 W#
+b0111 Z#
+1[#
+b0101 c#
+1k#
+1n#
+1!$
+1"$
+1%$
+02$
+1G$
+0Z$
+1]$
+#84
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#89
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#90
+0G
+b11101000000000000000000000000000000000000 S
+0_
+0a
+b00000000 {
+b11101000000000000000000000000000000000000 (!
+b1110100 ?!
+0d!
+1e!
+1w!
+0y!
+0("
+0>"
+0s"
+0{"
+1)#
+b10 1#
+b00000000 4#
+b01 7#
+18#
+b0110 <#
+0A#
+b1111 D#
+b000000100 E#
+0G#
+b01 K#
+b000001001 N#
+b000001001 O#
+b0110 T#
+b000001001 U#
+b0000 W#
+1Y#
+b0000 Z#
+0[#
+b00 ]#
+b0110 c#
+b1011 d#
+b00000000 z#
+12$
+0<$
+0G$
+1L$
+0]$
+#94
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#99
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#100
+1a
+b01110101 {
+b01 8!
+1("
+0="
+1>"
+0m"
+0+#
+b01 1#
+b00000000 3#
+b01110101 4#
+b10 7#
+b0111 <#
+b000000101 E#
+b1111 I#
+b10 K#
+b000001010 N#
+b000001010 O#
+b0111 T#
+b000001010 U#
+0Y#
+b00 _#
+b1111 a#
+1b#
+b0111 c#
+b0000 d#
+b00000000 r#
+b01110101 z#
+04$
+1<$
+#104
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#109
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#110
+0F
+b0011011 O
+0a
+0d
+b00000000 {
+b001101100000000000000000000000000000000 |
+1;!
+0c!
+0z!
+b00 H"
+0L"
+b001101100000000000000000000000000000000 S"
+b00 X"
+0Z"
+1["
+0h"
+1+#
+b10 1#
+b01110101 3#
+b00000000 4#
+b01 7#
+0>#
+b0001 @#
+b000000110 E#
+b11 K#
+1M#
+b000001011 N#
+b000001011 O#
+b0001 Q#
+1R#
+b000001011 U#
+b00 V#
+0\#
+0b#
+b01110101 r#
+0v#
+b00000000 z#
+b00 ~#
+1($
+0.$
+b001101100000000000000000000000000000000 P$
+#114
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#119
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#120
+b0011011 y
+b10 8!
+0+#
+b01 1#
+b00000000 3#
+b10 7#
+b0000 @#
+b000000111 E#
+1F#
+b000001100 N#
+b000001100 O#
+b0000 Q#
+0R#
+b000000000 U#
+b00000000 r#
+#124
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#129
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#130
+1L
+1V
+1g
+1m
+b11 8!
+1&"
+14"
+16"
+1U"
+1]"
+1q"
+1$#
+1+#
+b10 1#
+b01 7#
+b000001000 E#
+0F#
+b00 K#
+0M#
+b000001101 N#
+b000001101 O#
+b000000001 U#
+b1011 W#
+b0111 Z#
+1[#
+1o#
+16$
+1U$
+1Y$
+#134
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#139
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#140

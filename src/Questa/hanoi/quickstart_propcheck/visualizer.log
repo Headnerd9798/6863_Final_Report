@@ -1,0 +1,50 @@
+VISUALIZERROOT = '/tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/linux_x86_64/Visualizer'
+USER = 'hz2619'
+Loading tcl script /tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/linux_x86_64/Visualizer/lib/visualizer/tclscripts/designutil.tcl
+Done loading tcl script </tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/linux_x86_64/Visualizer/lib/visualizer/tclscripts/designutil.tcl>
+Server Initialized ...
+Mentor Graphics software version 2019.2_1 (Build on May 13 2019)
+Copyright (C) 1999-2019 by Mentor Graphics All rights reserved.
+   from_mega_agent
+   +outputDir+/tmp/visscratch.YNkv2W
+   +tcl
+   -I/tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/bin/../linux_x86_64/Visualizer/bin/../tb/incl
+   +designfile+/homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/VISUALIZER/design.bin
+   +show_pi_drvr_rcvr
+   +max_drv_rec_cnt=10000
+   +no_splash
+   +visformal
+   +external_client
+   +designfile+design.bin
+   +designfile+Output_Results/qcache/VISUALIZER/design.bin
+   +convertvhdlgenbracket
+
+Command line option(s) :
+   +outputDir+/tmp/visscratch.YNkv2W
+   +tcl
+   -I/tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/bin/../linux_x86_64/Visualizer/bin/../tb/incl
+   +designfile+/homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/Output_Results/qcache/VISUALIZER/design.bin
+   +show_pi_drvr_rcvr
+   +max_drv_rec_cnt=10000
+   +no_splash
+   +visformal
+   +external_client
+   +designfile+design.bin
+   +designfile+Output_Results/qcache/VISUALIZER/design.bin
+   +convertvhdlgenbracket
+
+New PLI Id assignment (at parsing time) will be used.
+Creating var connectivity .......
+Done Creating var connectivity .......
+Design Statistics
+              Always = 1
+          SVA-Assert = 21
+           SVA-Cover = 3
+End of Design Statistics
+design loaded ...
+Reading file /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv
+Window layout Default has been saved in file /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/.visualizer/layout.xml
+Start  : Tue Dec 17 21:05:44 2019
+End    : Tue Dec 17 21:37:58 2019
+VMSize : 2752452 kB
+VMPeak : 2784456 kB

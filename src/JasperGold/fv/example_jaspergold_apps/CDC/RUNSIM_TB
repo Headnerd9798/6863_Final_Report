@@ -1,0 +1,16 @@
+#!/bin/csh -f
+
+#Renaming the modules and property instance names to avoid conflict
+sed -i 's/cdc_properties/cdc_sigconfig_properties/g' signal_config_checks.svp
+sed -i 's/cdc_prop_inst/cdc_sigconfig_prop_inst/g' signal_config_checks.svp
+sed -i 's/cdc_properties/cdc_waivercond_properties/g' waiver_condition_checks.svp
+sed -i 's/cdc_prop_inst/cdc_waivercond_prop_inst/g' waiver_condition_checks.svp
+
+#Run simulation
+irun \
+-NOCOPYRIGHT \
+-NOWARN DLDEFM  sim/sim_tb.v  \
++tcl+sim/sim_tb.v.tcl $2 \
+-f sim/ies.f \
+-TOP sim_tb  \
+-gui

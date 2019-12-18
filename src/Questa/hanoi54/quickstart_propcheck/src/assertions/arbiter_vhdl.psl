@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+--
+--               Copyright 2006-2016 Mentor Graphics Corporation
+--                          All Rights Reserved.
+--  
+--             THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+--           INFORMATION WHICH IS THE PROPERTY OF MENTOR GRAPHICS 
+--          CORPORATION OR ITS LICENSORS AND IS SUBJECT TO LICENSE
+--                                 TERMS.
+--
+-------------------------------------------------------------------------------
+
+vunit arbiter_checker_psl(wb_arbiter(rtl)){
+
+default clock is rose(clk);
+
+-- Single-grant check
+arb_single_grant: assert always (onehot(gnt_o) or gnt_o = "00000") abort(rst);
+
+-- Known-grant checks
+arb_known_grant_4: assert always (gnt_o(4) -> prev(rqst_i(4)))abort(rst);
+arb_known_grant_3: assert always (gnt_o(3) -> prev(rqst_i(3)))abort(rst);
+arb_known_grant_2: assert always (gnt_o(2) -> prev(rqst_i(2)))abort(rst);
+arb_known_grant_1: assert always (gnt_o(1) -> prev(rqst_i(1)))abort(rst);
+arb_known_grant_0: assert always (gnt_o(0) -> prev(rqst_i(0)))abort(rst);
+
+
+-- Coverage: grant asserted
+arb_cover_grant_4: cover {not rst and gnt_o(4)};
+arb_cover_grant_3: cover {not rst and gnt_o(3)};
+arb_cover_grant_2: cover {not rst and gnt_o(2)};
+arb_cover_grant_1: cover {not rst and gnt_o(1)};
+arb_cover_grant_0: cover {not rst and gnt_o(0)};
+
+}

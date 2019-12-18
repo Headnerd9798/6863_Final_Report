@@ -1,0 +1,138 @@
+================================================================================
+== Profile: REAL-TIME, CPU-freq = 4.00 GHz
+                                                          Calls Real-Time  Parent 
+                                                                   (secs) fraction
+
+    <zixl_543IiP35>~_zixl                                                1       5.1 (100.0%)
+  zixl_5eAt1-I3L-ePP4~_zixl                                              1       5.1         
+    zixl_5eAt1-I3L-1LqiL1~_zixl                                         27       5.1 ( 99.0%)
+      zixl_IAI-iZ4e-5Pet1~_zixl                                         27       5.1 ( 99.9%)
+        zixl_IAI-5Pet1~_zixl                                            26       5.0 ( 98.3%)
+          zixl_IAI-5Pet1-5Pet1~_zixl                                    40       5.0 ( 99.9%)
+            zixl_irY-5Pet1~_zixl                                        40       5.0 (100.0%)
+              zixl_irY-52I1Lq271L~_zixl                                217       4.3 ( 86.8%)
+                zixl_irY-q1L1IAeiz1~_zixl                             4001       3.9 ( 91.3%)
+                  zixl_irY-Zir~_zixl                                  4001       3.8 ( 96.0%)
+                    zixl_irY-rPL51r32iPL [T]~_zixl                   57975       3.1 ( 82.8%)
+                    zixl_irY-34~_zixl                                27522       0.6 ( 15.8%)
+                      zixl_5r5-5Pet1 [Y]~_zixl                       34051       0.4 ( 63.9%)
+                      zixl_5Pet1 [F]~_zixl                           27522       0.0 (  5.1%)
+                      zixl_L1U-tAI [RD]~_zixl                        51534       0.0 (  1.2%)
+                      <zixl_I152>~_zixl                                          0.2 ( 28.9%)
+                  zixl_irY-rPL51r32iPL [R]~_zixl                      2968       0.1 (  3.4%)
+                zixl_irY-rPL51r32iPL [E]~_zixl                        5554       0.3 (  8.0%)
+              zixl_irY-4IP4AqA21 [E]~_zixl                             202       0.5 ( 10.1%)
+              zixl_irY-ePqaIPP6~_zixl                                   18       0.1 (  1.7%)
+                zixl_irY-iZ4IPt1~_zixl                                  18       0.1 ( 96.1%)
+                  zixl_irY-rPL51r32iPL [Y]~_zixl                      4338       0.1 ( 98.0%)
+                  <zixl_I152>~_zixl                                              0.0 (  1.3%)
+                zixl_4r-I14PI2aIPP6 [R]~_zixl                           18       0.0 (  3.1%)
+              <zixl_58i441S>~_zixl                                               0.1 (  1.4%)
+        zixl_IAI-iLtAIiAL25~_zixl                                        8       0.1 (  1.4%)
+          zixl_irY-iLtAIiAL25~_zixl                                      8       0.1 (100.0%)
+            zixl_irY-4IP4AqA21 [R]~_zixl                                 8       0.1 ( 98.0%)
+            zixl_irY-rPL6iq3I1bPL5 [R]~_zixl                             8       0.0 (  1.2%)
+    <zixl_I152>~_zixl                                                            0.1 (  1.0%)
+
+    zixl_5r5-5Pet1~_zixl                                            117491       3.2 ( 86.4%)
+    zixl_irY-52A21p6~_zixl                                           17503       0.5 ( 12.2%)
+    <zixl_58i441S>~_zixl                                                         0.0 (  1.3%)
+  zixl_5Pet1~_zixl                                                  163490       3.7         
+    zixl_ALAeOz1~_zixl                                              150278       0.3 (  6.8%)
+      zixl_q1L1IA21-reA351~_zixl                                    150278       0.1 ( 47.9%)
+      zixl_y3Z4-tAI5~_zixl                                          150278       0.1 ( 23.2%)
+      zixl_ZiLiZiz1-rPL6eir2~_zixl                                  150278       0.0 ( 15.8%)
+      zixl_6iLi57~_zixl                                             150278       0.0 (  8.0%)
+      <zixl_I152>~_zixl                                                          0.0 (  5.1%)
+    zixl_I1ePr-34SA21~_zixl                                            319       0.1 (  2.6%)
+    zixl_I1ZPt1-5A2i56i1S [E]~_zixl                                  23335       0.1 (  2.5%)
+    <zixl_I152>~_zixl                                                            3.2 ( 85.4%)
+    <zixl_58i441S>~_zixl                                                         0.1 (  2.6%)
+
+    zixl_irY-52I1Lq271L~_zixl                                         5554       0.3 (  9.4%)
+    zixl_irY-q1L1IAeiz1~_zixl                                         2968       0.1 (  3.6%)
+    zixl_irY-Zir~_zixl                                               57975       3.1 ( 84.8%)
+    zixl_irY-iZ4IPt1~_zixl                                            4338       0.1 (  2.2%)
+  zixl_irY-rPL51r32iPL~_zixl                                         70835       3.7         
+    zixl_irY-rPL5~_zixl                                              70268       3.7 ( 99.5%)
+      zixl_5r5-5Pet1 [R]~_zixl                                       70268       2.7 ( 73.6%)
+      zixl_irY-52A21p6 [E]~_zixl                                     17503       0.6 ( 15.5%)
+      zixl_3LSP [Y]~_zixl                                            62872       0.2 (  6.3%)
+      <zixl_I152>~_zixl                                                          0.2 (  4.5%)
+
+    zixl_irY-rPL5~_zixl                                              70268       2.7 ( 74.6%)
+    zixl_irY-U1A8bPL51r32iPL~_zixl                                   12697       0.5 ( 14.3%)
+    zixl_irY-34~_zixl                                                34051       0.4 ( 10.5%)
+  zixl_5r5-5Pet1~_zixl                                              117491       3.6         
+    zixl_5Pet1 [T]~_zixl                                            117491       3.2 ( 88.5%)
+    zixl_55-ZAI8~_zixl                                              117491       0.3 (  9.3%)
+      zixl_3LSP [F]~_zixl                                             8501       0.0 ( 11.3%)
+      <zixl_I152>~_zixl                                                          0.3 ( 88.7%)
+    <zixl_I152>~_zixl                                                            0.1 (  2.1%)
+
+    zixl_irY-5Pet1~_zixl                                               202       0.5 ( 87.9%)
+    zixl_irY-iLtAIiAL25~_zixl                                            8       0.1 ( 12.1%)
+  zixl_irY-4IP4AqA21~_zixl                                             210       0.6         
+    zixl_irY-U1A8bPL51r32iPL~_zixl                                   12697       0.5 ( 95.2%)
+      zixl_5r5-5Pet1 [T]~_zixl                                       12697       0.5 ( 95.8%)
+      <zixl_I152>~_zixl                                                          0.0 (  4.2%)
+    <zixl_I152>~_zixl                                                            0.0 (  4.0%)
+
+    zixl_irY-rPL5~_zixl                                              17503       0.6 (100.0%)
+  zixl_irY-52A21p6~_zixl                                             17696       0.6         
+    zixl_5Pet1 [G]~_zixl                                             17503       0.5 ( 79.8%)
+    zixl_52A21p6-52S~_zixl                                           17503       0.0 (  6.2%)
+    zixl_3LSP [D]~_zixl                                              17502       0.0 (  2.6%)
+    <zixl_I152>~_zixl                                                            0.1 ( 11.0%)
+
+    zixl_5Pet1~_zixl                                                152846       0.0 (  9.7%)
+    zixl_irY-q1L1IAeiz1~_zixl                                         2851       0.0 (  3.9%)
+    zixl_irY-rPL5~_zixl                                              62872       0.2 ( 64.1%)
+    zixl_irY-52A21p6~_zixl                                           17502       0.0 (  4.1%)
+    zixl_55-ZAI8~_zixl                                                8501       0.0 ( 10.6%)
+    zixl_irY-34~_zixl                                                35603       0.0 (  1.4%)
+    zixl_irY-Zir~_zixl                                                4088       0.0 (  5.5%)
+  zixl_3LSP~_zixl                                                   291395       0.4         
+
+    zixl_5Pet1~_zixl                                                 23335       0.1 ( 99.0%)
+    <zixl_58i441S>~_zixl                                                         0.0 (  1.0%)
+  zixl_I1ZPt1-5A2i56i1S~_zixl                                        24985       0.1         
+
+  <zixl_58i441S>~_zixl                                                           0.2 (  3.1%)
+
+================================================================================
+== Profile: PEAK-MEMORY, CPU-freq = 4.00 GHz
+                                                          Calls   Peak-Mb         
+                                                                                  
+
+    <zixl_543IiP35>~_zixl                                                1      12.0 (100.0%)
+  zixl_5eAt1-I3L-ePP4~_zixl                                              1      12.0         
+    zixl_5eAt1-I3L-1LqiL1~_zixl                                         27      12.0 (100.0%)
+      zixl_IAI-iZ4e-5Pet1~_zixl                                         27      12.0 (100.0%)
+        zixl_IAI-5Pet1~_zixl                                            26      12.0 (100.0%)
+          zixl_IAI-51234~_zixl                                          40       8.0 ( 66.7%)
+            zixl_55-I1512 [R]~_zixl                                    320       8.0 (100.0%)
+          zixl_IAI-5Pet1-5Pet1~_zixl                                    40       4.0 ( 33.3%)
+            zixl_irY-5Pet1~_zixl                                        40       4.0 (100.0%)
+              zixl_irY-52I1Lq271L~_zixl                                217       4.0 (100.0%)
+                zixl_irY-q1L1IAeiz1~_zixl                             4001       4.0 (100.0%)
+                  zixl_irY-Zir~_zixl                                  4001       4.0 (100.0%)
+                    zixl_irY-34~_zixl                                27522       4.0 (100.0%)
+                      zixl_5r5-5Pet1 [Y]~_zixl                       34051       4.0 (100.0%)
+
+    zixl_55-I1512~_zixl                                                695       8.0 ( 66.7%)
+    zixl_5Pet1~_zixl                                                   638       4.0 ( 33.3%)
+  zixl_L1U-r73L8~_zixl                                                1347      12.0         
+
+    zixl_IAI-51234~_zixl                                               320       8.0 (100.0%)
+  zixl_55-I1512~_zixl                                                  695       8.0         
+    zixl_L1U-r73L8 [E]~_zixl                                           695       8.0 (100.0%)
+
+    zixl_5r5-5Pet1~_zixl                                            117491       4.0 (100.0%)
+  zixl_5Pet1~_zixl                                                  163490       4.0         
+    zixl_L1U-r73L8 [R]~_zixl                                           638       4.0 (100.0%)
+
+    zixl_irY-34~_zixl                                                34051       4.0 (100.0%)
+  zixl_5r5-5Pet1~_zixl                                              117491       4.0         
+    zixl_5Pet1 [T]~_zixl                                            117491       4.0 (100.0%)
+

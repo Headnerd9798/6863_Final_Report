@@ -1,0 +1,33 @@
+###################################################
+#################                   ###############
+#################      Questa       ###############
+#################                   ###############
+###################################################
+
+1. Open src/Questa
+2. Copy Folder fifo/hanoi/hanoi43/hanoi54 (select one) to root directory
+3. Open terminal and 
+	input < cd fifo/hanoi/hanoi43/hanoi> (select one)
+	input < cd quickstart_propcheck >
+	input < QHOME = /tools/mentor/questa_2019.2_1/linux_x86_64 >
+	input < make run>
+4. The output report windows will pop out.
+
+###################################################
+#################                   ###############
+#################    JasperGold     ###############
+#################                   ###############
+###################################################
+
+1. Open src/JapserGold
+2. Copy Folder fv to root directory
+3. Open terminal and 
+	input < cd fv> 
+	input < cd example_jaspergold_apps >
+	input < cd FPV >
+	input < jg -fpv FPV_verilog_sva_example.tcv > 
+	### we didn't rename the tcl file but we alter the content>
+	### the default setting is about hanoi_3_3 if you want to run hanoi_4_3
+    ### we have put all systemverilog file about hanoi game in /fv/example_jaspegold_apps/designs/reference_design/verilog_sva/design 
+    ### in case you want to run other test on hanoi game, just alter /fv/example_jaspegold_apps/fifo_verilog_sva_exampe file 
+4. The output report windows will pop out.

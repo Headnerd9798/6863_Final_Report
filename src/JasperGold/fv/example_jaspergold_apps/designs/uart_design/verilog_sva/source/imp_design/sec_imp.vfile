@@ -1,0 +1,11 @@
++incdir+./${IMP_RTL_PATH} \
+       ./${IMP_RTL_PATH}/uart_top.v \
+       ./${IMP_RTL_PATH}/uart_debug_if.v \
+       ./${IMP_RTL_PATH}/uart_receiver.v \
+       ./${IMP_RTL_PATH}/uart_regs.v \
+       ./${IMP_RTL_PATH}/uart_sync_flops.v \
+       ./${IMP_RTL_PATH}/uart_tfifo.v \
+       ./${IMP_RTL_PATH}/uart_transmitter.v \
+       ./${IMP_RTL_PATH}/uart_wb.v \
+       ./${IMP_RTL_PATH}/uart_rfifo.v \
+       ./${IMP_RTL_PATH}/raminfr.v

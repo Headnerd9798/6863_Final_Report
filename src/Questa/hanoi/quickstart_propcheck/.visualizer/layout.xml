@@ -1,0 +1,21 @@
+<LayoutInfo CurrentRTLLayout="Default" version="1">
+ <Layout Name="Default" Type="RTL">
+  <dockareas bottom="640" right="112" top="0" left="250"/>
+  <window visible="1" type="rtl" undocked="0" height="951" y="65" width="1680" x="0"/>
+  <window visible="1" type="transcript" undocked="0" dock_location="bottom" y="0" x="0"/>
+  <window title="Wave (my_assert)" visible="0" type="wave" undocked="1" height="630" y="0" width="1008" x="1680"/>
+  <window title="Wave (cover_mid_disk_1)" visible="0" type="wave" undocked="1" height="526" y="0" width="864" id="1" x="0"/>
+  <window title="Wave (fifo_index_check.ovl_cover.ovl_cover_basic.cover_fifo_pop)" visible="0" type="wave" undocked="1" height="630" y="237" width="1008" id="2" x="185"/>
+  <window title="Wave (fifo_index_check.ovl_assert.A_ASSERT_FIFO_INDEX_UNDERFLOW_P)" visible="0" type="wave" undocked="1" height="630" y="346" width="1008" id="3" x="614"/>
+  <window title="Wave (fifo_num_entries_0)" visible="0" type="wave" undocked="1" height="630" y="80" width="1008" id="4" x="160"/>
+  <window visible="1" type="source" undocked="0" y="0" x="0"/>
+  <window visible="0" type="fsmview" undocked="0" dock_location="right" y="0" x="0"/>
+  <window visible="0" type="structure" undocked="0" dock_location="left" y="0" x="0"/>
+  <window title="Details" visible="0" type="zindetails" undocked="0" dock_location="left" y="0" x="0"/>
+  <window title="Schematic" visible="0" type="zinschematicview" undocked="1" dock_location="right" height="653" y="199" width="802" x="604"/>
+  <window title="Design" visible="1" type="zindutview" undocked="0" dock_location="left" y="0" x="0"/>
+  <window title="Properties" visible="1" type="zinformalproperties" undocked="0" dock_location="bottom" y="0" x="0"/>
+  <window title="Control Points" visible="0" type="zinformalcontrolpointsnew" undocked="0" dock_location="right" y="0" x="0"/>
+  <window title="Design Checks" visible="0" type="zinformalpolicychecks" undocked="0" dock_location="bottom" y="0" x="0"/>
+ </Layout>
+</LayoutInfo>

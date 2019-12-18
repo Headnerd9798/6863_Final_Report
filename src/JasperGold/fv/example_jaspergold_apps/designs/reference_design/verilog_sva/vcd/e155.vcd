@@ -1,0 +1,967 @@
+$date Mon Apr 26 15:08:27 2010
+ $end
+$version JasperGold $end
+$timescale 1 ns $end
+$scope module top $end
+$scope module ing3 $end
+$scope module i_ingress $end
+$var wire 1 ! int_valid $end
+$var wire 1 " wr_rd $end
+$var wire 1 # int_read_done $end
+$var wire 1 $ int_ready $end
+$var wire 1 % ready $end
+$var wire 1 & rd_ready $end
+$var wire 1 ' valid $end
+$var wire 1 ( rstN $end
+$var wire 1 ) clk $end
+$upscope $end
+$var reg 1 * valid_read $end
+$var wire 1 + current_read_write $end
+$var wire 39 , int_addr_data [38:0] $end
+$var reg 1 - trans_started $end
+$var wire 1 . new_tran $end
+$var reg 32 / wdata_reorder [31:0] $end
+$var reg 2 0 int_size [1:0] $end
+$var wire 1 1 int_ready $end
+$var wire 1 2 wr_rd $end
+$var wire 1 3 valid $end
+$var wire 1 4 rd_ready $end
+$var wire 1 5 int_read_done $end
+$var wire 1 6 ready $end
+$var wire 7 7 addr [6:0] $end
+$var wire 32 8 wdata [31:0] $end
+$var reg 7 9 int_addr [6:0] $end
+$var reg 1 : wr_rd_reg $end
+$var reg 1 ; int_valid $end
+$var wire 1 < rstN $end
+$var wire 32 = int2ig_data [31:0] $end
+$var wire 32 > rdata [31:0] $end
+$var reg 1 ? int_read_write $end
+$var wire 2 @ size [1:0] $end
+$var wire 1 A clk $end
+$upscope $end
+$scope module brdg $end
+$scope module i_bridge $end
+$var wire 4 B rd_ptr [3:0] $end
+$var wire 1 C fifo_full $end
+$var wire 1 D int_datardy $end
+$var wire 1 E fifo_empty $end
+$var wire 1 F int_valid $end
+$var wire 1 G int_datavalid $end
+$var wire 1 H rstN $end
+$var wire 1 I int_ready $end
+$var wire 4 J wr_ptr [3:0] $end
+$var wire 1 K clk $end
+$upscope $end
+$var wire 1 L read_dep $end
+$var wire 7 M \fifo_addr[0] [6:0] $end
+$var wire 2 N out_size [1:0] $end
+$var wire 7 O \fifo_addr[5] [6:0] $end
+$var wire 41 P fifo13 [40:0] $end
+$var wire 41 Q fifo7 [40:0] $end
+$var wire 7 R \fifo_addr[7] [6:0] $end
+$var wire 7 S \fifo_addr[10] [6:0] $end
+$var reg 41 T \fifo[8] [40:0] $end
+$var reg 41 U \fifo[10] [40:0] $end
+$var wire 41 V fifo1 [40:0] $end
+$var wire 1 W fifo_empty $end
+$var wire 1 X fifo_full $end
+$var reg 4 Y wr_ptr [3:0] $end
+$var wire 41 Z fifo5 [40:0] $end
+$var reg 41 [ \fifo[12] [40:0] $end
+$var wire 7 \ new_addr [6:0] $end
+$var wire 1 ] rstN $end
+$var wire 41 ^ fifo6 [40:0] $end
+$var wire 7 _ \fifo_addr[3] [6:0] $end
+$var reg 41 ` \fifo[9] [40:0] $end
+$var reg 41 a \fifo[13] [40:0] $end
+$var wire 1 b int2eg_end $end
+$var reg 41 c \fifo[15] [40:0] $end
+$var wire 7 d \fifo_addr[1] [6:0] $end
+$var wire 7 e \fifo_addr[6] [6:0] $end
+$var wire 1 f current_read_write $end
+$var reg 41 g \fifo[3] [40:0] $end
+$var wire 7 h \fifo_addr[8] [6:0] $end
+$var wire 7 i \fifo_addr[11] [6:0] $end
+$var wire 8 j eg2int_data [7:0] $end
+$var wire 1 k int_read_done $end
+$var wire 41 l fifo0 [40:0] $end
+$var wire 7 m \fifo_addr[13] [6:0] $end
+$var wire 7 n \fifo_addr[14] [6:0] $end
+$var wire 41 o fifo14 [40:0] $end
+$var wire 1 p int_datavalid $end
+$var wire 7 q \fifo_addr[9] [6:0] $end
+$var wire 41 r fifo3 [40:0] $end
+$var reg 7 s read_addr [6:0] $end
+$var wire 41 t fifo2 [40:0] $end
+$var wire 41 u fifo4 [40:0] $end
+$var wire 1 v int_valid $end
+$var reg 1 w addr_fifo $end
+$var reg 4 x rd_ptr [3:0] $end
+$var reg 41 y \fifo[6] [40:0] $end
+$var wire 7 z new_addr_dep [6:0] $end
+$var wire 41 { fifo10 [40:0] $end
+$var reg 41 | \fifo[0] [40:0] $end
+$var wire 1 } new_tran $end
+$var wire 41 ~ fifo11 [40:0] $end
+$var reg 41 !! \fifo[1] [40:0] $end
+$var wire 41 "! fifo12 [40:0] $end
+$var wire 1 #! int_ready $end
+$var wire 39 $! int_addr_data [38:0] $end
+$var wire 7 %! \fifo_addr[12] [6:0] $end
+$var wire 1 &! last_byte_num $end
+$var reg 41 '! \fifo[2] [40:0] $end
+$var wire 1 (! trans_started $end
+$var wire 32 )! i [31:0] $end
+$var wire 41 *! fifo9 [40:0] $end
+$var wire 4 +! wr_ptr_minus1 [3:0] $end
+$var reg 41 ,! \fifo[5] [40:0] $end
+$var reg 2 -! byte_num [1:0] $end
+$var wire 16 .! fifo_entry_valid [15:0] $end
+$var reg 41 /! \fifo[4] [40:0] $end
+$var wire 8 0! int2eg_data [7:0] $end
+$var reg 1 1! int_datavalid_tmp $end
+$var reg 41 2! \fifo[11] [40:0] $end
+$var wire 1 3! int_read_write $end
+$var wire 2 4! int_size [1:0] $end
+$var wire 41 5! fifo15 [40:0] $end
+$var reg 41 6! \fifo[14] [40:0] $end
+$var wire 1 7! rd_ready $end
+$var wire 7 8! \fifo_addr[2] [6:0] $end
+$var wire 1 9! int_datardy $end
+$var wire 7 :! \fifo_addr[15] [6:0] $end
+$var wire 41 ;! fifo_out [40:0] $end
+$var wire 7 <! \fifo_addr[4] [6:0] $end
+$var wire 32 =! int2ig_data [31:0] $end
+$var reg 41 >! \fifo[7] [40:0] $end
+$var wire 41 ?! fifo8 [40:0] $end
+$var wire 1 @! clk $end
+$upscope $end
+$scope module ing2 $end
+$scope module i_ingress $end
+$var wire 1 A! valid $end
+$var wire 1 B! rd_ready $end
+$var wire 1 C! int_valid $end
+$var wire 1 D! rstN $end
+$var wire 1 E! ready $end
+$var wire 1 F! int_ready $end
+$var wire 1 G! wr_rd $end
+$var wire 1 H! int_read_done $end
+$var wire 1 I! clk $end
+$upscope $end
+$var wire 1 J! current_read_write $end
+$var wire 1 K! int_ready $end
+$var wire 1 L! rd_ready $end
+$var wire 32 M! wdata [31:0] $end
+$var reg 32 N! wdata_reorder [31:0] $end
+$var reg 1 O! trans_started $end
+$var wire 1 P! rstN $end
+$var wire 1 Q! int_read_done $end
+$var wire 1 R! wr_rd $end
+$var reg 1 S! valid_read $end
+$var reg 1 T! int_valid $end
+$var wire 1 U! valid $end
+$var wire 7 V! addr [6:0] $end
+$var wire 1 W! ready $end
+$var wire 1 X! new_tran $end
+$var wire 32 Y! int2ig_data [31:0] $end
+$var wire 2 Z! size [1:0] $end
+$var wire 32 [! rdata [31:0] $end
+$var reg 1 \! int_read_write $end
+$var reg 1 ]! wr_rd_reg $end
+$var reg 7 ^! int_addr [6:0] $end
+$var reg 2 _! int_size [1:0] $end
+$var wire 39 `! int_addr_data [38:0] $end
+$var wire 1 a! clk $end
+$upscope $end
+$scope module ing1 $end
+$scope module i_ingress $end
+$var wire 1 b! int_valid $end
+$var wire 1 c! rstN $end
+$var wire 1 d! wr_rd $end
+$var wire 1 e! valid $end
+$var wire 1 f! int_read_done $end
+$var wire 1 g! rd_ready $end
+$var wire 1 h! int_ready $end
+$var wire 1 i! ready $end
+$var wire 1 j! clk $end
+$upscope $end
+$var wire 7 k! addr [6:0] $end
+$var wire 1 l! valid $end
+$var wire 32 m! rdata [31:0] $end
+$var reg 32 n! wdata_reorder [31:0] $end
+$var wire 1 o! int_read_done $end
+$var wire 1 p! rstN $end
+$var wire 2 q! size [1:0] $end
+$var wire 1 r! rd_ready $end
+$var reg 1 s! wr_rd_reg $end
+$var reg 1 t! valid_read $end
+$var wire 1 u! int_ready $end
+$var wire 32 v! int2ig_data [31:0] $end
+$var wire 39 w! int_addr_data [38:0] $end
+$var reg 1 x! int_read_write $end
+$var reg 7 y! int_addr [6:0] $end
+$var reg 2 z! int_size [1:0] $end
+$var reg 1 {! trans_started $end
+$var wire 1 |! wr_rd $end
+$var wire 1 }! current_read_write $end
+$var wire 1 ~! new_tran $end
+$var wire 1 !" ready $end
+$var wire 32 "" wdata [31:0] $end
+$var reg 1 #" int_valid $end
+$var wire 1 $" clk $end
+$upscope $end
+$scope module ing0 $end
+$scope module i_ingress $end
+$var wire 1 %" ready $end
+$var wire 1 &" int_read_done $end
+$var wire 1 '" valid $end
+$var wire 1 (" int_ready $end
+$var wire 1 )" rd_ready $end
+$var wire 1 *" rstN $end
+$var wire 1 +" wr_rd $end
+$var wire 1 ," int_valid $end
+$var wire 1 -" clk $end
+$upscope $end
+$var wire 32 ." wdata [31:0] $end
+$var wire 2 /" size [1:0] $end
+$var wire 1 0" int_read_done $end
+$var wire 1 1" int_ready $end
+$var reg 32 2" wdata_reorder [31:0] $end
+$var wire 1 3" rd_ready $end
+$var reg 1 4" int_read_write $end
+$var wire 1 5" valid $end
+$var wire 39 6" int_addr_data [38:0] $end
+$var wire 1 7" current_read_write $end
+$var reg 2 8" int_size [1:0] $end
+$var wire 1 9" rstN $end
+$var wire 1 :" new_tran $end
+$var reg 1 ;" wr_rd_reg $end
+$var wire 32 <" int2ig_data [31:0] $end
+$var wire 32 =" rdata [31:0] $end
+$var reg 1 >" trans_started $end
+$var reg 7 ?" int_addr [6:0] $end
+$var reg 1 @" int_valid $end
+$var wire 1 A" ready $end
+$var reg 1 B" valid_read $end
+$var wire 1 C" wr_rd $end
+$var wire 7 D" addr [6:0] $end
+$var wire 1 E" clk $end
+$upscope $end
+$scope module p_sel $end
+$scope module i_port_select $end
+$var wire 2 F" int_size2 [1:0] $end
+$var wire 2 G" ig_sel [1:0] $end
+$var wire 1 H" int_ready0 $end
+$var wire 1 I" int_ready1 $end
+$var wire 1 J" int_ready2 $end
+$var wire 2 K" int_size3 [1:0] $end
+$var wire 2 L" int_size1 [1:0] $end
+$var wire 2 M" int_size [1:0] $end
+$var wire 1 N" int_ready3 $end
+$var wire 2 O" int_size0 [1:0] $end
+$var wire 1 P" clk $end
+$upscope $end
+$var wire 32 Q" int2ig_data0 [31:0] $end
+$var wire 39 R" int_addr_data3 [38:0] $end
+$var wire 1 S" int_read_done1 $end
+$var wire 1 T" int_read_write3 $end
+$var wire 1 U" int_ready1 $end
+$var wire 32 V" int2ig_data2 [31:0] $end
+$var wire 1 W" int_read_write $end
+$var wire 1 X" current_read_write1 $end
+$var wire 1 Y" new_tran2 $end
+$var wire 2 Z" int_size2 [1:0] $end
+$var wire 1 [" int_read_done $end
+$var wire 1 \" trans_started $end
+$var wire 1 ]" int_read_done3 $end
+$var wire 1 ^" current_read_write2 $end
+$var wire 1 _" trans_started1 $end
+$var wire 1 `" int_ready0 $end
+$var wire 1 a" int_valid2 $end
+$var wire 1 b" current_read_write3 $end
+$var wire 1 c" new_tran1 $end
+$var wire 1 d" int_read_done2 $end
+$var wire 2 e" int_size1 [1:0] $end
+$var wire 2 f" ig_sel [1:0] $end
+$var wire 1 g" new_tran $end
+$var wire 1 h" int_valid3 $end
+$var wire 1 i" int_ready3 $end
+$var wire 1 j" current_read_write $end
+$var wire 1 k" int_valid $end
+$var wire 1 l" current_read_write0 $end
+$var wire 1 m" int_valid1 $end
+$var wire 1 n" new_tran0 $end
+$var wire 39 o" int_addr_data [38:0] $end
+$var wire 39 p" int_addr_data1 [38:0] $end
+$var wire 1 q" trans_started0 $end
+$var wire 1 r" int_valid0 $end
+$var wire 1 s" int_read_write1 $end
+$var wire 1 t" trans_started2 $end
+$var wire 32 u" int2ig_data [31:0] $end
+$var wire 2 v" int_size [1:0] $end
+$var wire 32 w" int2ig_data3 [31:0] $end
+$var wire 1 x" int_ready2 $end
+$var wire 32 y" int2ig_data1 [31:0] $end
+$var wire 1 z" int_read_write0 $end
+$var wire 1 {" int_read_write2 $end
+$var wire 2 |" int_size0 [1:0] $end
+$var wire 39 }" int_addr_data2 [38:0] $end
+$var wire 1 ~" new_tran3 $end
+$var wire 1 !# int_read_done0 $end
+$var wire 2 "# int_size3 [1:0] $end
+$var wire 39 ## int_addr_data0 [38:0] $end
+$var wire 1 $# int_ready $end
+$var wire 1 %# trans_started3 $end
+$var wire 1 &# clk $end
+$upscope $end
+$scope module eg $end
+$scope module i_egress $end
+$var wire 1 '# int_datavalid $end
+$var wire 1 (# int_datardy $end
+$var reg 1 )# eg_odd $end
+$var wire 1 *# rstN $end
+$var wire 1 +# eg_valid $end
+$var wire 1 ,# eg_ready $end
+$var wire 1 -# clk $end
+$upscope $end
+$var wire 1 .# eg_ready $end
+$var wire 8 /# eg_datain [7:0] $end
+$var wire 1 0# eg_valid $end
+$var reg 1 1# read_write $end
+$var reg 8 2# eg_ad_dataout [7:0] $end
+$var wire 8 3# int2eg_data [7:0] $end
+$var wire 1 4# int_datardy $end
+$var reg 8 5# eg2int_data [7:0] $end
+$var reg 2 6# cur_state [1:0] $end
+$var wire 1 7# rstN $end
+$var wire 2 8# nxt_state [1:0] $end
+$var wire 8 9# i2c2int_data [7:0] $end
+$var wire 1 :# int_datavalid $end
+$var wire 1 ;# clk $end
+$upscope $end
+$scope module arb $end
+$scope module i_arbiter $end
+$var wire 4 <# req [3:0] $end
+$var wire 1 =# int_valid $end
+$var wire 1 ># rstN $end
+$var wire 1 ?# trans_started $end
+$var wire 1 @# int_ready $end
+$var wire 4 A# gnt [3:0] $end
+$var wire 1 B# clk $end
+$upscope $end
+$var wire 1 C# sample_ready $end
+$var wire 1 D# hipri_req $end
+$var wire 1 E# sample_hipri $end
+$var wire 1 F# sample_pgrant $end
+$var wire 1 G# sample_transfer_ready $end
+$var wire 1 H# int_valid $end
+$var reg 4 I# req_rr_d [3:0] $end
+$var wire 4 J# req_rr [3:0] $end
+$var reg 1 K# last_phase $end
+$var wire 1 L# trans_started $end
+$var reg 4 M# gnt [3:0] $end
+$var reg 9 N# port_idle_cnt0 [8:0] $end
+$var wire 1 O# int_ready $end
+$var reg 2 P# sel0 [1:0] $end
+$var wire 4 Q# ig_req [3:0] $end
+$var reg 9 R# port_idle_cnt1 [8:0] $end
+$var reg 4 S# req_r [3:0] $end
+$var reg 2 T# sel1 [1:0] $end
+$var reg 2 U# sel2 [1:0] $end
+$var reg 2 V# sel3 [1:0] $end
+$var wire 2 W# next_port [1:0] $end
+$var wire 1 X# sample_grant $end
+$var wire 1 Y# rstN $end
+$var wire 4 Z# shift [3:0] $end
+$var reg 9 [# port_idle_cnt3 [8:0] $end
+$var reg 2 \# sample_timer_cnt [1:0] $end
+$var wire 4 ]# rr_shift [3:0] $end
+$var wire 4 ^# pri_req [3:0] $end
+$var reg 4 _# hi_pri [3:0] $end
+$var wire 4 `# req [3:0] $end
+$var reg 9 a# port_idle_cnt2 [8:0] $end
+$var reg 4 b# shift_d [3:0] $end
+$var reg 2 c# current_port [1:0] $end
+$var reg 2 d# ig_sel [1:0] $end
+$var wire 1 e# clk $end
+$upscope $end
+$var wire 1 f# ready3 $end
+$var wire 2 g# int_size [1:0] $end
+$var wire 1 h# int_ready0 $end
+$var wire 1 i# wr_rd0 $end
+$var wire 32 j# wdata0 [31:0] $end
+$var wire 2 k# int_size2 [1:0] $end
+$var wire 32 l# int2ig_data [31:0] $end
+$var wire 32 m# wdata [31:0] $end
+$var wire 1 n# trans_started1 $end
+$var wire 1 o# new_tran1 $end
+$var wire 2 p# size2 [1:0] $end
+$var wire 1 q# int_valid0 $end
+$var wire 1 r# int_ready2 $end
+$var wire 2 s# int_size1 [1:0] $end
+$var wire 1 t# ready2 $end
+$var wire 1 u# int_valid3 $end
+$var wire 7 v# addr0 [6:0] $end
+$var wire 39 w# int_addr_data2 [38:0] $end
+$var wire 1 x# int_ready $end
+$var wire 1 y# int_read_done0 $end
+$var wire 1 z# int_valid $end
+$var wire 1 {# int_ready3 $end
+$var wire 1 |# ready0 $end
+$var wire 1 }# current_read_write3 $end
+$var wire 32 ~# rdata2 [31:0] $end
+$var wire 1 !$ new_tran3 $end
+$var wire 1 "$ eg_valid $end
+$var wire 32 #$ wdata3 [31:0] $end
+$var wire 1 $$ current_read_write2 $end
+$var wire 1 %$ wr_rd1 $end
+$var wire 1 &$ int_read_write0 $end
+$var wire 1 '$ valid2 $end
+$var wire 1 ($ current_read_write0 $end
+$var wire 1 )$ int_read_done3 $end
+$var wire 2 *$ ig_sel [1:0] $end
+$var wire 7 +$ addr1 [6:0] $end
+$var wire 8 ,$ eg2int_data [7:0] $end
+$var wire 1 -$ int_read_done $end
+$var wire 1 .$ valid0 $end
+$var wire 32 /$ rdata [31:0] $end
+$var wire 1 0$ rstN $end
+$var wire 32 1$ rdata1 [31:0] $end
+$var wire 1 2$ current_read_write $end
+$var wire 1 3$ int_ready1 $end
+$var wire 1 4$ trans_started3 $end
+$var wire 39 5$ int_addr_data3 [38:0] $end
+$var wire 32 6$ int2ig_data2 [31:0] $end
+$var wire 7 7$ addr2 [6:0] $end
+$var wire 1 8$ trans_started0 $end
+$var wire 1 9$ new_tran2 $end
+$var wire 32 :$ int2ig_data0 [31:0] $end
+$var wire 1 ;$ wr_rd3 $end
+$var wire 1 <$ valid3 $end
+$var wire 1 =$ int_read_done2 $end
+$var wire 39 >$ int_addr_data0 [38:0] $end
+$var wire 1 ?$ eg_ready $end
+$var wire 2 @$ size3 [1:0] $end
+$var wire 1 A$ int_read_write $end
+$var wire 7 B$ addr [6:0] $end
+$var wire 1 C$ ready1 $end
+$var wire 32 D$ int2ig_data1 [31:0] $end
+$var wire 8 E$ int2eg_data [7:0] $end
+$var wire 32 F$ int2ig_data3 [31:0] $end
+$var wire 1 G$ valid1 $end
+$var wire 1 H$ trans_started $end
+$var wire 1 I$ new_tran0 $end
+$var wire 8 J$ eg_datain [7:0] $end
+$var wire 7 K$ addr3 [6:0] $end
+$var wire 32 L$ rdata0 [31:0] $end
+$var wire 1 M$ int_valid2 $end
+$var wire 1 N$ current_read_write1 $end
+$var wire 1 O$ int_read_done1 $end
+$var wire 32 P$ wdata2 [31:0] $end
+$var wire 1 Q$ rd_ready $end
+$var wire 1 R$ int_read_write2 $end
+$var wire 32 S$ rdata3 [31:0] $end
+$var wire 1 T$ int_valid1 $end
+$var wire 1 U$ wr_rd2 $end
+$var wire 2 V$ int_size0 [1:0] $end
+$var wire 39 W$ int_addr_data1 [38:0] $end
+$var wire 1 X$ int_read_write3 $end
+$var wire 39 Y$ int_addr_data [38:0] $end
+$var wire 1 Z$ new_tran $end
+$var wire 2 [$ size1 [1:0] $end
+$var wire 1 \$ int_datavalid $end
+$var wire 1 ]$ int_read_write1 $end
+$var wire 1 ^$ trans_started2 $end
+$var wire 2 _$ size [1:0] $end
+$var wire 32 `$ wdata1 [31:0] $end
+$var wire 2 a$ int_size3 [1:0] $end
+$var wire 2 b$ size0 [1:0] $end
+$var wire 1 c$ int_datardy $end
+$var wire 8 d$ eg_ad_dataout [7:0] $end
+$var wire 1 e$ clk $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+0$
+0%
+1&
+1'
+1(
+1)
+1*
+0+
+b000000000000000000000000000000000000000 ,
+0-
+0.
+b00000000000000000000000000000000 /
+b00 0
+01
+12
+13
+14
+05
+06
+b1111111 7
+b00000000000000000000000000000000 8
+b0000000 9
+1:
+0;
+1<
+b00000000000000000000000000000000 =
+b00000000000000000000000000000000 >
+0?
+b11 @
+1A
+b0000 B
+0C
+1D
+1E
+0F
+0G
+1H
+1I
+b0000 J
+1K
+0L
+b0000000 M
+b00 N
+b0000000 O
+b00000000000000000000000000000000000000000 P
+b00000000000000000000000000000000000000000 Q
+b0000000 R
+b0000000 S
+b00000000000000000000000000000000000000000 T
+b00000000000000000000000000000000000000000 U
+b00000000000000000000000000000000000000000 V
+1W
+0X
+b0000 Y
+b00000000000000000000000000000000000000000 Z
+b00000000000000000000000000000000000000000 [
+b0000000 \
+1]
+b00000000000000000000000000000000000000000 ^
+b0000000 _
+b00000000000000000000000000000000000000000 `
+b00000000000000000000000000000000000000000 a
+0b
+b00000000000000000000000000000000000000000 c
+b0000000 d
+b0000000 e
+0f
+b00000000000000000000000000000000000000000 g
+b0000000 h
+b0000000 i
+b00000000 j
+0k
+b00000000000000000000000000000000000000000 l
+b0000000 m
+b0000000 n
+b00000000000000000000000000000000000000000 o
+0p
+b0000000 q
+b00000000000000000000000000000000000000000 r
+b0000000 s
+b00000000000000000000000000000000000000000 t
+b00000000000000000000000000000000000000000 u
+0v
+1w
+b0000 x
+b00000000000000000000000000000000000000000 y
+b0000000 z
+b00000000000000000000000000000000000000000 {
+b00000000000000000000000000000000000000000 |
+1}
+b00000000000000000000000000000000000000000 ~
+b00000000000000000000000000000000000000000 !!
+b00000000000000000000000000000000000000000 "!
+1#!
+b000000000000000000000000000000000000000 $!
+b0000000 %!
+0&!
+b00000000000000000000000000000000000000000 '!
+0(!
+b00000000000000000000000000000000 )!
+b00000000000000000000000000000000000000000 *!
+b1111 +!
+b00000000000000000000000000000000000000000 ,!
+b00 -!
+b0000000000000000 .!
+b00000000000000000000000000000000000000000 /!
+b00000000 0!
+01!
+b00000000000000000000000000000000000000000 2!
+03!
+b00 4!
+b00000000000000000000000000000000000000000 5!
+b00000000000000000000000000000000000000000 6!
+17!
+b0000000 8!
+19!
+b0000000 :!
+b00000000000000000000000000000000000000000 ;!
+b0000000 <!
+b00000000000000000000000000000000 =!
+b00000000000000000000000000000000000000000 >!
+b00000000000000000000000000000000000000000 ?!
+1@!
+1A!
+1B!
+0C!
+1D!
+0E!
+0F!
+1G!
+0H!
+1I!
+0J!
+0K!
+1L!
+b00000000000000000000000000000000 M!
+b00000000000000000000000000000000 N!
+0O!
+1P!
+0Q!
+1R!
+1S!
+0T!
+1U!
+b1111111 V!
+0W!
+0X!
+b00000000000000000000000000000000 Y!
+b11 Z!
+b00000000000000000000000000000000 [!
+0\!
+1]!
+b0000000 ^!
+b00 _!
+b000000000000000000000000000000000000000 `!
+1a!
+0b!
+1c!
+1d!
+1e!
+0f!
+1g!
+0h!
+0i!
+1j!
+b1111111 k!
+1l!
+b00000000000000000000000000000000 m!
+b00000000000000000000000000000000 n!
+0o!
+1p!
+b11 q!
+1r!
+1s!
+1t!
+0u!
+b00000000000000000000000000000000 v!
+b000000000000000000000000000000000000000 w!
+0x!
+b0000000 y!
+b00 z!
+0{!
+1|!
+0}!
+0~!
+0!"
+b00000000000000000000000000000000 ""
+0#"
+1$"
+1%"
+0&"
+1'"
+1("
+1)"
+1*"
+1+"
+0,"
+1-"
+b00000000000000000000000000000000 ."
+b11 /"
+00"
+11"
+b00000000000000000000000000000000 2"
+13"
+04"
+15"
+b000000000000000000000000000000000000000 6"
+07"
+b00 8"
+19"
+1:"
+1;"
+b00000000000000000000000000000000 <"
+b00000000000000000000000000000000 ="
+0>"
+b0000000 ?"
+0@"
+1A"
+1B"
+1C"
+b1111111 D"
+1E"
+b00 F"
+b00 G"
+1H"
+0I"
+0J"
+b00 K"
+b00 L"
+b00 M"
+0N"
+b00 O"
+1P"
+b00000000000000000000000000000000 Q"
+b000000000000000000000000000000000000000 R"
+0S"
+0T"
+0U"
+b00000000000000000000000000000000 V"
+0W"
+0X"
+0Y"
+b00 Z"
+0["
+0\"
+0]"
+0^"
+0_"
+1`"
+0a"
+0b"
+0c"
+0d"
+b00 e"
+b00 f"
+1g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+1n"
+b000000000000000000000000000000000000000 o"
+b000000000000000000000000000000000000000 p"
+0q"
+0r"
+0s"
+0t"
+b00000000000000000000000000000000 u"
+b00 v"
+b00000000000000000000000000000000 w"
+0x"
+b00000000000000000000000000000000 y"
+0z"
+0{"
+b00 |"
+b000000000000000000000000000000000000000 }"
+0~"
+0!#
+b00 "#
+b000000000000000000000000000000000000000 ##
+1$#
+0%#
+1&#
+0'#
+1(#
+1)#
+1*#
+0+#
+1,#
+1-#
+1.#
+b00000000 /#
+00#
+01#
+b00000000 2#
+b00000000 3#
+14#
+b00000000 5#
+b00 6#
+17#
+b00 8#
+b00000000 9#
+0:#
+1;#
+b1111 <#
+0=#
+1>#
+0?#
+1@#
+b0000 A#
+1B#
+1C#
+0D#
+0E#
+0F#
+1G#
+0H#
+b0000 I#
+b0000 J#
+0K#
+0L#
+b0000 M#
+b000000000 N#
+1O#
+b00 P#
+b1111 Q#
+b000000000 R#
+b0000 S#
+b01 T#
+b10 U#
+b11 V#
+b00 W#
+0X#
+1Y#
+b0000 Z#
+b000000000 [#
+b11 \#
+b0000 ]#
+b0000 ^#
+b0000 _#
+b1111 `#
+b000000000 a#
+b0000 b#
+b00 c#
+b00 d#
+1e#
+0f#
+b00 g#
+1h#
+1i#
+b00000000000000000000000000000000 j#
+b00 k#
+b00000000000000000000000000000000 l#
+b00000000000000000000000000000000 m#
+0n#
+0o#
+b11 p#
+0q#
+0r#
+b00 s#
+0t#
+0u#
+b1111111 v#
+b000000000000000000000000000000000000000 w#
+1x#
+0y#
+0z#
+0{#
+1|#
+0}#
+b00000000000000000000000000000000 ~#
+0!$
+0"$
+b00000000000000000000000000000000 #$
+0$$
+1%$
+0&$
+1'$
+0($
+0)$
+b00 *$
+b1111111 +$
+b00000000 ,$
+0-$
+1.$
+b00000000000000000000000000000000 /$
+10$
+b00000000000000000000000000000000 1$
+02$
+03$
+04$
+b000000000000000000000000000000000000000 5$
+b00000000000000000000000000000000 6$
+b1111111 7$
+08$
+09$
+b00000000000000000000000000000000 :$
+1;$
+1<$
+0=$
+b000000000000000000000000000000000000000 >$
+1?$
+b11 @$
+0A$
+b0000000 B$
+0C$
+b00000000000000000000000000000000 D$
+b00000000 E$
+b00000000000000000000000000000000 F$
+1G$
+0H$
+1I$
+b00000000 J$
+b1111111 K$
+b00000000000000000000000000000000 L$
+0M$
+0N$
+0O$
+b00000000000000000000000000000000 P$
+1Q$
+0R$
+b00000000000000000000000000000000 S$
+0T$
+1U$
+b00 V$
+b000000000000000000000000000000000000000 W$
+0X$
+b000000000000000000000000000000000000000 Y$
+1Z$
+b11 [$
+0\$
+0]$
+0^$
+b00 _$
+b00000000000000000000000000000000 `$
+b00 a$
+b11 b$
+1c$
+b00000000 d$
+1e$
+#4
+0)
+0A
+0K
+0@!
+0I!
+0a!
+0j!
+0$"
+0-"
+0E"
+0P"
+0&#
+0-#
+0;#
+0B#
+0e#
+0e$
+#9
+1)
+1A
+1K
+1@!
+1I!
+1a!
+1j!
+1$"
+1-"
+1E"
+1P"
+1&#
+1-#
+1;#
+1B#
+1e#
+1e$
+#10

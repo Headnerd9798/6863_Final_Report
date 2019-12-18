@@ -1,0 +1,64 @@
+>1
+>2
+25
+0:9:move_disk
+1:4:work
+2:85:/homes/user/stud/fall19/hz2619/hanoi54/quickstart_propcheck/src/vlog/towersofhanoi.sv
+3:30:zi_int_anonblk_213247227_32_2_
+4:30:zi_int_anonblk_213247227_36_2_
+5:30:zi_int_anonblk_213247227_39_2_
+6:10:DISKS_LOG2
+7:5:32'h3
+8:15:NUMBER_OF_DISKS
+9:5:32'h5
+10:14:NUMBER_OF_RODS
+11:5:32'h4
+12:9:RODS_LOG2
+13:5:32'h2
+14:3:clk
+15:8:from_rod
+16:8:rod_data
+17:3:rst
+18:6:to_rod
+19:10:top_of_rod
+20:32:zi_int_anonblk_213247227_32_2_.i
+21:32:zi_int_anonblk_213247227_36_2_.i
+22:32:zi_int_anonblk_213247227_36_2_.j
+23:32:zi_int_anonblk_213247227_39_2_.i
+24:32:zi_int_anonblk_213247227_39_2_.j
+<2
+>3
+6
+0:140:10 "scalar signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar signed" "<zin_internal>" 0 2 1 0 0
+1:36:7 "logic" "<zin_internal>" 0 0 1 0 0
+2:121:10 "logic[1:0]" "<zin_internal>" 0 4 1 7 "integer[1:0]" "<zin_internal>" 0 10 32 1 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+3:306:10 "logic[3:0][4:0][2:0]" "<zin_internal>" 0 4 1 7 "integer[3:0]" "<zin_internal>" 0 10 32 3 0 10 "logic[4:0][2:0]" "<zin_internal>" 0 4 1 7 "integer[4:0]" "<zin_internal>" 0 10 32 4 0 10 "logic[2:0]" "<zin_internal>" 0 4 1 7 "integer[2:0]" "<zin_internal>" 0 10 32 2 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+4:211:10 "logic[3:0][2:0]" "<zin_internal>" 0 4 1 7 "integer[3:0]" "<zin_internal>" 0 10 32 3 0 10 "logic[2:0]" "<zin_internal>" 0 4 1 7 "integer[2:0]" "<zin_internal>" 0 10 32 2 0 7 "logic" "<zin_internal>" 0 0 1 0 0
+5:134:10 "bit signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "bit signed" "<zin_internal>" 0 2 1 0 0
+<3
+>4
+b1f2l2.527t0C3B3P2S32E32B4P2S36E36B5P2S39E39c4p6v7F0L14T0U0p8v9F0L8T0U0p10v11F0L5T0U0p12v13F0L11T0U0;
+<4
+>5
+b11@14l17knt1;
+@15l19knt2;
+@16l23knt3;
+@17l18knt1;
+@18l20knt2;
+@19l22knt4;
+@20l32knt5;
+@21l36knt5;
+@22l36knt5;
+@23l39knt5;
+@24l39knt5;
+<5
+>6
+b4@14l39x1t1;
+@17l39x4t1;
+@15l39x2t2;
+@18l39x5t2;
+<6
+>7
+c0
+<7
+<1

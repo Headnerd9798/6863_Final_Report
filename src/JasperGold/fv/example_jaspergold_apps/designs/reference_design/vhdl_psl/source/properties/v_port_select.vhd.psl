@@ -1,0 +1,39 @@
+vunit v_port_select (port_select(rtl)) {
+
+  -- Assertion "int_ready_onehot0"
+  --  At least one port is ready
+  --
+  property int_ready_onehot0 is
+    onehot0(int_ready3 & int_ready2 & int_ready1 & int_ready0);
+  a_int_ready_onehot0: assert always int_ready_onehot0;
+
+  -- Assertions "int_size_select_xx"
+  --  Check correct selection of in_size
+  --
+  property int_size_select_00 is (ig_sel = "00") -> (int_size = int_size0);
+  a_int_size_select_00 : assert always int_size_select_00 ;
+  property int_size_select_01 is (ig_sel = "01") -> (int_size = int_size1);
+  a_int_size_select_01 : assert always int_size_select_01 ;
+  property int_size_select_10 is (ig_sel = "10") -> (int_size = int_size2);
+  a_int_size_select_10 : assert always int_size_select_10 ;
+  property int_size_select_11 is (ig_sel = "11") -> (int_size = int_size3);
+  a_int_size_select_11 : assert always int_size_select_11 ;
+
+  -- Ingress port select
+  c_ig_sel_00: cover {ig_sel = "00"};
+  c_ig_sel_01: cover {ig_sel = "01"};
+  c_ig_sel_10: cover {ig_sel = "10"};
+  c_ig_sel_11: cover {ig_sel = "11"};
+  --
+
+} -- v_port_select
+
+
+-- -------------------------------------------------------
+-- Copyright (c) 2017 Cadence Design Systems, Inc.
+--
+-- All rights reserved.
+--
+-- Cadence Design Systems Proprietary and Confidential.
+-- -------------------------------------------------------
+

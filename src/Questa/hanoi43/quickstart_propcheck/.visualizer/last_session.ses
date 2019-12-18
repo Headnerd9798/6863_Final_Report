@@ -1,0 +1,53 @@
+<!-- THIS IS TOOL GENERATED SESSION FILE. PLEASE DO NOT MODIFY THIS -->
+<!DOCTYPE visualizer_session>
+<session version="0.2">
+ <app argc="8">
+  <argv value="/tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/bin/../linux_x86_64/Visualizer/bin/hdlstudio" pos="0"/>
+  <argv value="-I/tools/mentor/questa_2019.2_1/linux_x86_64/share/modeltech/bin/../linux_x86_64/Visualizer/bin/../tb/incl" pos="1"/>
+  <argv value="+designfile+/homes/user/stud/fall19/hz2619/hanoi43/quickstart_propcheck/Output_Results/qcache/VISUALIZER/design.bin" pos="2"/>
+  <argv value="+show_pi_drvr_rcvr" pos="3"/>
+  <argv value="+max_drv_rec_cnt=10000" pos="4"/>
+  <argv value="+no_splash" pos="5"/>
+  <argv value="+visformal" pos="6"/>
+  <argv value="+external_client" pos="7"/>
+ </app>
+ <window_config>
+  <dockareas bottom="357" right="112" top="0" left="250"/>
+  <window undocked="0" visible="1" type="rtl" y="37" width="1680" x="1680" height="1013"/>
+  <window undocked="0" visible="1" type="transcript" y="0" dock_location="bottom" x="0"/>
+  <window undocked="1" visible="1" title="Wave (assert_top_disk_1_2)" type="wave" y="111" width="1008" x="505" height="630"/>
+  <window undocked="1" visible="0" title="Wave (cover_mid_disk_1)" type="wave" y="0" width="864" x="0" id="1" height="526"/>
+  <window undocked="1" visible="0" title="Wave (fifo_index_check.ovl_cover.ovl_cover_basic.cover_fifo_pop)" type="wave" y="237" width="1008" x="185" id="2" height="630"/>
+  <window undocked="1" visible="0" title="Wave (fifo_index_check.ovl_assert.A_ASSERT_FIFO_INDEX_UNDERFLOW_P)" type="wave" y="346" width="1008" x="614" id="3" height="630"/>
+  <window undocked="1" visible="0" title="Wave (fifo_num_entries_0)" type="wave" y="80" width="1008" x="160" id="4" height="630"/>
+  <window undocked="0" visible="1" type="source" y="0" x="0"/>
+  <window undocked="0" visible="0" type="fsmview" y="0" dock_location="right" x="0"/>
+  <window undocked="0" visible="0" type="structure" y="0" dock_location="left" x="0"/>
+  <window undocked="0" visible="0" title="Details" type="zindetails" y="0" dock_location="left" x="0"/>
+  <window undocked="1" visible="0" title="Schematic" type="zinschematicview" y="199" width="802" x="604" height="653"/>
+  <window undocked="0" visible="1" title="Design" type="zindutview" y="0" dock_location="left" x="0"/>
+  <window undocked="0" visible="1" title="Properties" type="zinformalproperties" y="0" dock_location="bottom" x="0"/>
+  <window undocked="0" visible="0" title="Control Points" type="zinformalcontrolpointsnew" y="0" dock_location="right" x="0"/>
+  <window undocked="0" visible="0" title="Design Checks" type="zinformalpolicychecks" y="0" dock_location="bottom" x="0"/>
+ </window_config>
+ <wave_file_mgr>
+  <waveFile tagName="F0" waveType="0" fileName="/tmp/propcheck.5060_644/DesignConsts.db"/>
+ </wave_file_mgr>
+ <gui>
+  <main_window visible="1">
+   <srcbrowser primary="true" value_tooltip_mode="true" value_annotation_mode="true" instancename="move_disk"/>
+   <sourcetclcommands>
+    <tcl command="src activate source"/>
+    <tcl command="src top 2"/>
+   </sourcetclcommands>
+   <edge_gui cur_selection="AnyEdge"/>
+  </main_window>
+  <watchTower_cur_setting curActiveWaveFile="F0" curDisplayTimeUnitStr="1ns" curDisplayTimeUnit="-9" curRadix="8" customDisplayTimeUnitListStr="">
+   <curTime lowtime="0" hightime="0"/>
+  </watchTower_cur_setting>
+  <drv_rec_data drivers="true"/>
+ </gui>
+ <wave_mgr sync_time_range="0"/>
+ <windows/>
+ <dut/>
+</session>

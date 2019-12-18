@@ -1,0 +1,15 @@
+ALIAS,eg_data,eg.int2eg_data
+ALIAS,brdg_data,brdg.int2eg_data
+
+,NAME,SRC BLOCK,SRC SIGNAL,DEST BLOCK,DEST SIGNAL
+CONNECTION,conn_addr0,,addr0,ing0,addr
+CONNECTION,conn_addr1,,addr1,ing1,addr
+CONNECTION,conn_addr2,,addr2,ing2,addr
+CONNECTION,conn_addr3,,addr3,ing3,addr
+CONNECTION,eg_brdg_data,,eg_data,,brdg_data
+CONNECTION,port_sel,arb,next_port,p_sel,ig_sel,,cond latency,check latency,dest latency,src latency
+,,,,,,LATENCIES,,0,0,2,0
+CONNECTION,port_sel_gnt,arb,next_port,p_sel,ig_sel,,cond latency,check latency,dest latency,src latency
+,,,,,,LATENCIES,,0,0,2,0
+,,,,,,,COND BLOCK,COND SIGNAL,value
+,,,,,,CONDITION,arb,sample_grant,1

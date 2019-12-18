@@ -1,0 +1,43 @@
+## This proc prints a simple report to the provided file.
+## It contains the name of the module and in each line a check and the number of violations to that check.
+## The resulting file with the report can then be passed to proc "hier_report".
+
+proc violations_count {file_name} {
+
+    set fp [open $file_name a]
+    set module [get_top_module]
+    set violations [check_cdc -list violations]
+    set all_checks ""
+    foreach key [dict key $violations] {
+        set check [dict get $violations $key Check]
+        lappend all_checks [dict get $violations $key Check]
+    }
+    puts $fp "Violation Count for module $module"
+    set total 0
+    set uniq_checks [lsort -unique $all_checks]
+    foreach check $uniq_checks {
+        set num [llength [dict key [check_cdc -list violations -filter [check_cdc -filter -add -check $check]]]]
+        puts $fp "$check    $num"
+        incr total $num
+    }
+    puts $fp "Finished module $module - Total Number of Violations $total"
+    close $fp
+}
+
+## This proc generates a hierarchical report for the failures.
+## It takes a file and a list of pairs {report_file module}.
+## The passed report files should have been generated with the proc above.
+proc hier_report {file_name file_module_list} {
+    set fp [open $file_name a]
+    puts $fp "Hierarchical Violation Report"
+    flush $fp
+    violations_count $file_name
+    foreach {f mod} $file_module_list {
+        set instances [get_design_info -module $mod -list instance -silent]
+        puts $fp "Instances of $mod: $instances"
+        set f_mod [open $f r]
+        fcopy $f_mod $fp
+    }
+    close $fp
+}
+

@@ -1,0 +1,48 @@
+2019-12-17 21:50:53.820528 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.820598 (14135) main____ INFO    JasperGold version info
+2019-12-17 21:50:53.820607 (14135) main____ INFO      tool      : JasperGold 2019.03
+2019-12-17 21:50:53.820613 (14135) main____ INFO      version   : 2019.03p002 64 bits
+2019-12-17 21:50:53.820618 (14135) main____ INFO      build date: 2019.06.01 18:04:02 PDT
+2019-12-17 21:50:53.820621 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.820625 (14135) main____ INFO    Runtime info:
+2019-12-17 21:50:53.820629 (14135) main____ INFO      platform  : Linux 3.10.0-1062.el7.x86_64 x86_64
+2019-12-17 21:50:53.820636 (14135) main____ INFO      hostname  : cadpc14
+2019-12-17 21:50:53.820640 (14135) main____ INFO      pid       : 14135
+2019-12-17 21:50:53.820644 (14135) main____ INFO      arguments : '-style' 'windows' '-fpv' 'FPV_verilog_hanoi.tcl'
+2019-12-17 21:50:53.820647 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.820650 (14135) main____ INFO    System resource limits info:
+2019-12-17 21:50:53.820654 (14135) main____ INFO      virtual memory: unlimited
+2019-12-17 21:50:53.820658 (14135) main____ INFO      cpu time      : unlimited
+2019-12-17 21:50:53.820671 (14135) main____ INFO      stack size    : 8388608 B
+2019-12-17 21:50:53.820677 (14135) main____ INFO      core file size: 0 B
+2019-12-17 21:50:53.820685 (14135) main____ INFO      open files    : 1024
+2019-12-17 21:50:53.820689 (14135) main____ INFO      file size     : unlimited
+2019-12-17 21:50:53.820692 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.820695 (14135) main____ INFO    Memory statistics:
+2019-12-17 21:50:53.820699 (14135) main____ INFO      total physical memory  : 32721096 kB
+2019-12-17 21:50:53.820702 (14135) main____ INFO      free physical memory   : 27818124 kB
+2019-12-17 21:50:53.820705 (14135) main____ INFO      committed address space: 7017660 kB
+2019-12-17 21:50:53.820708 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.820733 (14135) main____ INFO    Important environment variables:
+2019-12-17 21:50:53.820740 (14135) main____ INFO      CDS_LIC_FILE: '5280@bioeecad.ee.columbia.edu'
+2019-12-17 21:50:53.820746 (14135) main____ INFO      DISPLAY     : ':0'
+2019-12-17 21:50:53.820749 (14135) main____ INFO    ----------------------------------------
+2019-12-17 21:50:53.821555 (14135) lic_core INFO    Initializing license system ...
+2019-12-17 21:50:53.823672 (14135) lic_core INFO    ... license system initialized.
+2019-12-17 21:50:53.824746 (14135) lic__man INFO    Claim 'main' for <ui>.
+2019-12-17 21:50:53.824779 (14135) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2019-12-17 21:50:53.838662 (14135) lic_core INFO    ... (1) checkout succeeded
+2019-12-17 21:50:53.838714 (14135) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:50:53.838735 (14135) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2019-12-17 21:50:53.849749 (14135) lic_core INFO    ... (2) checkout succeeded
+2019-12-17 21:50:55.571394 (14135) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:50:56.486781 (14135) lic__man INFO    Unclaim 'fpv' for <ui>.
+2019-12-17 21:50:56.486818 (14135) lic__man INFO    Claim 'fpv' for <ui>.
+2019-12-17 21:50:56.511886 (14135) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2019-12-17 21:50:56.513115 (14135) session_ INFO    Analysis session with session id 'session_0' started (pid: 14159)
+2019-12-17 21:50:58.645261 (14135) session_ INFO    Analysis session 'session_0' connected to the console (host: 128.59.64.204:42228)
+2019-12-17 21:50:59.846999 (14135) lic__man INFO    Unclaim everything for 'session_0'.
+2019-12-17 21:50:59.934499 (14135) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2019-12-17 21:51:03.084342 (14135) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2019-12-17 21:51:03.085938 (14135) lic__man INFO    Claim 'fpv' for 'session_0/prove-1'.
+2019-12-17 22:13:22.649995 (14135) lic__man INFO    Unclaim everything for 'session_0/prove-1'.

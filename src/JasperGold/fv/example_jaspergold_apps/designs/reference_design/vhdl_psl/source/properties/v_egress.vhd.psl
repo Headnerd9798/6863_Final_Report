@@ -1,0 +1,39 @@
+vunit v_egress (egress(rtl)) {
+
+  default clock is rose(clk);
+
+  signal eg_odd: std_logic;
+  process (clk, rstN) begin
+    if rising_edge(clk) then
+      if rstN='0' then eg_odd <= '1';
+      elsif (eg_valid='1' and eg_ready='1') then eg_odd <= not eg_odd;
+      end if;
+    end if;
+  end process;
+
+  -- Assertion "wvalid_2cycle"
+  --  Valid signal is asserted twice in a row
+  --
+  property wvalid_2cycle is (eg_odd = '0') -> (eg_valid = '1');
+  a_wvalid_2cycle: assert always wvalid_2cycle;
+
+  -- Egress ready/valid
+  c_eg_ready: cover {eg_ready};
+  c_eg_valid: cover {eg_valid};
+  --
+  -- Data ready/valid
+  c_int_datavalid: cover {int_datavalid};
+  c_int_datardy:   cover {int_datardy};
+  --
+
+} -- v_egress
+
+
+-- -------------------------------------------------------
+-- Copyright (c) 2017 Cadence Design Systems, Inc.
+--
+-- All rights reserved.
+--
+-- Cadence Design Systems Proprietary and Confidential.
+-- -------------------------------------------------------
+

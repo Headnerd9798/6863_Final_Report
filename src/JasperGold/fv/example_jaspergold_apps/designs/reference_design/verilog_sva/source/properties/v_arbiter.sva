@@ -1,0 +1,70 @@
+module v_arbiter (
+  clk, rstN,
+  gnt, req,
+  int_ready, int_valid, trans_started
+);
+input clk, rstN;
+input [3:0] gnt, req;
+input int_ready, int_valid, trans_started;
+
+  // Assertion "grant_is_onehot0"
+  //  Grant signal is one-hot or zero
+  //
+  property grant_is_onehot0;
+    @(posedge clk) $onehot0(gnt);
+  endproperty
+  a_grant_is_onehot0: assert property (grant_is_onehot0);
+
+  // Assertion "grant_is_one_cycle"
+  //  Grant signal is high for one cycle only
+  //
+  property grant_is_one_cycle;
+    @(posedge clk) (gnt!=4'b0) |=> (gnt==4'b0);
+  endproperty
+  a_grant_is_one_cycle: assert property (grant_is_one_cycle);
+
+  // Functional coverage points
+  //
+  // Request
+  c_req0: cover property (@(posedge clk) (req[0]));
+  c_req1: cover property (@(posedge clk) (req[1]));
+  c_req2: cover property (@(posedge clk) (req[2]));
+  c_req3: cover property (@(posedge clk) (req[3]));
+  //
+  // Grant
+  c_gnt0: cover property (@(posedge clk) (gnt[0]));
+  c_gnt1: cover property (@(posedge clk) (gnt[1]));
+  c_gnt2: cover property (@(posedge clk) (gnt[2]));
+  c_gnt3: cover property (@(posedge clk) (gnt[3]));
+  //
+  // Control signals
+  c_int_ready: cover property (@(posedge clk) (int_ready));
+  c_int_valid: cover property (@(posedge clk) (int_valid));
+  c_trans_started: cover property (@(posedge clk) (trans_started));
+  //
+  
+  // Same functional coverage as above, described using covergroups
+  covergroup cg @(posedge clk);
+    c_req: coverpoint req {
+      bins port[4] = {8, 4, 2, 1};
+    }
+    c_gnt: coverpoint gnt {
+      bins port[4] = {8, 4, 2, 1};
+    }
+    int_ready: coverpoint int_ready {bins active = {1};}
+    int_valid: coverpoint int_valid {bins active = {1};}
+    trans_started: coverpoint trans_started {bins active = {1};}
+  endgroup
+  cg cg_i = new();
+
+endmodule // v_arbiter
+
+
+// -------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Cadence Design Systems Proprietary and Confidential.
+// -------------------------------------------------------
+

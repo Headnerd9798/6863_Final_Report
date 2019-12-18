@@ -1,0 +1,63 @@
+module v_port_select (
+  clk,
+  int_ready0, int_ready1, int_ready2, int_ready3,
+  ig_sel, int_size,
+  int_size0, int_size1, int_size2, int_size3
+);
+input clk;
+input int_ready0, int_ready1, int_ready2, int_ready3;
+input [1:0] ig_sel, int_size;
+input [1:0] int_size0, int_size1, int_size2, int_size3;
+
+  // Assertion "int_ready_onehot0"
+  //  At least one port is ready
+  //
+  property int_ready_onehot0;
+    @(posedge clk) $onehot0({int_ready3,int_ready2,int_ready1,int_ready0});
+  endproperty
+  a_int_ready_onehot0: assert property (int_ready_onehot0);
+
+  // Assertions "int_size_select_xx"
+  //  Check correct selection of in_size
+  //
+  property int_size_select_00;
+    @(posedge clk) (ig_sel == 2'b00) |-> (int_size == int_size0);
+  endproperty
+  a_int_size_select_00 : assert property (int_size_select_00) ;
+  property int_size_select_01;
+    @(posedge clk) (ig_sel == 2'b01) |-> (int_size == int_size1);
+  endproperty
+  a_int_size_select_01 : assert property (int_size_select_01) ;
+  property int_size_select_10;
+    @(posedge clk) (ig_sel == 2'b10) |-> (int_size == int_size2);
+  endproperty
+  a_int_size_select_10 : assert property (int_size_select_10) ;
+  property int_size_select_11;
+    @(posedge clk) (ig_sel == 2'b11) |-> (int_size == int_size3);
+  endproperty
+  a_int_size_select_11 : assert property (int_size_select_11) ;
+
+  // Ingress port select
+  c_ig_sel_00: cover property (@(posedge clk) (ig_sel == 2'b00));
+  c_ig_sel_01: cover property (@(posedge clk) (ig_sel == 2'b01));
+  c_ig_sel_10: cover property (@(posedge clk) (ig_sel == 2'b10));
+  c_ig_sel_11: cover property (@(posedge clk) (ig_sel == 2'b11));
+  //
+  
+  // Same functional coverage as above, described using covergroup
+  covergroup c_ig_sel @(posedge clk);
+    ig_sel: coverpoint ig_sel;
+  endgroup
+  c_ig_sel c_ig_sel_inst = new();
+
+endmodule // v_port_select
+
+
+// -------------------------------------------------------
+// Copyright (c) 2017 Cadence Design Systems, Inc.
+//
+// All rights reserved.
+//
+// Cadence Design Systems Proprietary and Confidential.
+// -------------------------------------------------------
+

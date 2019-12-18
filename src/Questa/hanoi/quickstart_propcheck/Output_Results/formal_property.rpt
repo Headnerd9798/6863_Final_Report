@@ -1,0 +1,222 @@
+-------------------------------------------------------------------------------
+Property Report
+-------------------------------------------------------------------------------
+Questa Formal Version 2019.2_1 linux_x86_64 18 May 2019
+-------------------------------------------------------------------------------
+Report Generated               : Tue Dec 17 21:05:39 2019
+-------------------------------------------------------------------------------
+
+Property Summary
+-------------------------------------------------------------------------------
+Total    Directives :25
+Assert   Directives :21
+Assume   Directives :1
+Cover    Directives :3
+
+
+SVA Summary
+-------------------------------------------------------------------------------
+SVA Directive Type        Directives           Checkers
+-------------------------------------------------------------------------------
+Assert                        21                  21
+Assume                         1                   1
+Cover                          3                   3
+-------------------------------------------------------------------------------
+
+
+Compiled Properties:
+-------------------------------------------------------------------------------
+Assertions:
+    assert_bigsmall_disk_0_21_10
+    assert_bigsmall_disk_0_21_21
+    assert_bigsmall_disk_0_31_10
+    assert_bigsmall_disk_0_31_21
+    assert_bigsmall_disk_0_32_10
+    assert_bigsmall_disk_0_32_21
+    assert_bigsmall_disk_1_21_10
+    assert_bigsmall_disk_1_21_21
+    assert_bigsmall_disk_1_31_10
+    assert_bigsmall_disk_1_31_21
+    assert_bigsmall_disk_1_32_10
+    assert_bigsmall_disk_1_32_21
+    assert_bigsmall_disk_2_21_10
+    assert_bigsmall_disk_2_21_21
+    assert_bigsmall_disk_2_31_10
+    assert_bigsmall_disk_2_31_21
+    assert_bigsmall_disk_2_32_10
+    assert_bigsmall_disk_2_32_21
+    assert_top_disk_1_1
+    assert_top_disk_1_2
+    my_assert
+Assumptions:
+    assume_adjacent
+Covers:
+    cover_top_disk_1_1
+    cover_top_disk_1_2
+    my_assert_cover
+
+
+===============================================================================
+Module: move_disk
+===============================================================================
+Parameters: 
+    parameter  NUMBER_OF_RODS = 3
+    parameter  NUMBER_OF_DISKS = 3
+    parameter  RODS_LOG2 = 2
+    parameter  DISKS_LOG2 = 2
+Summary
+-------------------------------------------------------------------------------
+Assertions   : 21 
+Assumptions  : 1 
+Covers       : 3 
+-------------------------------------------------------------------------------
+assert my_assert (sva)
+  Instance: move_disk.my_assert
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 57
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_top_disk_1_1 (sva)
+  Instance: move_disk.assert_top_disk_1_1
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 93
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_top_disk_1_2 (sva)
+  Instance: move_disk.assert_top_disk_1_2
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 95
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_21_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_21_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 109
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_21_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_21_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 111
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_21_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_21_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 115
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_21_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_21_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 117
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_21_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_21_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 121
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_21_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_21_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 123
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_32_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_32_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 127
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_32_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_32_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 129
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_32_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_32_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 133
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_32_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_32_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 135
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_32_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_32_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 139
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_32_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_32_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 141
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_31_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_31_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 145
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_0_31_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_0_31_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 147
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_31_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_31_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 151
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_1_31_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_1_31_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 153
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_31_10 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_31_10
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 157
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assert assert_bigsmall_disk_2_31_21 (sva)
+  Instance: move_disk.assert_bigsmall_disk_2_31_21
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 159
+  Severity: error
+  Stats:   depth=1 gates=3 flops=0
+
+assume assume_adjacent (sva)
+  Instance: move_disk.assume_adjacent
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 67
+  Severity: error
+  Stats:   depth=1 gates=6 flops=0
+
+cover my_assert_cover (sva)
+  Instance: move_disk.my_assert_cover
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 59
+  Severity: info
+  Stats:   depth=1 gates=2 flops=0
+
+cover cover_top_disk_1_1 (sva)
+  Instance: move_disk.cover_top_disk_1_1
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 97
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+
+cover cover_top_disk_1_2 (sva)
+  Instance: move_disk.cover_top_disk_1_2
+  Location: File /homes/user/stud/fall19/hz2619/hanoi/quickstart_propcheck/src/vlog/towersofhanoi.sv, Line 99
+  Severity: info
+  Stats:   depth=1 gates=1 flops=0
+

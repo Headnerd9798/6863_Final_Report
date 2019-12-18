@@ -1,0 +1,59 @@
+================================================================================
+== Profile: REAL-TIME, CPU-freq = 4.00 GHz
+                                                          Calls Real-Time  Parent 
+                                                                  (milli) fraction
+
+    <zixl_543IiP35>~_zixl                                                1     718.4 (100.0%)
+  zixl_5eAt1-I3L-ePP4~_zixl                                              1     718.4         
+    zixl_5eAt1-I3L-1LqiL1~_zixl                                         18      11.6 (  1.6%)
+      zixl_yZr~_zixl                                                    55       5.2 ( 44.3%)
+        zixl_5Pet1 [R]~_zixl                                            45       3.4 ( 66.7%)
+        zixl_reA35i6O [R]~_zixl                                         97       0.7 ( 13.4%)
+        zixl_A553Z1~_zixl                                               55       0.5 ( 10.7%)
+          zixl_3LIPee-1921LS-ZA4 [R]~_zixl                              21       0.0 (  2.2%)
+          <zixl_I152>~_zixl                                                      0.5 ( 97.8%)
+        zixl_7ALSe1-5A2~_zixl                                           11       0.2 (  4.4%)
+          zixl_95eAt1-6iI1-2IAr1~_zixl                                   6       0.1 ( 56.6%)
+            zixl_A5iP-51LS [F]~_zixl                                     6       0.1 ( 60.8%)
+            <zixl_I152>~_zixl                                                    0.0 ( 39.2%)
+          zixl_5eAt1-512-6iI1S~_zixl                                     5       0.1 ( 33.7%)
+            zixl_A5iP-51LS [H]~_zixl                                     5       0.1 ( 76.8%)
+            <zixl_I152>~_zixl                                                    0.0 ( 23.2%)
+          <zixl_I152>~_zixl                                                      0.0 (  9.7%)
+        zixl_ZAI8-ePqir [R]~_zixl                                       45       0.1 (  1.1%)
+        <zixl_I152>~_zixl                                                        0.1 (  1.6%)
+        <zixl_58i441S>~_zixl                                                     0.1 (  2.1%)
+      zixl_iLS3r2iPL~_zixl                                              52       4.1 ( 35.1%)
+        zixl_IUTe-y3ieS-6IPZ-AIIAO~_zixl                                 1       1.6 ( 39.0%)
+        zixl_5Pet1 [E]~_zixl                                            50       0.9 ( 20.8%)
+        zixl_reA35i6O [E]~_zixl                                         97       0.6 ( 14.5%)
+        zixl_95eAt1-4IPt1 [E]~_zixl                                      4       0.1 (  1.7%)
+        zixl_ZAI8-ePqir [E]~_zixl                                       50       0.1 (  1.4%)
+        zixl_34SA21-ZAI81S-tAI5 [E]~_zixl                               50       0.1 (  1.2%)
+        <zixl_I152>~_zixl                                                        0.8 ( 20.5%)
+      zixl_A5iP-I1rt [E]~_zixl                                           1       0.2 (  1.9%)
+      zixl_95eAt1-t52A21-4Pee~_zixl                                      1       0.2 (  1.3%)
+        zixl_A5iP-I1rt [T]~_zixl                                         1       0.1 ( 88.5%)
+        zixl_A5iP-51LS [T]~_zixl                                         1       0.0 (  5.1%)
+        <zixl_I152>~_zixl                                                        0.0 (  6.4%)
+      <zixl_I152>~_zixl                                                          1.9 ( 16.2%)
+      <zixl_58i441S>~_zixl                                                       0.1 (  1.1%)
+    <zixl_I152>~_zixl                                                          706.4 ( 98.3%)
+
+  <zixl_58i441S>~_zixl                                                           7.3 (  1.0%)
+
+================================================================================
+== Profile: PEAK-MEMORY, CPU-freq = 4.00 GHz
+                                                          Calls   Peak-Mb         
+                                                                                  
+
+    <zixl_543IiP35>~_zixl                                                1       4.0 (100.0%)
+  zixl_5eAt1-I3L-ePP4~_zixl                                              1       4.0         
+    zixl_5eAt1-I3L-1LqiL1~_zixl                                         18       4.0 (100.0%)
+      zixl_yZr~_zixl                                                    55       4.0 (100.0%)
+        zixl_reA35i6O [R]~_zixl                                         97       4.0 (100.0%)
+
+    zixl_yZr~_zixl                                                      97       4.0 (100.0%)
+  zixl_reA35i6O~_zixl                                                  194       4.0         
+    <zixl_I152>~_zixl                                                            4.0 (100.0%)
+

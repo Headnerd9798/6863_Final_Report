@@ -1,0 +1,55 @@
+"ADDR_WIDTH",3,,,,,,
+"DATA_WIDTH",8,,,,,,
+"          ",,,,,,,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"Rx_Buffer_1",8,"3'h0","RO",0,"Receiver FIFO Output"
+,,,"MSB","LSB",,,
+,"FIELD","Rx_Buffer_1",7,0,"RO",0,"This register behaves like an internal status bit"
+,"ATTR","ACCESS_PRIORITY","bus_write","direct_write",,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.dlab ? regs.dl[7:0] : regs.rf_data_out[10:3]",,,,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR_disabled",,"THR",8,0,"WO",0,"Transmitter Holding Register - Transmit FIFO Input"
+,,,"MSB","LSB",,,
+,"FIELD_disabled","THR",7,0,"WO",0,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"IER",8,"3'h1","RW",0,"This register allows enabling and disabling interrupt generation by the UART."
+,,,"MSB","LSB",,,
+,"FIELD","Reserved",7,4,"RO",0,,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.dlab ? regs.dl[15:12] : 4'b0000",,,,
+,"FIELD","IER",3,0,"RO",0,,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.dlab ? regs.dl[11:8] : regs.ier",,,,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"IIR",8,"3'h2","RO","8'hc1","The IIR enables the programmer to retrieve what is the current highest priority pending interrupt.
+Bit 0 indicates that an interrupt is pending when it's logic 0. When it's 1 no interrupt is pending."
+,,,"MSB","LSB",,,
+,"FIELD","Rsvd_High",7,6,"R1","2'b11",
+,"FIELD","Rsvd_Low",5,4,"RZ","2'b00",
+,"FIELD","IIR",3,0,"RO","1'b1",
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.iir",,,,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"LCR",8,"3'h3","RW",3,"Line Control Register. The line control register allows the specification of the format of the asynchronous data
+communication used. A bit in the register also allows access to the Divisor Latches, which define the baud rate. 
+Reading from the register is allowed to check the current settings of the communication."
+,,,"MSB","LSB",,,
+,"FIELD","LCR",7,0,,,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.wb_dat_i",,,,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"LSR",8,"3'h5","RO",0,"Line Status Register"
+,,,"MSB","LSB",,,
+,"FIELD","ERR",7,7,"RO",0,
+,"FIELD","Tx_Empty",6,6,"RO",0,
+,"FIELD","Tx_FIFO_Empty",5,5,"RO",0,
+,"FIELD","BI",4,4,"RO",0,
+,"FIELD","FE",3,3,"RO",0,
+,"FIELD","PE",2,2,"RO",0,
+,"FIELD","OE",1,1,"RO",0,
+,"FIELD","DR",0,0,"RO",0,
+,,"NAME","SIZE","BYTE ADDRESS","ACCESS TYPE","RESET VALUE","DESCRIPTION"
+"CSR",,"MSR",8,"3'h6","RO",0,"The register displays the current state of the modem control lines. Also, four bits also
+provide an indication in the state of one of the modem status lines. These bits are set to 1 when a change in corresponding line has been detected and they are reset when the
+register is being read."
+,,,"MSB","LSB",,,
+,"FIELD","CDCD_CRI_CDSR_CCTS",7,4,"RO",0,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","{regs.dcd_c,regs.ri_c,regs.dsr_c,regs.cts_c}",,,,
+,"FIELD","DDCD_TERI_DDSR_DCTS",3,0,"RO",0,
+,"ATTR","DIRECT_WRITE","~regs.wb_rst_i","regs.msi_reset ? 4'b0 : regs.msr[3:0] | ({regs.dcd, regs.ri, regs.dsr, regs.cts} ^ regs.delayed_modem_signals[3:0])",,,,
